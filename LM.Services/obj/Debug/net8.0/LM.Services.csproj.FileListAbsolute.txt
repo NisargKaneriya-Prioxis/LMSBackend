@@ -1,0 +1,17 @@
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/bin/Debug/net8.0/LM.Services.deps.json
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/bin/Debug/net8.0/LM.Services.dll
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/bin/Debug/net8.0/LM.Services.pdb
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/bin/Debug/net8.0/LM.Common.dll
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/bin/Debug/net8.0/LM.Model.dll
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/bin/Debug/net8.0/LM.Common.pdb
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/bin/Debug/net8.0/LM.Model.pdb
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/obj/Debug/net8.0/LM.Services.csproj.AssemblyReference.cache
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/obj/Debug/net8.0/LM.Services.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/obj/Debug/net8.0/LM.Services.AssemblyInfoInputs.cache
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/obj/Debug/net8.0/LM.Services.AssemblyInfo.cs
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/obj/Debug/net8.0/LM.Services.csproj.CoreCompileInputs.cache
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/obj/Debug/net8.0/LM.Servi.DCB7C04C.Up2Date
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/obj/Debug/net8.0/LM.Services.dll
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/obj/Debug/net8.0/refint/LM.Services.dll
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/obj/Debug/net8.0/LM.Services.pdb
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/obj/Debug/net8.0/ref/LM.Services.dll

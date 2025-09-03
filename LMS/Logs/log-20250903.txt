@@ -1,0 +1,1260 @@
+2025-09-03 11:04:28.250 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 11:04:28.316 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 11:04:28.320 +05:30 [INF] Hosting environment: Development
+2025-09-03 11:04:28.320 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 11:04:29.670 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 11:04:29.918 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 248.5923ms
+2025-09-03 11:04:33.823 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-03 11:04:33.834 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 11:04:33.836 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:04:33.854 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:04:34.212 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-03 11:04:34.216 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 11:04:34.224 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 11:04:34.503 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 11:04:35.057 +05:30 [INF] Executed DbCommand (49ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-03 11:04:35.172 +05:30 [INF] Books list retrieved successfully.
+2025-09-03 11:04:35.173 +05:30 [INF] Retrieved 10 books
+2025-09-03 11:04:35.182 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 966.2398ms.
+2025-09-03 11:04:35.189 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 11:04:35.327 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 1227.6848ms
+2025-09-03 11:04:35.328 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:04:35.339 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 1517.0948ms
+2025-09-03 11:05:14.913 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-03 11:05:14.923 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:05:14.931 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:05:14.933 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-03 11:05:14.933 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 11:05:14.934 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 11:05:14.992 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-03 11:05:14.994 +05:30 [INF] Books list retrieved successfully.
+2025-09-03 11:05:14.995 +05:30 [INF] Retrieved 10 books
+2025-09-03 11:05:14.995 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 61.7119ms.
+2025-09-03 11:05:14.996 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 11:05:15.005 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 73.5118ms
+2025-09-03 11:05:15.005 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:05:15.006 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 93.1875ms
+2025-09-03 11:05:21.294 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-03 11:05:21.301 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:05:21.301 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:05:21.308 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-03 11:05:21.309 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 11:05:21.309 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 11:05:21.330 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-03 11:05:21.332 +05:30 [INF] Books list retrieved successfully.
+2025-09-03 11:05:21.332 +05:30 [INF] Retrieved 10 books
+2025-09-03 11:05:21.332 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.281ms.
+2025-09-03 11:05:21.333 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 11:05:21.333 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 31.4486ms
+2025-09-03 11:05:21.333 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:05:21.333 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 38.6886ms
+2025-09-03 11:05:31.255 +05:30 [INF] Application is shutting down...
+2025-09-03 11:05:34.651 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 11:05:34.704 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 11:05:34.704 +05:30 [INF] Hosting environment: Development
+2025-09-03 11:05:34.704 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 11:05:35.249 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 11:05:35.475 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 227.4871ms
+2025-09-03 11:05:39.314 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-03 11:05:39.334 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 11:05:39.337 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:05:39.351 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:05:39.441 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-03 11:05:39.444 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 11:05:39.453 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 11:05:39.690 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 11:05:40.373 +05:30 [INF] Executed DbCommand (70ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-03 11:05:40.573 +05:30 [INF] Books list retrieved successfully.
+2025-09-03 11:05:40.574 +05:30 [INF] Retrieved 10 books
+2025-09-03 11:05:40.584 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1139.2152ms.
+2025-09-03 11:05:40.593 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 11:05:40.764 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 1410.2674ms
+2025-09-03 11:05:40.765 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:05:40.776 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 1462.9008ms
+2025-09-03 11:06:19.658 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-03 11:06:19.663 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:06:19.671 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:06:19.675 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-03 11:06:19.675 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 11:06:19.676 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 11:06:19.731 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-03 11:06:19.733 +05:30 [INF] Books list retrieved successfully.
+2025-09-03 11:06:19.733 +05:30 [INF] Retrieved 10 books
+2025-09-03 11:06:19.733 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 57.8202ms.
+2025-09-03 11:06:19.734 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 11:06:19.745 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 72.809ms
+2025-09-03 11:06:19.745 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:06:19.745 +05:30 [ERR] Unhandled error occurred.
+System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at LM.Model.ResponseModel.LMSBookResponseModel.get_ModifiedAt()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-03 11:06:19.783 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 500 null application/json 125.163ms
+2025-09-03 11:06:30.912 +05:30 [INF] Application is shutting down...
+2025-09-03 11:06:34.035 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 11:06:34.076 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 11:06:34.077 +05:30 [INF] Hosting environment: Development
+2025-09-03 11:06:34.077 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 11:06:34.677 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 11:06:34.919 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 243.3461ms
+2025-09-03 11:06:38.694 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-03 11:06:38.714 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 11:06:38.718 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:06:38.742 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:06:38.855 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-03 11:06:38.858 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 11:06:38.867 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 11:06:39.118 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 11:06:39.640 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-03 11:06:39.851 +05:30 [INF] Books list retrieved successfully.
+2025-09-03 11:06:39.852 +05:30 [INF] Retrieved 10 books
+2025-09-03 11:06:39.863 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1005.3286ms.
+2025-09-03 11:06:39.873 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 11:06:40.025 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 1279.3942ms
+2025-09-03 11:06:40.026 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:06:40.037 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 1351.2778ms
+2025-09-03 11:06:49.715 +05:30 [INF] Application is shutting down...
+2025-09-03 11:23:46.572 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 11:23:46.616 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 11:23:46.617 +05:30 [INF] Hosting environment: Development
+2025-09-03 11:23:46.617 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 11:23:47.259 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 11:23:47.531 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 273.1055ms
+2025-09-03 11:23:51.789 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-03 11:23:51.812 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 11:23:51.817 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-03 11:23:51.831 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 11:23:51.956 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-03 11:23:51.959 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 11:23:51.970 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 11:23:52.246 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 11:23:52.916 +05:30 [INF] Executed DbCommand (120ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-03 11:23:53.042 +05:30 [INF] user list retrieved successfully.
+2025-09-03 11:23:53.043 +05:30 [INF] Retrieved 3 users
+2025-09-03 11:23:53.053 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1093.6139ms.
+2025-09-03 11:23:53.061 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 11:23:53.225 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1390.5055ms
+2025-09-03 11:23:53.226 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-03 11:23:53.239 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 1449.7673ms
+2025-09-03 11:25:32.618 +05:30 [INF] Application is shutting down...
+2025-09-03 11:37:00.508 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-03 11:37:00.550 +05:30 [INF] Creating key {d15b20cd-b10f-4305-b9bb-da2ae4decfef} with creation date 2025-09-03 06:07:00Z, activation date 2025-09-03 06:07:00Z, and expiration date 2025-12-02 06:07:00Z.
+2025-09-03 11:37:00.556 +05:30 [WRN] No XML encryptor configured. Key {d15b20cd-b10f-4305-b9bb-da2ae4decfef} may be persisted to storage in unencrypted form.
+2025-09-03 11:37:00.558 +05:30 [INF] Writing data to file '/Users/nisargkaneriya/.aspnet/DataProtection-Keys/key-d15b20cd-b10f-4305-b9bb-da2ae4decfef.xml'.
+2025-09-03 11:37:00.595 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 11:37:00.597 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 11:37:00.598 +05:30 [INF] Hosting environment: Development
+2025-09-03 11:37:00.598 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 11:37:01.441 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 11:37:01.684 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 245.2632ms
+2025-09-03 11:37:05.655 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-03 11:37:05.677 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 11:37:05.680 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:37:05.693 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:37:05.795 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-03 11:37:05.798 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 11:37:05.806 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 11:37:06.056 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 11:37:06.584 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-03 11:37:06.734 +05:30 [INF] Books list retrieved successfully.
+2025-09-03 11:37:06.735 +05:30 [INF] Retrieved 10 books
+2025-09-03 11:37:06.746 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 948.0271ms.
+2025-09-03 11:37:06.758 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 11:37:06.908 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 1211.8463ms
+2025-09-03 11:37:06.909 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 11:37:06.921 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 1268.8517ms
+2025-09-03 11:37:35.309 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B001/ISBN001 - null 0
+2025-09-03 11:37:35.324 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:37:35.332 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:37:35.335 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:37:35.338 +05:30 [INF] Borrow request received for Book SID: B001, ISBN: ISBN001
+2025-09-03 11:37:35.341 +05:30 [INF] Borrowing book with SID: B001 and ISBN: ISBN001
+2025-09-03 11:37:35.653 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:37:35.910 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@p17='1', @p0='George Orwell' (Size = 50), @p1='7' (Nullable = true), @p2='328' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='1st' (Size = 50), @p8='ISBN001' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1949' (Nullable = true), @p13='Secker & Warburg' (Size = 100), @p14='10' (Nullable = true), @p15='1', @p16='1984' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:37:35.920 +05:30 [INF] Book with SID: B001 and ISBN: ISBN001 successfully borrowed
+2025-09-03 11:37:35.921 +05:30 [INF] Executed action method LMS.Controllers.BookController.BorrowBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 586.4636ms.
+2025-09-03 11:37:35.922 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:37:35.936 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 603.8497ms
+2025-09-03 11:37:35.936 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:37:35.938 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B001/ISBN001 - 200 null application/json; charset=utf-8 629.6947ms
+2025-09-03 11:38:05.302 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B001/ISBN001 - null 0
+2025-09-03 11:38:05.304 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:38:05.308 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:38:05.312 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:38:05.313 +05:30 [INF] Return request received for Book SID: B001, ISBN: ISBN001
+2025-09-03 11:38:05.314 +05:30 [INF] Return book with SID: B001 and ISBN: ISBN001
+2025-09-03 11:38:05.332 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:38:05.346 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p17='1', @p0='George Orwell' (Size = 50), @p1='8' (Nullable = true), @p2='328' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='1st' (Size = 50), @p8='ISBN001' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1949' (Nullable = true), @p13='Secker & Warburg' (Size = 100), @p14='10' (Nullable = true), @p15='1', @p16='1984' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:38:05.351 +05:30 [INF] Book with SID: B001 and ISBN: ISBN001 successfully returned
+2025-09-03 11:38:05.351 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 38.9411ms.
+2025-09-03 11:38:05.351 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:38:05.352 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 44.609ms
+2025-09-03 11:38:05.353 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:38:05.353 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B001/ISBN001 - 200 null application/json; charset=utf-8 51.5541ms
+2025-09-03 11:38:47.649 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B010/ISBN010 - null 0
+2025-09-03 11:38:47.658 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:38:47.660 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:38:47.674 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:38:47.675 +05:30 [INF] Borrow request received for Book SID: B010, ISBN: ISBN010
+2025-09-03 11:38:47.675 +05:30 [INF] Borrowing book with SID: B010 and ISBN: ISBN010
+2025-09-03 11:38:47.691 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:38:47.691 +05:30 [WRN] Book with SID: B010 and ISBN: ISBN010 not available or already borrowed
+2025-09-03 11:38:47.693 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 24.2224ms
+2025-09-03 11:38:47.694 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:38:47.694 +05:30 [ERR] Custom error occurred: Book with SID 'B010' and ISBN 'ISBN010' not available or already borrowed.
+LM.Common.HttpStatusCodeException: Book with SID 'B010' and ISBN 'ISBN010' not available or already borrowed.
+   at LM.Services.Repositories.Implementation.BookRepository.BorrowedBook(String bookSid, String Isbn) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/BookRepository.cs:line 294
+   at LMS.Controllers.BookController.BorrowBook(String bookSid, String isbn) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/BookController.cs:line 99
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-03 11:38:47.733 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B010/ISBN010 - 404 null application/json 86.8767ms
+2025-09-03 11:38:48.591 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B010/ISBN010 - null 0
+2025-09-03 11:38:48.591 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:38:48.591 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:38:48.593 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:38:48.594 +05:30 [INF] Borrow request received for Book SID: B010, ISBN: ISBN010
+2025-09-03 11:38:48.595 +05:30 [INF] Borrowing book with SID: B010 and ISBN: ISBN010
+2025-09-03 11:38:48.608 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:38:48.608 +05:30 [WRN] Book with SID: B010 and ISBN: ISBN010 not available or already borrowed
+2025-09-03 11:38:48.609 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 17.495ms
+2025-09-03 11:38:48.609 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:38:48.609 +05:30 [ERR] Custom error occurred: Book with SID 'B010' and ISBN 'ISBN010' not available or already borrowed.
+LM.Common.HttpStatusCodeException: Book with SID 'B010' and ISBN 'ISBN010' not available or already borrowed.
+   at LM.Services.Repositories.Implementation.BookRepository.BorrowedBook(String bookSid, String Isbn) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/BookRepository.cs:line 294
+   at LMS.Controllers.BookController.BorrowBook(String bookSid, String isbn) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/BookController.cs:line 99
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-03 11:38:48.614 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B010/ISBN010 - 404 null application/json 23.0804ms
+2025-09-03 11:39:17.303 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - null 0
+2025-09-03 11:39:17.307 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:39:17.311 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:17.314 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:17.315 +05:30 [INF] Borrow request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:17.315 +05:30 [INF] Borrowing book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:17.331 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:17.350 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='4' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:17.351 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully borrowed
+2025-09-03 11:39:17.351 +05:30 [INF] Executed action method LMS.Controllers.BookController.BorrowBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 36.2808ms.
+2025-09-03 11:39:17.351 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:17.352 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 40.8191ms
+2025-09-03 11:39:17.352 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:39:17.353 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - 200 null application/json; charset=utf-8 49.9446ms
+2025-09-03 11:39:18.352 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - null 0
+2025-09-03 11:39:18.353 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:39:18.353 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:18.354 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:18.354 +05:30 [INF] Borrow request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:18.354 +05:30 [INF] Borrowing book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:18.364 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:18.374 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='3' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:18.375 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully borrowed
+2025-09-03 11:39:18.375 +05:30 [INF] Executed action method LMS.Controllers.BookController.BorrowBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.4989ms.
+2025-09-03 11:39:18.376 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:18.376 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 22.7136ms
+2025-09-03 11:39:18.376 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:39:18.376 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - 200 null application/json; charset=utf-8 23.759ms
+2025-09-03 11:39:19.269 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - null 0
+2025-09-03 11:39:19.269 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:39:19.269 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:19.270 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:19.271 +05:30 [INF] Borrow request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:19.271 +05:30 [INF] Borrowing book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:19.275 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:19.285 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='2' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:19.286 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully borrowed
+2025-09-03 11:39:19.286 +05:30 [INF] Executed action method LMS.Controllers.BookController.BorrowBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.1014ms.
+2025-09-03 11:39:19.286 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:19.286 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 16.8098ms
+2025-09-03 11:39:19.286 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:39:19.286 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - 200 null application/json; charset=utf-8 17.8432ms
+2025-09-03 11:39:20.270 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - null 0
+2025-09-03 11:39:20.270 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:39:20.270 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:20.271 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:20.271 +05:30 [INF] Borrow request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:20.271 +05:30 [INF] Borrowing book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:20.275 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:20.282 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='1' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:20.283 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully borrowed
+2025-09-03 11:39:20.283 +05:30 [INF] Executed action method LMS.Controllers.BookController.BorrowBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.0963ms.
+2025-09-03 11:39:20.283 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:20.283 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 13.1373ms
+2025-09-03 11:39:20.283 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:39:20.284 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - 200 null application/json; charset=utf-8 13.8151ms
+2025-09-03 11:39:21.151 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - null 0
+2025-09-03 11:39:21.152 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:39:21.152 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:21.153 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:21.153 +05:30 [INF] Borrow request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:21.154 +05:30 [INF] Borrowing book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:21.158 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:21.164 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='0' (Nullable = true), @p2='288' (Size = 50), @p3='5', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:21.164 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully borrowed
+2025-09-03 11:39:21.164 +05:30 [INF] Executed action method LMS.Controllers.BookController.BorrowBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.9247ms.
+2025-09-03 11:39:21.165 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:21.165 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 12.3032ms
+2025-09-03 11:39:21.165 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:39:21.165 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - 200 null application/json; charset=utf-8 13.6273ms
+2025-09-03 11:39:28.020 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - null 0
+2025-09-03 11:39:28.021 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:39:28.021 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:28.021 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:28.022 +05:30 [INF] Borrow request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:28.022 +05:30 [INF] Borrowing book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:28.028 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:28.029 +05:30 [WRN] Book with SID: B002 and ISBN: ISBN002 not available or already borrowed
+2025-09-03 11:39:28.034 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 13.5147ms
+2025-09-03 11:39:28.035 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:39:28.035 +05:30 [ERR] Custom error occurred: Book with SID 'B002' and ISBN 'ISBN002' not available or already borrowed.
+LM.Common.HttpStatusCodeException: Book with SID 'B002' and ISBN 'ISBN002' not available or already borrowed.
+   at LM.Services.Repositories.Implementation.BookRepository.BorrowedBook(String bookSid, String Isbn) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/BookRepository.cs:line 294
+   at LMS.Controllers.BookController.BorrowBook(String bookSid, String isbn) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/BookController.cs:line 99
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-03 11:39:28.045 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - 404 null application/json 24.9721ms
+2025-09-03 11:39:43.413 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:39:43.414 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:43.414 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:43.415 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:43.415 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:43.416 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:43.429 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:43.445 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='1' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:43.596 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:39:43.596 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 181.0392ms.
+2025-09-03 11:39:43.597 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:43.603 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 189.3336ms
+2025-09-03 11:39:43.604 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:43.604 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 190.8986ms
+2025-09-03 11:39:50.477 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:39:50.480 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:50.481 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:50.485 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:50.486 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:50.486 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:50.505 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:50.520 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='2' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:50.525 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:39:50.525 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 39.4155ms.
+2025-09-03 11:39:50.528 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:50.529 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 46.7341ms
+2025-09-03 11:39:50.529 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:50.529 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 52.7871ms
+2025-09-03 11:39:51.191 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:39:51.191 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:51.191 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:51.192 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:51.192 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:51.192 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:51.197 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:51.205 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='3' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:51.206 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:39:51.206 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.2143ms.
+2025-09-03 11:39:51.206 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:51.206 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 15.0027ms
+2025-09-03 11:39:51.206 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:51.206 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 15.9119ms
+2025-09-03 11:39:51.688 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:39:51.689 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:51.689 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:51.690 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:51.690 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:51.690 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:51.701 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:51.709 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='4' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:51.710 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:39:51.710 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.7814ms.
+2025-09-03 11:39:51.710 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:51.710 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 21.199ms
+2025-09-03 11:39:51.710 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:51.711 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 22.11ms
+2025-09-03 11:39:51.975 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:39:51.975 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:51.975 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:51.976 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:51.976 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:51.976 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:51.983 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:51.989 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='5' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:51.990 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:39:51.990 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.3766ms.
+2025-09-03 11:39:51.990 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:51.990 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 14.5866ms
+2025-09-03 11:39:51.990 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:51.990 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 15.8089ms
+2025-09-03 11:39:52.157 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:39:52.157 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:52.158 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:52.159 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:52.159 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:52.159 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:52.166 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:52.174 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='6' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:52.174 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:39:52.174 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.4355ms.
+2025-09-03 11:39:52.174 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:52.175 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 17.0287ms
+2025-09-03 11:39:52.175 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:52.175 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 18.0181ms
+2025-09-03 11:39:52.300 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:39:52.300 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:52.300 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:52.301 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:52.301 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:52.302 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:52.308 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:52.314 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='7' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:52.315 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:39:52.315 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.8998ms.
+2025-09-03 11:39:52.316 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:52.316 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 15.4163ms
+2025-09-03 11:39:52.316 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:52.316 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 16.5974ms
+2025-09-03 11:39:52.442 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:39:52.443 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:52.443 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:52.444 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:52.444 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:52.444 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:52.452 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:52.458 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='8' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:52.458 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:39:52.458 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.5652ms.
+2025-09-03 11:39:52.459 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:52.459 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 16.0696ms
+2025-09-03 11:39:52.459 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:52.459 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 16.8457ms
+2025-09-03 11:39:52.740 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:39:52.741 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:52.742 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:39:52.743 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:39:52.744 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:39:52.744 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:39:52.748 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:39:52.754 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='9' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:39:52.755 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:39:52.755 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.2164ms.
+2025-09-03 11:39:52.755 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:39:52.755 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 12.8835ms
+2025-09-03 11:39:52.755 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:39:52.755 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 14.8682ms
+2025-09-03 11:40:00.020 +05:30 [INF] Application is shutting down...
+2025-09-03 11:40:19.097 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-03 11:40:19.178 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 11:40:19.182 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 11:40:19.182 +05:30 [INF] Hosting environment: Development
+2025-09-03 11:40:19.182 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 11:40:19.815 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 11:40:20.012 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 197.2805ms
+2025-09-03 11:40:43.601 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - null 0
+2025-09-03 11:40:43.613 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 11:40:43.617 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:40:43.631 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:40:43.738 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:40:43.739 +05:30 [INF] Borrow request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:40:43.741 +05:30 [INF] Borrowing book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:40:44.130 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 11:40:44.655 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:40:44.873 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='8' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:40:44.882 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully borrowed
+2025-09-03 11:40:44.886 +05:30 [INF] Executed action method LMS.Controllers.BookController.BorrowBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1144.9437ms.
+2025-09-03 11:40:44.894 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:40:45.002 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 1367.8107ms
+2025-09-03 11:40:45.003 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:40:45.017 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - 200 null application/json; charset=utf-8 1418.4584ms
+2025-09-03 11:40:46.839 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - null 0
+2025-09-03 11:40:46.842 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:40:46.842 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:40:46.843 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:40:46.844 +05:30 [INF] Borrow request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:40:46.844 +05:30 [INF] Borrowing book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:40:46.858 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:40:46.872 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='7' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:40:46.876 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully borrowed
+2025-09-03 11:40:46.876 +05:30 [INF] Executed action method LMS.Controllers.BookController.BorrowBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 32.7608ms.
+2025-09-03 11:40:46.877 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:40:46.878 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 35.769ms
+2025-09-03 11:40:46.878 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:40:46.879 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - 200 null application/json; charset=utf-8 39.5939ms
+2025-09-03 11:40:47.586 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - null 0
+2025-09-03 11:40:47.587 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:40:47.587 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:40:47.591 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:40:47.591 +05:30 [INF] Borrow request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:40:47.592 +05:30 [INF] Borrowing book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:40:47.596 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:40:47.604 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='6' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:40:47.605 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully borrowed
+2025-09-03 11:40:47.605 +05:30 [INF] Executed action method LMS.Controllers.BookController.BorrowBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.3005ms.
+2025-09-03 11:40:47.605 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:40:47.605 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 18.332ms
+2025-09-03 11:40:47.605 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:40:47.605 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - 200 null application/json; charset=utf-8 19.7121ms
+2025-09-03 11:40:52.138 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - null 0
+2025-09-03 11:40:52.139 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:40:52.139 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:40:52.140 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 11:40:52.140 +05:30 [INF] Borrow request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:40:52.140 +05:30 [INF] Borrowing book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:40:52.147 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:40:52.156 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='5' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:40:52.157 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully borrowed
+2025-09-03 11:40:52.157 +05:30 [INF] Executed action method LMS.Controllers.BookController.BorrowBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.6667ms.
+2025-09-03 11:40:52.157 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:40:52.157 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 18.0945ms
+2025-09-03 11:40:52.157 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 11:40:52.158 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - 200 null application/json; charset=utf-8 19.3839ms
+2025-09-03 11:41:35.484 +05:30 [INF] Application is shutting down...
+2025-09-03 11:42:44.222 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-03 11:42:44.373 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 11:42:44.379 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 11:42:44.381 +05:30 [INF] Hosting environment: Development
+2025-09-03 11:42:44.381 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 11:42:44.766 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 11:42:45.158 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 391.8448ms
+2025-09-03 11:42:55.982 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:42:56.003 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 11:42:56.007 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:42:56.026 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:42:56.133 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:42:56.135 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:42:56.136 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:42:56.527 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 11:42:57.061 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:42:57.281 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='6' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:42:57.290 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:42:57.294 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1157.6788ms.
+2025-09-03 11:42:57.302 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:42:57.410 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 1380.8697ms
+2025-09-03 11:42:57.411 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:42:57.424 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 1444.8771ms
+2025-09-03 11:43:03.113 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:43:03.119 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:43:03.120 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:43:03.122 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:43:03.122 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:43:03.122 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:43:03.146 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:43:03.155 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='6' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:43:03.155 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:43:03.156 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 33.4936ms.
+2025-09-03 11:43:03.156 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:43:03.156 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 36.1252ms
+2025-09-03 11:43:03.156 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:43:03.157 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 43.6645ms
+2025-09-03 11:43:08.429 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:43:08.430 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:43:08.430 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:43:08.437 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:43:08.437 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:43:08.437 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:43:08.446 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:43:08.454 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='6' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:43:08.456 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:43:08.456 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 18.5847ms.
+2025-09-03 11:43:08.456 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:43:08.456 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 25.9205ms
+2025-09-03 11:43:08.456 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:43:08.457 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 27.5557ms
+2025-09-03 11:43:08.965 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:43:08.966 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:43:08.966 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:43:08.967 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:43:08.968 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:43:08.968 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:43:08.972 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:43:08.982 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='6' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:43:08.983 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:43:08.983 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.3584ms.
+2025-09-03 11:43:08.983 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:43:08.983 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 16.8297ms
+2025-09-03 11:43:08.983 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:43:08.983 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 18.3938ms
+2025-09-03 11:43:09.169 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:43:09.170 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:43:09.170 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:43:09.171 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:43:09.171 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:43:09.171 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:43:09.178 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:43:09.184 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='6' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:43:09.185 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:43:09.185 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.7538ms.
+2025-09-03 11:43:09.185 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:43:09.185 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 15.1167ms
+2025-09-03 11:43:09.185 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:43:09.185 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 16.0165ms
+2025-09-03 11:43:09.349 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:43:09.350 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:43:09.350 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:43:09.351 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:43:09.351 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:43:09.351 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:43:09.356 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:43:09.363 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='6' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 11:43:09.363 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully returned
+2025-09-03 11:43:09.363 +05:30 [INF] Executed action method LMS.Controllers.BookController.ReturnBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.5184ms.
+2025-09-03 11:43:09.364 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 11:43:09.364 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 13.4338ms
+2025-09-03 11:43:09.364 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:43:09.364 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 200 null application/json; charset=utf-8 14.4816ms
+2025-09-03 11:44:46.706 +05:30 [INF] Application is shutting down...
+2025-09-03 11:44:49.654 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-03 11:44:49.781 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 11:44:49.784 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 11:44:49.784 +05:30 [INF] Hosting environment: Development
+2025-09-03 11:44:49.784 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 11:44:50.390 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 11:44:50.679 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 292.7827ms
+2025-09-03 11:45:01.794 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - null 0
+2025-09-03 11:45:01.818 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 11:45:01.824 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:45:01.837 +05:30 [INF] Route matched with {action = "ReturnBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ReturnBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 11:45:01.943 +05:30 [INF] Executing action method LMS.Controllers.BookController.ReturnBook (LMS) - Validation state: "Valid"
+2025-09-03 11:45:01.945 +05:30 [INF] Return request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 11:45:01.946 +05:30 [INF] Return book with SID: B002 and ISBN: ISBN002
+2025-09-03 11:45:02.330 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 11:45:02.867 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 11:45:02.893 +05:30 [ERR] Unexpected error occurred while returning book with SID: B002 and ISBN: ISBN002
+System.Exception: Book is already Present
+   at LM.Services.Repositories.Implementation.BookRepository.ReturnBook(String bookSid, String Isbn) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/BookRepository.cs:line 347
+2025-09-03 11:45:02.911 +05:30 [INF] Executed action LMS.Controllers.BookController.ReturnBook (LMS) in 1071.021ms
+2025-09-03 11:45:02.912 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.ReturnBook (LMS)'
+2025-09-03 11:45:02.913 +05:30 [ERR] Custom error occurred: An unexpected error occurred while returning the book.
+LM.Common.HttpStatusCodeException: An unexpected error occurred while returning the book.
+   at LM.Services.Repositories.Implementation.BookRepository.ReturnBook(String bookSid, String Isbn) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/BookRepository.cs:line 368
+   at LMS.Controllers.BookController.ReturnBook(String bookSid, String isbn) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/BookController.cs:line 123
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-03 11:45:03.020 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/return/B002/ISBN002 - 500 null application/json 1226.4387ms
+2025-09-03 11:45:17.105 +05:30 [INF] Application is shutting down...
+2025-09-03 12:25:15.883 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-03 12:25:15.989 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 12:25:15.991 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 12:25:15.991 +05:30 [INF] Hosting environment: Development
+2025-09-03 12:25:15.991 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 12:25:16.659 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 12:25:16.852 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 193.9737ms
+2025-09-03 12:25:22.668 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-03 12:25:22.688 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 12:25:22.693 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-03 12:25:22.706 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 12:25:22.819 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-03 12:25:22.822 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 12:25:22.831 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 12:25:23.081 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 12:25:23.626 +05:30 [INF] Executed DbCommand (50ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-03 12:25:23.736 +05:30 [INF] user list retrieved successfully.
+2025-09-03 12:25:23.737 +05:30 [INF] Retrieved 3 users
+2025-09-03 12:25:23.746 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 923.9143ms.
+2025-09-03 12:25:23.753 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 12:25:23.903 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1193.4201ms
+2025-09-03 12:25:23.904 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-03 12:25:23.926 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 1260.289ms
+2025-09-03 12:25:39.875 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/dynamicuser/USR001 - null null
+2025-09-03 12:25:39.882 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.GetByuserSID (LMS)'
+2025-09-03 12:25:39.887 +05:30 [INF] Route matched with {action = "GetByuserSID", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LM.Model.ResponseModel.LMSUserResponseModel]] GetByuserSID(System.String) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 12:25:39.891 +05:30 [INF] Executing action method LMS.Controllers.UserController.GetByuserSID (LMS) - Validation state: "Valid"
+2025-09-03 12:25:39.892 +05:30 [INF] Fetching book with SID: USR001
+2025-09-03 12:25:39.893 +05:30 [INF] Fetching book with SID: USR001
+2025-09-03 12:25:39.965 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[p0='USR001' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetUserBySId @p0
+2025-09-03 12:25:39.967 +05:30 [INF] Successfully retrieved book: (SID: USR001)
+2025-09-03 12:25:39.967 +05:30 [INF] Successfully retrieved book: (SID: USR001)
+2025-09-03 12:25:39.967 +05:30 [INF] Executed action method LMS.Controllers.UserController.GetByuserSID (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 75.7376ms.
+2025-09-03 12:25:39.967 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.ResponseModel.LMSUserResponseModel'.
+2025-09-03 12:25:39.968 +05:30 [INF] Executed action LMS.Controllers.UserController.GetByuserSID (LMS) in 80.2204ms
+2025-09-03 12:25:39.968 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.GetByuserSID (LMS)'
+2025-09-03 12:25:39.968 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/dynamicuser/USR001 - 200 null application/json; charset=utf-8 93.4999ms
+2025-09-03 12:26:24.186 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/InsertUser - application/json 186
+2025-09-03 12:26:24.192 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.InsertBook (LMS)'
+2025-09-03 12:26:24.206 +05:30 [INF] Route matched with {action = "InsertBook", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[LM.Model.ResponseModel.LMSUserResponseModel]]] InsertBook(System.Collections.Generic.List`1[LM.Model.RequestModel.UserSignupRequestModel]) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 12:26:24.353 +05:30 [INF] Executing action method LMS.Controllers.UserController.InsertBook (LMS) - Validation state: "Valid"
+2025-09-03 12:26:24.359 +05:30 [INF] Inserting 1 new users
+2025-09-03 12:26:24.637 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@__user_Email_0='Khimanadan@gmail.com' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[Address], [u].[CreatedAT], [u].[CreatedBY], [u].[Email], [u].[ModifiedAT], [u].[ModifiedBY], [u].[Name], [u].[PasswordHash], [u].[phone_number], [u].[Role], [u].[Status], [u].[UserSID]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2025-09-03 12:26:24.793 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[@p0='Porbandar' (Size = 100), @p1='2025-09-03T12:26:24.6414560+05:30' (DbType = DateTime), @p2='System' (Size = 50), @p3='Khimanadan@gmail.com' (Size = 50), @p4=NULL (DbType = DateTime), @p5=NULL (Size = 50), @p6='Khimanadan' (Size = 50), @p7='0x8F35A60533D66B194C4EE160FDC8B9244AAF0044C72E8D86CB1534EB67C77505' (Nullable = false) (Size = 64), @p8='9737252201' (Nullable = true), @p9='Admin' (Nullable = false) (Size = 20), @p10='1', @p11='ADMF39165' (Nullable = false) (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Address], [CreatedAT], [CreatedBY], [Email], [ModifiedAT], [ModifiedBY], [Name], [PasswordHash], [phone_number], [Role], [Status], [UserSID])
+OUTPUT INSERTED.[UserID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-09-03 12:26:24.811 +05:30 [INF] Successfully inserted 1 users
+2025-09-03 12:26:24.811 +05:30 [INF] user created successfully
+2025-09-03 12:26:24.811 +05:30 [INF] Executed action method LMS.Controllers.UserController.InsertBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 458.7015ms.
+2025-09-03 12:26:24.812 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LM.Model.ResponseModel.LMSUserResponseModel, LM.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-03 12:26:24.814 +05:30 [INF] Executed action LMS.Controllers.UserController.InsertBook (LMS) in 506.2983ms
+2025-09-03 12:26:24.814 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.InsertBook (LMS)'
+2025-09-03 12:26:24.815 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/InsertUser - 200 null application/json; charset=utf-8 629.122ms
+2025-09-03 12:26:38.370 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-03 12:26:38.373 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-03 12:26:38.373 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 12:26:38.378 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-03 12:26:38.380 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 12:26:38.382 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 12:26:38.430 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-03 12:26:38.434 +05:30 [INF] user list retrieved successfully.
+2025-09-03 12:26:38.434 +05:30 [INF] Retrieved 3 users
+2025-09-03 12:26:38.435 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 56.853ms.
+2025-09-03 12:26:38.436 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 12:26:38.436 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 60.8209ms
+2025-09-03 12:26:38.436 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-03 12:26:38.437 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 66.5259ms
+2025-09-03 12:27:14.113 +05:30 [INF] Application is shutting down...
+2025-09-03 12:40:21.909 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-03 12:40:21.998 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 12:40:22.001 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 12:40:22.001 +05:30 [INF] Hosting environment: Development
+2025-09-03 12:40:22.001 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 12:40:22.974 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 12:40:23.174 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 201.5686ms
+2025-09-03 12:40:37.986 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - null 0
+2025-09-03 12:40:38.004 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 12:40:38.007 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 12:40:38.025 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 12:40:38.138 +05:30 [INF] Executing action method LMS.Controllers.BookController.BorrowBook (LMS) - Validation state: "Valid"
+2025-09-03 12:40:38.140 +05:30 [INF] Borrow request received for Book SID: B002, ISBN: ISBN002
+2025-09-03 12:40:38.141 +05:30 [INF] Borrowing book with SID: B002 and ISBN: ISBN002
+2025-09-03 12:40:38.544 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 12:40:39.292 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-03 12:40:39.621 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[@p17='2', @p0='Aldous Huxley' (Size = 50), @p1='5' (Nullable = true), @p2='288' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='2nd' (Size = 50), @p8='ISBN002' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1932' (Nullable = true), @p13='Chatto & Windus' (Size = 100), @p14='6' (Nullable = true), @p15='1', @p16='Brave New World' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-03 12:40:39.672 +05:30 [INF] Book with SID: B002 and ISBN: ISBN002 successfully borrowed
+2025-09-03 12:40:39.677 +05:30 [INF] Executed action method LMS.Controllers.BookController.BorrowBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1534.3183ms.
+2025-09-03 12:40:39.689 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 12:40:39.814 +05:30 [INF] Executed action LMS.Controllers.BookController.BorrowBook (LMS) in 1786.1392ms
+2025-09-03 12:40:39.815 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.BorrowBook (LMS)'
+2025-09-03 12:40:39.837 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/borrow/B002/ISBN002 - 200 null application/json; charset=utf-8 1853.5367ms
+2025-09-03 12:48:34.900 +05:30 [INF] Application is shutting down...
+2025-09-03 14:39:33.018 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-03 14:39:33.136 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 14:39:33.138 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 14:39:33.139 +05:30 [INF] Hosting environment: Development
+2025-09-03 14:39:33.139 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 14:39:34.543 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 14:39:34.693 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.4639ms
+2025-09-03 14:40:40.537 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/login - application/json 65
+2025-09-03 14:40:40.551 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 14:40:40.554 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Login (LMS)'
+2025-09-03 14:40:40.576 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LM.Model.RequestModel.LoginRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 14:40:40.740 +05:30 [INF] Executing action method LMS.Controllers.UserController.Login (LMS) - Validation state: "Valid"
+2025-09-03 14:40:40.742 +05:30 [INF] Attempting login for email: Khimanadan@gmail.com
+2025-09-03 14:40:41.095 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 14:40:41.665 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[@__model_Email_0='Khimanadan@gmail.com' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[Address], [u].[CreatedAT], [u].[CreatedBY], [u].[Email], [u].[ModifiedAT], [u].[ModifiedBY], [u].[Name], [u].[PasswordHash], [u].[phone_number], [u].[Role], [u].[Status], [u].[UserSID]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0 AND [u].[Status] = 1
+2025-09-03 14:40:41.687 +05:30 [WRN] Login failed: Invalid password for email: Khimanadan@gmail.com
+2025-09-03 14:40:41.689 +05:30 [WRN] Login failed: Invalid email or password.
+2025-09-03 14:40:41.692 +05:30 [INF] Executed action method LMS.Controllers.UserController.Login (LMS), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 949.3282ms.
+2025-09-03 14:40:41.698 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 14:40:41.725 +05:30 [INF] Executed action LMS.Controllers.UserController.Login (LMS) in 1145.9633ms
+2025-09-03 14:40:41.725 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Login (LMS)'
+2025-09-03 14:40:41.736 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/login - 401 null application/json; charset=utf-8 1201.3416ms
+2025-09-03 14:45:51.008 +05:30 [INF] Application is shutting down...
+2025-09-03 14:51:33.862 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-03 14:51:33.960 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 14:51:33.962 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 14:51:33.962 +05:30 [INF] Hosting environment: Development
+2025-09-03 14:51:33.962 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 14:51:34.204 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 14:51:34.337 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.4972ms
+2025-09-03 14:51:41.373 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/InsertUser - application/json 166
+2025-09-03 14:51:41.382 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 14:51:41.385 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.InsertBook (LMS)'
+2025-09-03 14:51:41.395 +05:30 [INF] Route matched with {action = "InsertBook", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[LM.Model.ResponseModel.LMSUserResponseModel]]] InsertBook(System.Collections.Generic.List`1[LM.Model.RequestModel.UserSignupRequestModel]) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 14:51:41.566 +05:30 [INF] Executing action method LMS.Controllers.UserController.InsertBook (LMS) - Validation state: "Valid"
+2025-09-03 14:51:41.569 +05:30 [INF] Inserting 1 new users
+2025-09-03 14:51:41.937 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 14:51:42.478 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[@__user_Email_0='heelo@gmail.com' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[Address], [u].[CreatedAT], [u].[CreatedBY], [u].[Email], [u].[ModifiedAT], [u].[ModifiedBY], [u].[Name], [u].[PasswordHash], [u].[phone_number], [u].[Role], [u].[Status], [u].[UserSID]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2025-09-03 14:51:42.645 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@p0='heloo' (Size = 100), @p1='2025-09-03T14:51:42.4965230+05:30' (DbType = DateTime), @p2='System' (Size = 50), @p3='heelo@gmail.com' (Size = 50), @p4=NULL (DbType = DateTime), @p5=NULL (Size = 50), @p6='heelo' (Size = 50), @p7='0x304EF4CDDA3463B24BF53F9CDD69AD3ECDAB0842E7E70E2F3CFBB9F14E1C4AE6' (Nullable = false) (Size = 64), @p8='9876543212' (Nullable = true), @p9='student' (Nullable = false) (Size = 20), @p10='1', @p11='USRbe3aff02-a538-485a-99e6-5fe617747e5d' (Nullable = false) (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Address], [CreatedAT], [CreatedBY], [Email], [ModifiedAT], [ModifiedBY], [Name], [PasswordHash], [phone_number], [Role], [Status], [UserSID])
+OUTPUT INSERTED.[UserID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-09-03 14:51:42.668 +05:30 [INF] Successfully inserted 1 users
+2025-09-03 14:51:42.668 +05:30 [INF] user created successfully
+2025-09-03 14:51:42.673 +05:30 [INF] Executed action method LMS.Controllers.UserController.InsertBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1102.9358ms.
+2025-09-03 14:51:42.682 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LM.Model.ResponseModel.LMSUserResponseModel, LM.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-03 14:51:42.733 +05:30 [INF] Executed action LMS.Controllers.UserController.InsertBook (LMS) in 1335.8341ms
+2025-09-03 14:51:42.734 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.InsertBook (LMS)'
+2025-09-03 14:51:42.747 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/InsertUser - 200 null application/json; charset=utf-8 1374.7542ms
+2025-09-03 14:52:31.865 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/login - application/json 55
+2025-09-03 14:52:31.873 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Login (LMS)'
+2025-09-03 14:52:31.879 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LM.Model.RequestModel.LoginRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 14:52:31.892 +05:30 [INF] Executing action method LMS.Controllers.UserController.Login (LMS) - Validation state: "Valid"
+2025-09-03 14:52:31.895 +05:30 [INF] Attempting login for email: heelo
+2025-09-03 14:52:31.942 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__model_Email_0='heelo' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[Address], [u].[CreatedAT], [u].[CreatedBY], [u].[Email], [u].[ModifiedAT], [u].[ModifiedBY], [u].[Name], [u].[PasswordHash], [u].[phone_number], [u].[Role], [u].[Status], [u].[UserSID]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0 AND [u].[Status] = 1
+2025-09-03 14:52:31.943 +05:30 [WRN] Login failed: User not found for email: heelo
+2025-09-03 14:52:31.946 +05:30 [WRN] Login failed: Invalid email or password.
+2025-09-03 14:52:31.946 +05:30 [INF] Executed action method LMS.Controllers.UserController.Login (LMS), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 53.8628ms.
+2025-09-03 14:52:31.947 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 14:52:31.958 +05:30 [INF] Executed action LMS.Controllers.UserController.Login (LMS) in 79.0564ms
+2025-09-03 14:52:31.958 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Login (LMS)'
+2025-09-03 14:52:31.959 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/login - 401 null application/json; charset=utf-8 94.0849ms
+2025-09-03 14:53:15.293 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/login - application/json 55
+2025-09-03 14:53:15.302 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Login (LMS)'
+2025-09-03 14:53:15.304 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LM.Model.RequestModel.LoginRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 14:53:15.311 +05:30 [INF] Executing action method LMS.Controllers.UserController.Login (LMS) - Validation state: "Valid"
+2025-09-03 14:53:15.311 +05:30 [INF] Attempting login for email: heelo
+2025-09-03 14:53:15.332 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__model_Email_0='heelo' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[Address], [u].[CreatedAT], [u].[CreatedBY], [u].[Email], [u].[ModifiedAT], [u].[ModifiedBY], [u].[Name], [u].[PasswordHash], [u].[phone_number], [u].[Role], [u].[Status], [u].[UserSID]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0 AND [u].[Status] = 1
+2025-09-03 14:53:15.332 +05:30 [WRN] Login failed: User not found for email: heelo
+2025-09-03 14:53:15.332 +05:30 [WRN] Login failed: Invalid email or password.
+2025-09-03 14:53:15.333 +05:30 [INF] Executed action method LMS.Controllers.UserController.Login (LMS), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 21.7101ms.
+2025-09-03 14:53:15.333 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 14:53:15.333 +05:30 [INF] Executed action LMS.Controllers.UserController.Login (LMS) in 28.4414ms
+2025-09-03 14:53:15.333 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Login (LMS)'
+2025-09-03 14:53:15.333 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/login - 401 null application/json; charset=utf-8 40.5472ms
+2025-09-03 14:53:52.333 +05:30 [INF] Application is shutting down...
+2025-09-03 14:59:40.215 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-03 14:59:40.289 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 14:59:40.290 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 14:59:40.291 +05:30 [INF] Hosting environment: Development
+2025-09-03 14:59:40.291 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 14:59:40.936 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 14:59:41.076 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 141.2141ms
+2025-09-03 15:03:26.935 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/login - application/json 55
+2025-09-03 15:03:26.947 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 15:03:26.950 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Login (LMS)'
+2025-09-03 15:03:26.965 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LM.Model.RequestModel.LoginRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 15:03:27.132 +05:30 [INF] Executing action method LMS.Controllers.UserController.Login (LMS) - Validation state: "Valid"
+2025-09-03 15:03:27.135 +05:30 [INF] Attempting login for email: heelo
+2025-09-03 15:03:27.609 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 15:03:28.186 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[@__model_Email_0='heelo' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[Address], [u].[CreatedAT], [u].[CreatedBY], [u].[Email], [u].[ModifiedAT], [u].[ModifiedBY], [u].[Name], [u].[PasswordHash], [u].[phone_number], [u].[Role], [u].[Status], [u].[UserSID]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0 AND [u].[Status] = 1
+2025-09-03 15:03:28.204 +05:30 [WRN] Login failed: User not found for email: heelo
+2025-09-03 15:03:28.206 +05:30 [WRN] Login failed: Invalid email or password.
+2025-09-03 15:03:28.209 +05:30 [INF] Executed action method LMS.Controllers.UserController.Login (LMS), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1074.402ms.
+2025-09-03 15:03:28.216 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 15:03:28.246 +05:30 [INF] Executed action LMS.Controllers.UserController.Login (LMS) in 1278.4012ms
+2025-09-03 15:03:28.246 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Login (LMS)'
+2025-09-03 15:03:28.256 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/login - 401 null application/json; charset=utf-8 1322.2105ms
+2025-09-03 15:03:47.637 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/login - application/json 45
+2025-09-03 15:03:47.639 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Login (LMS)'
+2025-09-03 15:03:47.639 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LM.Model.RequestModel.LoginRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 15:03:47.641 +05:30 [INF] Executing action method LMS.Controllers.UserController.Login (LMS) - Validation state: "Valid"
+2025-09-03 15:03:47.642 +05:30 [INF] Attempting login for email: heelo
+2025-09-03 15:03:47.675 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__model_Email_0='heelo' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[Address], [u].[CreatedAT], [u].[CreatedBY], [u].[Email], [u].[ModifiedAT], [u].[ModifiedBY], [u].[Name], [u].[PasswordHash], [u].[phone_number], [u].[Role], [u].[Status], [u].[UserSID]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0 AND [u].[Status] = 1
+2025-09-03 15:03:47.676 +05:30 [WRN] Login failed: User not found for email: heelo
+2025-09-03 15:03:47.676 +05:30 [WRN] Login failed: Invalid email or password.
+2025-09-03 15:03:47.676 +05:30 [INF] Executed action method LMS.Controllers.UserController.Login (LMS), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 34.6403ms.
+2025-09-03 15:03:47.677 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-03 15:03:47.677 +05:30 [INF] Executed action LMS.Controllers.UserController.Login (LMS) in 37.7547ms
+2025-09-03 15:03:47.677 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Login (LMS)'
+2025-09-03 15:03:47.677 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/login - 401 null application/json; charset=utf-8 40.3237ms
+2025-09-03 15:03:58.263 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/login - application/json 55
+2025-09-03 15:03:58.264 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Login (LMS)'
+2025-09-03 15:03:58.264 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LM.Model.RequestModel.LoginRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 15:03:58.267 +05:30 [INF] Executing action method LMS.Controllers.UserController.Login (LMS) - Validation state: "Valid"
+2025-09-03 15:03:58.267 +05:30 [INF] Attempting login for email: heelo@gmail.com
+2025-09-03 15:03:58.275 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__model_Email_0='heelo@gmail.com' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[Address], [u].[CreatedAT], [u].[CreatedBY], [u].[Email], [u].[ModifiedAT], [u].[ModifiedBY], [u].[Name], [u].[PasswordHash], [u].[phone_number], [u].[Role], [u].[Status], [u].[UserSID]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0 AND [u].[Status] = 1
+2025-09-03 15:03:58.304 +05:30 [INF] Login successful for email: heelo@gmail.com
+2025-09-03 15:03:58.304 +05:30 [INF] Executed action method LMS.Controllers.UserController.Login (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 36.8437ms.
+2025-09-03 15:03:58.304 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.ResponseModel.LoginResponseModel'.
+2025-09-03 15:03:58.307 +05:30 [INF] Executed action LMS.Controllers.UserController.Login (LMS) in 43.0392ms
+2025-09-03 15:03:58.307 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Login (LMS)'
+2025-09-03 15:03:58.308 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/login - 200 null application/json; charset=utf-8 44.944ms
+2025-09-03 15:08:07.747 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/AuthTest/protected - application/json 55
+2025-09-03 15:08:07.778 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-03 15:08:07.785 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-09-03 15:08:07.786 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/AuthTest/protected - 404 0 null 39.3379ms
+2025-09-03 15:08:07.787 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5171/AuthTest/protected, Response status code: 404
+2025-09-03 15:08:33.558 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/AuthTest/protected - application/json 55
+2025-09-03 15:08:33.590 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/AuthTest/protected - 404 0 null 31.4332ms
+2025-09-03 15:08:33.590 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5171/AuthTest/protected, Response status code: 404
+2025-09-03 15:09:19.700 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/AuthTest/protected - application/json 55
+2025-09-03 15:09:19.707 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-03 15:09:19.709 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-09-03 15:09:19.713 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/AuthTest/protected - 404 0 null 12.935ms
+2025-09-03 15:09:19.713 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5171/AuthTest/protected, Response status code: 404
+2025-09-03 15:09:22.575 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/AuthTest/protected - application/json 55
+2025-09-03 15:09:22.576 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-03 15:09:22.578 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-09-03 15:09:22.579 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/AuthTest/protected - 404 0 null 3.1833ms
+2025-09-03 15:09:22.580 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5171/AuthTest/protected, Response status code: 404
+2025-09-03 15:12:17.969 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/AuthTest/protected - application/json 55
+2025-09-03 15:12:17.974 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/AuthTest/protected - 404 0 null 5.4593ms
+2025-09-03 15:12:17.974 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5171/AuthTest/protected, Response status code: 404
+2025-09-03 15:12:25.279 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/AuthTest/protected - application/json 55
+2025-09-03 15:12:25.281 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/AuthTest/protected - 404 0 null 1.2753ms
+2025-09-03 15:12:25.281 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5171/AuthTest/protected, Response status code: 404
+2025-09-03 15:14:00.911 +05:30 [INF] Application is shutting down...
+2025-09-03 18:04:34.343 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-03 18:04:34.415 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-03 18:04:34.418 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-03 18:04:34.418 +05:30 [INF] Hosting environment: Development
+2025-09-03 18:04:34.418 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-03 18:04:35.381 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-03 18:04:35.554 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 173.5065ms
+2025-09-03 18:04:40.391 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-03 18:04:40.418 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-03 18:04:40.421 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 18:04:40.434 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 18:04:40.539 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-03 18:04:40.541 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 18:04:40.550 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 18:04:40.791 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-03 18:04:41.333 +05:30 [INF] Executed DbCommand (101ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-03 18:04:41.441 +05:30 [INF] Books list retrieved successfully.
+2025-09-03 18:04:41.442 +05:30 [INF] Retrieved 5 books
+2025-09-03 18:04:41.450 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 908.3476ms.
+2025-09-03 18:04:41.458 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 18:04:41.584 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 1146.8046ms
+2025-09-03 18:04:41.584 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 18:04:41.595 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 1206.0771ms
+2025-09-03 18:05:58.805 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-03 18:05:58.812 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-03 18:05:58.819 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-03 18:05:58.823 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-03 18:05:58.825 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 18:05:58.827 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 18:05:58.922 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-03 18:05:58.925 +05:30 [INF] user list retrieved successfully.
+2025-09-03 18:05:58.926 +05:30 [INF] Retrieved 4 users
+2025-09-03 18:05:58.926 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 102.4862ms.
+2025-09-03 18:05:58.926 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 18:05:58.945 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 125.6632ms
+2025-09-03 18:05:58.945 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-03 18:05:58.946 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 152.1427ms
+2025-09-03 18:06:15.103 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-03 18:06:15.104 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 18:06:15.105 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-03 18:06:15.111 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-03 18:06:15.112 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-03 18:06:15.113 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-03 18:06:15.134 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-03 18:06:15.135 +05:30 [INF] Books list retrieved successfully.
+2025-09-03 18:06:15.135 +05:30 [INF] Retrieved 5 books
+2025-09-03 18:06:15.135 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.458ms.
+2025-09-03 18:06:15.135 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-03 18:06:15.136 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 30.6679ms
+2025-09-03 18:06:15.136 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-03 18:06:15.136 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 32.6407ms
+2025-09-03 18:06:28.914 +05:30 [INF] Application is shutting down...

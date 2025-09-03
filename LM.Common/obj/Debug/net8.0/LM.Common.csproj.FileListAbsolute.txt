@@ -1,0 +1,12 @@
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/bin/Debug/net8.0/LM.Common.deps.json
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/bin/Debug/net8.0/LM.Common.dll
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/bin/Debug/net8.0/LM.Common.pdb
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/obj/Debug/net8.0/LM.Common.csproj.AssemblyReference.cache
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/obj/Debug/net8.0/LM.Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/obj/Debug/net8.0/LM.Common.AssemblyInfoInputs.cache
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/obj/Debug/net8.0/LM.Common.AssemblyInfo.cs
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/obj/Debug/net8.0/LM.Common.csproj.CoreCompileInputs.cache
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/obj/Debug/net8.0/LM.Common.dll
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/obj/Debug/net8.0/refint/LM.Common.dll
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/obj/Debug/net8.0/LM.Common.pdb
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/obj/Debug/net8.0/ref/LM.Common.dll

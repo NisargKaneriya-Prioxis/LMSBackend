@@ -1,0 +1,1211 @@
+2025-09-02 13:06:36.811 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 13:06:36.847 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 13:06:36.848 +05:30 [INF] Hosting environment: Development
+2025-09-02 13:06:36.848 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 13:06:37.455 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 13:06:37.626 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 175.8151ms
+2025-09-02 13:06:43.649 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-02 13:06:43.687 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 13:06:43.694 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-02 13:06:43.712 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 13:06:43.830 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-02 13:06:43.835 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 13:06:43.844 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 13:06:44.104 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 13:06:44.759 +05:30 [INF] Executed DbCommand (112ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-02 13:06:44.881 +05:30 [INF] Books list retrieved successfully.
+2025-09-02 13:06:44.882 +05:30 [INF] Retrieved 10 books
+2025-09-02 13:06:44.894 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1059.2237ms.
+2025-09-02 13:06:44.902 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-09-02 13:06:45.059 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 1344.642ms
+2025-09-02 13:06:45.060 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-02 13:06:45.073 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 1430.1175ms
+2025-09-02 13:09:23.160 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-02 13:09:23.166 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-02 13:09:23.166 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 13:09:23.169 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-02 13:09:23.169 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 13:09:23.170 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 13:09:23.278 +05:30 [INF] Executed DbCommand (62ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-02 13:09:23.281 +05:30 [INF] Books list retrieved successfully.
+2025-09-02 13:09:23.282 +05:30 [INF] Retrieved 10 books
+2025-09-02 13:09:23.282 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 113.3475ms.
+2025-09-02 13:09:23.283 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-09-02 13:09:23.283 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 117.173ms
+2025-09-02 13:09:23.284 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-02 13:09:23.284 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 124.4167ms
+2025-09-02 13:10:07.096 +05:30 [INF] Application is shutting down...
+2025-09-02 14:23:49.251 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:23:49.286 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:23:49.286 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:23:49.286 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:23:50.156 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:23:50.320 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 165.9182ms
+2025-09-02 14:23:54.802 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:23:54.830 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:23:54.836 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:23:54.857 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:23:54.865 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 3.226ms
+2025-09-02 14:23:54.865 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:23:54.866 +05:30 [ERR] Unhandled error occurred.
+System.InvalidOperationException: Unable to resolve service for type 'LM.Services.Repositories.Interface.IUserRepository' while attempting to activate 'LMS.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-02 14:23:54.971 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 500 null application/json 172.6782ms
+2025-09-02 14:24:19.031 +05:30 [INF] Application is shutting down...
+2025-09-02 14:24:35.554 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:24:35.594 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:24:35.594 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:24:35.594 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:24:36.124 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:24:36.363 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 234.3856ms
+2025-09-02 14:24:40.822 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:24:40.847 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:24:40.856 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:24:40.870 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:24:40.874 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 2.1269ms
+2025-09-02 14:24:40.875 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:24:40.997 +05:30 [ERR] Unhandled error occurred.
+System.InvalidOperationException: Unable to resolve service for type 'LM.Services.Repositories.Interface.IUserRepository' while attempting to activate 'LMS.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-02 14:24:41.139 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 500 null application/json 320.7133ms
+2025-09-02 14:25:00.582 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:25:00.628 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:25:00.629 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:25:00.629 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:25:01.341 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:25:01.525 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 181.6335ms
+2025-09-02 14:25:05.708 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:25:05.734 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:25:05.745 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:25:05.759 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:25:05.763 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1.5914ms
+2025-09-02 14:25:05.763 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:25:05.880 +05:30 [ERR] Unhandled error occurred.
+System.InvalidOperationException: Unable to resolve service for type 'LM.Services.Repositories.Interface.IUserRepository' while attempting to activate 'LMS.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-02 14:25:05.989 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 500 null application/json 282.2429ms
+2025-09-02 14:29:03.205 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:29:03.238 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:29:03.238 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:29:03.239 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:29:03.977 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:29:04.090 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 113.8556ms
+2025-09-02 14:29:09.398 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:29:09.417 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:29:09.420 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:29:09.434 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:29:09.439 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1.1551ms
+2025-09-02 14:29:09.439 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:29:09.439 +05:30 [ERR] Unhandled error occurred.
+System.InvalidOperationException: Unable to resolve service for type 'LM.Services.Repositories.Interface.IUserRepository' while attempting to activate 'LMS.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-02 14:29:09.508 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 500 null application/json 110.99ms
+2025-09-02 14:31:16.000 +05:30 [INF] Application is shutting down...
+2025-09-02 14:31:37.238 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:31:37.298 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:31:37.299 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:31:37.299 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:31:37.635 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:31:37.873 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 239.7652ms
+2025-09-02 14:31:44.424 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:31:44.449 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:31:44.467 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:31:44.489 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:31:44.494 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 2.556ms
+2025-09-02 14:31:44.495 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:31:44.610 +05:30 [ERR] Unhandled error occurred.
+System.InvalidOperationException: Unable to resolve service for type 'LM.Services.Repositories.Interface.IUserRepository' while attempting to activate 'LMS.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-02 14:31:44.726 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 500 null application/json 304.183ms
+2025-09-02 14:32:03.992 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:32:04.090 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:32:04.091 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:32:04.092 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:32:04.502 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:32:04.666 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 163.5761ms
+2025-09-02 14:32:08.571 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:32:08.589 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:32:08.597 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:32:08.611 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:32:08.616 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 2.1036ms
+2025-09-02 14:32:08.616 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:32:08.717 +05:30 [ERR] Unhandled error occurred.
+System.InvalidOperationException: Unable to resolve service for type 'LM.Services.Repositories.Interface.IUserRepository' while attempting to activate 'LMS.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-02 14:32:08.827 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 500 null application/json 256.8891ms
+2025-09-02 14:36:58.337 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:36:58.376 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:36:58.377 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:36:58.377 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:36:58.668 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:36:58.806 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.9103ms
+2025-09-02 14:37:03.526 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:37:03.534 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:37:03.536 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:37:03.549 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:37:03.681 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1.6885ms
+2025-09-02 14:37:03.682 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:37:03.682 +05:30 [ERR] Unhandled error occurred.
+System.InvalidOperationException: Unable to resolve service for type 'LM.Services.Repositories.Interface.IUserRepository' while attempting to activate 'LMS.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-02 14:37:03.748 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 500 null application/json 233.203ms
+2025-09-02 14:38:30.164 +05:30 [INF] Application is shutting down...
+2025-09-02 14:38:32.998 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:38:33.032 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:38:33.032 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:38:33.032 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:38:33.598 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:38:33.730 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 132.5114ms
+2025-09-02 14:38:37.578 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:38:37.602 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:38:37.606 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:38:37.623 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:38:37.628 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 2.4607ms
+2025-09-02 14:38:37.629 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:38:37.629 +05:30 [ERR] Unhandled error occurred.
+System.InvalidOperationException: Unable to resolve service for type 'LM.Services.Repositories.Interface.IUserRepository' while attempting to activate 'LMS.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-02 14:38:37.683 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 500 null application/json 105.8137ms
+2025-09-02 14:38:56.897 +05:30 [INF] Application is shutting down...
+2025-09-02 14:39:00.065 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:39:00.100 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:39:00.101 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:39:00.101 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:39:00.731 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:39:01.020 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 290.9757ms
+2025-09-02 14:39:04.729 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:39:04.739 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:39:04.742 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:39:04.764 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:39:04.870 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-02 14:39:04.873 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 14:39:04.883 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 14:39:05.128 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 14:39:05.740 +05:30 [INF] Executed DbCommand (114ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-02 14:39:05.852 +05:30 [INF] user list retrieved successfully.
+2025-09-02 14:39:05.852 +05:30 [INF] Retrieved 4 users
+2025-09-02 14:39:05.861 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 987.93ms.
+2025-09-02 14:39:05.868 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 14:39:06.039 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1272.2134ms
+2025-09-02 14:39:06.040 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:39:06.051 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 1323.5539ms
+2025-09-02 14:40:48.316 +05:30 [INF] Application is shutting down...
+2025-09-02 14:40:51.114 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:40:51.157 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:40:51.157 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:40:51.157 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:40:51.667 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:40:51.883 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 211.2652ms
+2025-09-02 14:40:55.431 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:40:55.442 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:40:55.444 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:40:55.460 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:40:55.557 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-02 14:40:55.560 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 14:40:55.569 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 14:40:55.816 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 14:40:56.333 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-02 14:40:56.496 +05:30 [INF] user list retrieved successfully.
+2025-09-02 14:40:56.496 +05:30 [INF] Retrieved 4 users
+2025-09-02 14:40:56.504 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 944.684ms.
+2025-09-02 14:40:56.511 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 14:40:56.956 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1493.3175ms
+2025-09-02 14:40:56.958 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:40:56.970 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 1541.225ms
+2025-09-02 14:41:36.495 +05:30 [INF] Application is shutting down...
+2025-09-02 14:41:39.052 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:41:39.086 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:41:39.087 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:41:39.087 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:41:39.646 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:41:39.928 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 282.4537ms
+2025-09-02 14:41:43.395 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:41:43.405 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:41:43.408 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:41:43.432 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:41:43.524 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-02 14:41:43.528 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 14:41:43.536 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 14:41:43.778 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 14:41:44.269 +05:30 [INF] Executed DbCommand (41ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-02 14:41:44.378 +05:30 [INF] user list retrieved successfully.
+2025-09-02 14:41:44.378 +05:30 [INF] Retrieved 4 users
+2025-09-02 14:41:44.391 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 862.152ms.
+2025-09-02 14:41:44.401 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 14:41:44.532 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1096.5045ms
+2025-09-02 14:41:44.533 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:41:44.544 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 1152.244ms
+2025-09-02 14:42:15.894 +05:30 [INF] Application is shutting down...
+2025-09-02 14:42:19.202 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:42:19.248 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:42:19.249 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:42:19.249 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:42:19.999 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:42:20.116 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.461ms
+2025-09-02 14:42:23.199 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:42:23.207 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:42:23.209 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:42:23.223 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:42:23.316 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-02 14:42:23.319 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 14:42:23.328 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 14:42:23.573 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 14:42:24.076 +05:30 [INF] Executed DbCommand (42ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-02 14:42:24.184 +05:30 [INF] user list retrieved successfully.
+2025-09-02 14:42:24.185 +05:30 [INF] Retrieved 4 users
+2025-09-02 14:42:24.197 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 878.0762ms.
+2025-09-02 14:42:24.205 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 14:42:24.329 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1102.7637ms
+2025-09-02 14:42:24.330 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:42:24.342 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 1144.3905ms
+2025-09-02 14:42:46.027 +05:30 [INF] Application is shutting down...
+2025-09-02 14:42:48.801 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:42:48.843 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:42:48.844 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:42:48.844 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:42:49.206 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:42:49.310 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 104.7516ms
+2025-09-02 14:42:52.481 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:42:52.491 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:42:52.495 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:42:52.508 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:42:52.602 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-02 14:42:52.606 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 14:42:52.616 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 14:42:52.877 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 14:42:53.373 +05:30 [INF] Executed DbCommand (42ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-02 14:42:53.477 +05:30 [INF] user list retrieved successfully.
+2025-09-02 14:42:53.477 +05:30 [INF] Retrieved 4 users
+2025-09-02 14:42:53.490 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 884.085ms.
+2025-09-02 14:42:53.497 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 14:42:53.621 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1110.4392ms
+2025-09-02 14:42:53.622 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:42:53.635 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 1154.8769ms
+2025-09-02 14:44:02.669 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:44:02.672 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:44:02.673 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:44:02.676 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-02 14:44:02.676 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 14:44:02.677 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 14:44:02.739 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-02 14:44:02.740 +05:30 [INF] user list retrieved successfully.
+2025-09-02 14:44:02.740 +05:30 [INF] Retrieved 4 users
+2025-09-02 14:44:02.741 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 64.7084ms.
+2025-09-02 14:44:02.741 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 14:44:02.742 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 68.5485ms
+2025-09-02 14:44:02.742 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:44:02.742 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 73.2579ms
+2025-09-02 14:45:32.966 +05:30 [INF] Application is shutting down...
+2025-09-02 14:45:35.244 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:45:35.275 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:45:35.275 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:45:35.275 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:45:35.879 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:45:36.004 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 125.3573ms
+2025-09-02 14:46:02.554 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:46:02.569 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:46:02.573 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:46:02.595 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:46:02.705 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-02 14:46:02.709 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 14:46:02.719 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 14:46:02.999 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 14:46:03.526 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-02 14:46:03.635 +05:30 [INF] user list retrieved successfully.
+2025-09-02 14:46:03.636 +05:30 [INF] Retrieved 4 users
+2025-09-02 14:46:03.645 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 937.3487ms.
+2025-09-02 14:46:03.653 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 14:46:03.797 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1199.4798ms
+2025-09-02 14:46:03.798 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:46:03.809 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 1257.3534ms
+2025-09-02 14:46:23.126 +05:30 [INF] Application is shutting down...
+2025-09-02 14:46:24.960 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:46:24.995 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:46:24.995 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:46:24.995 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:46:25.685 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:46:25.830 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 148.8972ms
+2025-09-02 14:46:32.099 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 14:46:32.114 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:46:32.119 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:46:32.141 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 14:46:32.233 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-02 14:46:32.236 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 14:46:32.245 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 14:46:32.484 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 14:46:33.020 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-02 14:46:33.130 +05:30 [INF] user list retrieved successfully.
+2025-09-02 14:46:33.130 +05:30 [INF] Retrieved 4 users
+2025-09-02 14:46:33.139 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 902.8082ms.
+2025-09-02 14:46:33.146 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 14:46:33.290 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1146.091ms
+2025-09-02 14:46:33.290 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 14:46:33.301 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 1205.6449ms
+2025-09-02 14:46:38.987 +05:30 [INF] Application is shutting down...
+2025-09-02 14:54:51.865 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 14:54:51.897 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 14:54:51.897 +05:30 [INF] Hosting environment: Development
+2025-09-02 14:54:51.897 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 14:54:52.254 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 14:54:52.359 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.4793ms
+2025-09-02 14:55:10.685 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/dynamic/B002 - null null
+2025-09-02 14:55:10.700 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 14:55:10.703 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-02 14:55:10.719 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LM.Model.ResponseModel.LMSBookResponseModel]] GetByBookSID(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 14:55:10.833 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetByBookSID (LMS) - Validation state: "Valid"
+2025-09-02 14:55:10.835 +05:30 [INF] Fetching book with SID: B002
+2025-09-02 14:55:10.836 +05:30 [INF] Fetching book with SID: B002
+2025-09-02 14:55:11.078 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 14:55:11.614 +05:30 [INF] Executed DbCommand (55ms) [Parameters=[p0='B002' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookBySID @p0
+2025-09-02 14:55:11.708 +05:30 [INF] Successfully retrieved book: Brave New World (SID: B002)
+2025-09-02 14:55:11.708 +05:30 [INF] Successfully retrieved book: Brave New World (SID: B002)
+2025-09-02 14:55:11.711 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetByBookSID (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 874.7087ms.
+2025-09-02 14:55:11.719 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.ResponseModel.LMSBookResponseModel'.
+2025-09-02 14:55:11.866 +05:30 [INF] Executed action LMS.Controllers.BookController.GetByBookSID (LMS) in 1143.7787ms
+2025-09-02 14:55:11.867 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-02 14:55:11.879 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/dynamic/B002 - 200 null application/json; charset=utf-8 1195.9056ms
+2025-09-02 15:06:38.997 +05:30 [INF] Application is shutting down...
+2025-09-02 15:09:05.859 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 15:09:05.901 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 15:09:05.902 +05:30 [INF] Hosting environment: Development
+2025-09-02 15:09:05.902 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 15:09:06.502 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 15:09:06.687 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 186.4527ms
+2025-09-02 15:09:15.982 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/dynamic/B002 - null null
+2025-09-02 15:09:15.999 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 15:09:16.002 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-02 15:09:16.018 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LM.Model.ResponseModel.LMSBookResponseModel]] GetByBookSID(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 15:09:16.126 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetByBookSID (LMS) - Validation state: "Valid"
+2025-09-02 15:09:16.127 +05:30 [INF] Fetching book with SID: B002
+2025-09-02 15:09:16.128 +05:30 [INF] Fetching book with SID: B002
+2025-09-02 15:09:16.522 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 15:09:17.049 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[p0='B002' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookBySID @p0
+2025-09-02 15:09:17.138 +05:30 [INF] Successfully retrieved book: Brave New World (SID: B002)
+2025-09-02 15:09:17.138 +05:30 [INF] Successfully retrieved book: Brave New World (SID: B002)
+2025-09-02 15:09:17.141 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetByBookSID (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1012.334ms.
+2025-09-02 15:09:17.148 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.ResponseModel.LMSBookResponseModel'.
+2025-09-02 15:09:17.276 +05:30 [INF] Executed action LMS.Controllers.BookController.GetByBookSID (LMS) in 1255.313ms
+2025-09-02 15:09:17.277 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-02 15:09:17.288 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/dynamic/B002 - 200 null application/json; charset=utf-8 1306.9093ms
+2025-09-02 15:09:32.427 +05:30 [INF] Application is shutting down...
+2025-09-02 15:10:52.795 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 15:10:52.837 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 15:10:52.837 +05:30 [INF] Hosting environment: Development
+2025-09-02 15:10:52.837 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 15:10:53.327 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 15:10:53.510 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 183.0858ms
+2025-09-02 15:11:01.980 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/dynamic/B002 - null null
+2025-09-02 15:11:02.001 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 15:11:02.004 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-02 15:11:02.017 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LM.Model.ResponseModel.LMSBookResponseModel]] GetByBookSID(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 15:11:02.130 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetByBookSID (LMS) - Validation state: "Valid"
+2025-09-02 15:11:02.131 +05:30 [INF] Fetching book with SID: B002
+2025-09-02 15:11:02.132 +05:30 [INF] Fetching book with SID: B002
+2025-09-02 15:11:02.368 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 15:11:02.863 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[p0='B002' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookBySID @p0
+2025-09-02 15:11:02.944 +05:30 [INF] Successfully retrieved book: Brave New World (SID: B002)
+2025-09-02 15:11:02.944 +05:30 [INF] Successfully retrieved book: Brave New World (SID: B002)
+2025-09-02 15:11:02.947 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetByBookSID (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 814.5033ms.
+2025-09-02 15:11:02.954 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.ResponseModel.LMSBookResponseModel'.
+2025-09-02 15:11:03.076 +05:30 [INF] Executed action LMS.Controllers.BookController.GetByBookSID (LMS) in 1056.3896ms
+2025-09-02 15:11:03.077 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-02 15:11:03.088 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/dynamic/B002 - 200 null application/json; charset=utf-8 1109.1299ms
+2025-09-02 15:11:16.829 +05:30 [INF] Application is shutting down...
+2025-09-02 15:16:41.243 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 15:16:41.274 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 15:16:41.274 +05:30 [INF] Hosting environment: Development
+2025-09-02 15:16:41.274 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 15:16:41.944 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 15:16:42.041 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 96.9533ms
+2025-09-02 15:17:01.179 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/dynamic/USR001 - null null
+2025-09-02 15:17:01.192 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+LMS.Controllers.BookController.GetByBookSID (LMS)
+LMS.Controllers.UserController.GetByBookSID (LMS)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-02 15:17:01.220 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/dynamic/USR001 - 500 null text/plain; charset=utf-8 41.4286ms
+2025-09-02 15:17:34.243 +05:30 [INF] Application is shutting down...
+2025-09-02 15:19:27.879 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 15:19:27.917 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 15:19:27.917 +05:30 [INF] Hosting environment: Development
+2025-09-02 15:19:27.917 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 15:19:28.519 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 15:19:28.742 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 223.512ms
+2025-09-02 15:19:37.957 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/dynamicuser/USR001 - null null
+2025-09-02 15:19:37.971 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 15:19:37.975 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.GetByuserSID (LMS)'
+2025-09-02 15:19:37.988 +05:30 [INF] Route matched with {action = "GetByuserSID", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LM.Model.ResponseModel.LMSUserResponseModel]] GetByuserSID(System.String) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 15:19:38.099 +05:30 [INF] Executing action method LMS.Controllers.UserController.GetByuserSID (LMS) - Validation state: "Valid"
+2025-09-02 15:19:38.100 +05:30 [INF] Fetching book with SID: USR001
+2025-09-02 15:19:38.101 +05:30 [INF] Fetching book with SID: USR001
+2025-09-02 15:19:38.341 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 15:19:38.869 +05:30 [INF] Executed DbCommand (58ms) [Parameters=[p0='USR001' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetUserBySId @p0
+2025-09-02 15:19:38.953 +05:30 [INF] Successfully retrieved book: (SID: USR001)
+2025-09-02 15:19:38.953 +05:30 [INF] Successfully retrieved book: (SID: USR001)
+2025-09-02 15:19:38.957 +05:30 [INF] Executed action method LMS.Controllers.UserController.GetByuserSID (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 854.9275ms.
+2025-09-02 15:19:38.964 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.ResponseModel.LMSUserResponseModel'.
+2025-09-02 15:19:39.093 +05:30 [INF] Executed action LMS.Controllers.UserController.GetByuserSID (LMS) in 1101.9013ms
+2025-09-02 15:19:39.094 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.GetByuserSID (LMS)'
+2025-09-02 15:19:39.105 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/dynamicuser/USR001 - 200 null application/json; charset=utf-8 1151.5683ms
+2025-09-02 15:20:07.089 +05:30 [INF] Application is shutting down...
+2025-09-02 16:08:44.108 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 16:08:44.190 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 16:08:44.190 +05:30 [INF] Hosting environment: Development
+2025-09-02 16:08:44.190 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 16:08:44.729 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 16:08:44.959 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 230.2673ms
+2025-09-02 16:08:58.864 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/dynamic/B002 - null null
+2025-09-02 16:08:58.888 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 16:08:58.895 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-02 16:08:58.911 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LM.Model.ResponseModel.LMSBookResponseModel]] GetByBookSID(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 16:08:59.025 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetByBookSID (LMS) - Validation state: "Valid"
+2025-09-02 16:08:59.026 +05:30 [INF] Fetching book with SID: B002
+2025-09-02 16:08:59.027 +05:30 [INF] Fetching book with SID: B002
+2025-09-02 16:08:59.274 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 16:08:59.788 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[p0='B002' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookBySID @p0
+2025-09-02 16:08:59.891 +05:30 [INF] Successfully retrieved book: Brave New World (SID: B002)
+2025-09-02 16:08:59.892 +05:30 [INF] Successfully retrieved book: Brave New World (SID: B002)
+2025-09-02 16:08:59.895 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetByBookSID (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 867.3762ms.
+2025-09-02 16:08:59.902 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.ResponseModel.LMSBookResponseModel'.
+2025-09-02 16:09:00.030 +05:30 [INF] Executed action LMS.Controllers.BookController.GetByBookSID (LMS) in 1115.9178ms
+2025-09-02 16:09:00.031 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-02 16:09:00.042 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/dynamic/B002 - 200 null application/json; charset=utf-8 1184.065ms
+2025-09-02 16:09:06.793 +05:30 [INF] Application is shutting down...
+2025-09-02 16:10:02.297 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 16:10:02.364 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 16:10:02.364 +05:30 [INF] Hosting environment: Development
+2025-09-02 16:10:02.364 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 16:10:02.995 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 16:10:03.337 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 342.1688ms
+2025-09-02 16:10:09.931 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/dynamic/B002 - null null
+2025-09-02 16:10:09.949 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 16:10:09.954 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-02 16:10:09.971 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LM.Model.ResponseModel.LMSBookResponseModel]] GetByBookSID(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 16:10:10.081 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetByBookSID (LMS) - Validation state: "Valid"
+2025-09-02 16:10:10.082 +05:30 [INF] Fetching book with SID: B002
+2025-09-02 16:10:10.083 +05:30 [INF] Fetching book with SID: B002
+2025-09-02 16:10:10.349 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 16:10:10.880 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[p0='B002' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookBySID @p0
+2025-09-02 16:10:10.968 +05:30 [INF] Successfully retrieved book: Brave New World (SID: B002)
+2025-09-02 16:10:10.968 +05:30 [INF] Successfully retrieved book: Brave New World (SID: B002)
+2025-09-02 16:10:10.973 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetByBookSID (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 888.6067ms.
+2025-09-02 16:10:10.982 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.ResponseModel.LMSBookResponseModel'.
+2025-09-02 16:10:11.111 +05:30 [INF] Executed action LMS.Controllers.BookController.GetByBookSID (LMS) in 1137.3543ms
+2025-09-02 16:10:11.112 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-02 16:10:11.123 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/dynamic/B002 - 200 null application/json; charset=utf-8 1194.5487ms
+2025-09-02 16:10:47.582 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-02 16:10:47.589 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-02 16:10:47.604 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 16:10:47.613 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-02 16:10:47.619 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 16:10:47.632 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 16:10:47.759 +05:30 [INF] Executed DbCommand (80ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-02 16:10:47.784 +05:30 [INF] Books list retrieved successfully.
+2025-09-02 16:10:47.784 +05:30 [INF] Retrieved 10 books
+2025-09-02 16:10:47.789 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 175.8512ms.
+2025-09-02 16:10:47.789 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 16:10:47.805 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 201.1971ms
+2025-09-02 16:10:47.806 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-02 16:10:47.806 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 224.2016ms
+2025-09-02 16:11:54.645 +05:30 [INF] Application is shutting down...
+2025-09-02 16:14:42.988 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 16:14:43.023 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 16:14:43.024 +05:30 [INF] Hosting environment: Development
+2025-09-02 16:14:43.024 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 16:14:43.410 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 16:14:43.691 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 282.4667ms
+2025-09-02 16:14:46.926 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-02 16:14:46.940 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 16:14:46.943 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-02 16:14:46.957 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 16:14:47.070 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-02 16:14:47.073 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 16:14:47.082 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 16:14:47.337 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 16:14:47.876 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-02 16:14:47.995 +05:30 [INF] Books list retrieved successfully.
+2025-09-02 16:14:47.996 +05:30 [INF] Retrieved 10 books
+2025-09-02 16:14:48.005 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 931.7994ms.
+2025-09-02 16:14:48.013 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 16:14:48.176 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 1216.6515ms
+2025-09-02 16:14:48.177 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-02 16:14:48.211 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 1285.4435ms
+2025-09-02 16:15:09.060 +05:30 [INF] Application is shutting down...
+2025-09-02 16:21:48.619 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 16:21:48.700 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 16:21:48.700 +05:30 [INF] Hosting environment: Development
+2025-09-02 16:21:48.700 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 16:21:49.076 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 16:21:49.299 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 224.1315ms
+2025-09-02 16:23:20.203 +05:30 [INF] Application is shutting down...
+2025-09-02 16:24:00.553 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 16:24:00.614 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 16:24:00.615 +05:30 [INF] Hosting environment: Development
+2025-09-02 16:24:00.615 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 16:24:01.295 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 16:24:01.507 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 212.0116ms
+2025-09-02 16:25:09.526 +05:30 [INF] Application is shutting down...
+2025-09-02 16:25:12.408 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 16:25:12.448 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 16:25:12.449 +05:30 [INF] Hosting environment: Development
+2025-09-02 16:25:12.449 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 16:25:13.063 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 16:25:13.265 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 200.9208ms
+2025-09-02 16:25:16.814 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-02 16:25:16.845 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 16:25:16.850 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-02 16:25:16.865 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 16:25:16.976 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-02 16:25:16.979 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 16:25:16.988 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 16:25:17.241 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 16:25:17.774 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-02 16:25:18.021 +05:30 [INF] Books list retrieved successfully.
+2025-09-02 16:25:18.022 +05:30 [INF] Retrieved 10 books
+2025-09-02 16:25:18.030 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1051.4043ms.
+2025-09-02 16:25:18.044 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 16:25:18.586 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 1718.7791ms
+2025-09-02 16:25:18.588 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-02 16:25:18.600 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 1792.636ms
+2025-09-02 16:27:32.694 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/InsertBook - application/json 495
+2025-09-02 16:27:32.704 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.InsertBook (LMS)'
+2025-09-02 16:27:32.716 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[LM.Model.ResponseModel.LMSBookResponseModel]]] InsertBook(System.Collections.Generic.List`1[LM.Model.RequestModel.LMSBookRequestModel]) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 16:27:32.769 +05:30 [INF] Executing action method LMS.Controllers.BookController.InsertBook (LMS) - Validation state: "Valid"
+2025-09-02 16:27:32.772 +05:30 [INF] Inserting 1 new books
+2025-09-02 16:27:33.038 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@__book_Title_0='TheAlchemist' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[Title] = @__book_Title_0
+2025-09-02 16:27:33.063 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@__book_Isbn_0='ISBN011' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[ISBN] = @__book_Isbn_0
+2025-09-02 16:27:33.222 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@p0='PauloCoelho' (Size = 50), @p1='5' (Nullable = true), @p2=NULL (Size = 50), @p3='LIBa28ae85e-9d53-436e-99bf-73e7cdf3f666' (Nullable = false) (Size = 50), @p4='4', @p5='string' (Size = 50), @p6=NULL (Size = 50), @p7='1st' (Size = 50), @p8='ISBN011' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1988' (Nullable = true), @p13='Raja' (Size = 100), @p14='5' (Nullable = true), @p15='TheAlchemist' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Book] ([Author], [Available_Quantity], [BookPages], [BookSID], [BorrowedStatus], [CategoryName], [CreatedBY], [Edition], [ISBN], [Language], [ModifiedAT], [ModifiedBY], [PublishYear], [Publisher], [Quantity], [Title])
+OUTPUT INSERTED.[BookID], INSERTED.[CreatedAT], INSERTED.[Status]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+2025-09-02 16:27:33.240 +05:30 [INF] Successfully inserted 1 books
+2025-09-02 16:27:33.240 +05:30 [INF] Book created successfully
+2025-09-02 16:27:33.240 +05:30 [INF] Executed action method LMS.Controllers.BookController.InsertBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 470.4505ms.
+2025-09-02 16:27:33.240 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LM.Model.ResponseModel.LMSBookResponseModel, LM.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-02 16:27:33.240 +05:30 [INF] Executed action LMS.Controllers.BookController.InsertBook (LMS) in 523.923ms
+2025-09-02 16:27:33.240 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.InsertBook (LMS)'
+2025-09-02 16:27:33.242 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/InsertBook - 200 null application/json; charset=utf-8 548.037ms
+2025-09-02 16:29:06.034 +05:30 [INF] Application is shutting down...
+2025-09-02 16:44:23.268 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 16:44:23.321 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 16:44:23.321 +05:30 [INF] Hosting environment: Development
+2025-09-02 16:44:23.321 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 16:44:23.771 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 16:44:23.915 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 146.1633ms
+2025-09-02 16:44:53.205 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5171/deletebook/LIBa28ae85e-9d53-436e-99bf-73e7cdf3f666 - null 0
+2025-09-02 16:44:53.220 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 16:44:53.223 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.DeleteBook (LMS)'
+2025-09-02 16:44:53.239 +05:30 [INF] Route matched with {action = "DeleteBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteBook(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 16:44:53.355 +05:30 [INF] Executing action method LMS.Controllers.BookController.DeleteBook (LMS) - Validation state: "Valid"
+2025-09-02 16:44:53.357 +05:30 [INF] Request to delete book with SID: LIBa28ae85e-9d53-436e-99bf-73e7cdf3f666
+2025-09-02 16:44:53.358 +05:30 [INF] Deleting (marking as unavailable) book with SID: LIBa28ae85e-9d53-436e-99bf-73e7cdf3f666
+2025-09-02 16:44:53.755 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 16:44:54.312 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-02 16:44:54.337 +05:30 [WRN] Book not found for deletion. SID: LIBa28ae85e-9d53-436e-99bf-73e7cdf3f666
+2025-09-02 16:44:54.339 +05:30 [WRN] Deleting failed Book with the Sid:LIBa28ae85e-9d53-436e-99bf-73e7cdf3f666
+2025-09-02 16:44:54.345 +05:30 [INF] Executed action LMS.Controllers.BookController.DeleteBook (LMS) in 1103.6064ms
+2025-09-02 16:44:54.346 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.DeleteBook (LMS)'
+2025-09-02 16:44:54.347 +05:30 [ERR] Custom error occurred: Book not found for deletion
+LM.Common.HttpStatusCodeException: Book not found for deletion
+   at LM.Services.Repositories.Implementation.BookRepository.Deletebook(String bookSid) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/BookRepository.cs:line 292
+   at LMS.Controllers.BookController.DeleteBook(String bookSid) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/BookController.cs:line 97
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-02 16:44:54.454 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5171/deletebook/LIBa28ae85e-9d53-436e-99bf-73e7cdf3f666 - 400 null application/json 1251.0116ms
+2025-09-02 16:45:26.270 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5171/deletebook/B010 - null 0
+2025-09-02 16:45:26.274 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.DeleteBook (LMS)'
+2025-09-02 16:45:26.275 +05:30 [INF] Route matched with {action = "DeleteBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteBook(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 16:45:26.285 +05:30 [INF] Executing action method LMS.Controllers.BookController.DeleteBook (LMS) - Validation state: "Valid"
+2025-09-02 16:45:26.285 +05:30 [INF] Request to delete book with SID: B010
+2025-09-02 16:45:26.285 +05:30 [INF] Deleting (marking as unavailable) book with SID: B010
+2025-09-02 16:45:26.349 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-02 16:45:26.350 +05:30 [WRN] Book not found for deletion. SID: B010
+2025-09-02 16:45:26.350 +05:30 [WRN] Deleting failed Book with the Sid:B010
+2025-09-02 16:45:26.351 +05:30 [INF] Executed action LMS.Controllers.BookController.DeleteBook (LMS) in 72.1941ms
+2025-09-02 16:45:26.351 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.DeleteBook (LMS)'
+2025-09-02 16:45:26.351 +05:30 [ERR] Custom error occurred: Book not found for deletion
+LM.Common.HttpStatusCodeException: Book not found for deletion
+   at LM.Services.Repositories.Implementation.BookRepository.Deletebook(String bookSid) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/BookRepository.cs:line 292
+   at LMS.Controllers.BookController.DeleteBook(String bookSid) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/BookController.cs:line 97
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-02 16:45:26.354 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5171/deletebook/B010 - 400 null application/json 84.1616ms
+2025-09-02 16:48:14.275 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/dynamic/B010 - null null
+2025-09-02 16:48:14.284 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-02 16:48:14.291 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LM.Model.ResponseModel.LMSBookResponseModel]] GetByBookSID(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 16:48:14.297 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetByBookSID (LMS) - Validation state: "Valid"
+2025-09-02 16:48:14.299 +05:30 [INF] Fetching book with SID: B010
+2025-09-02 16:48:14.300 +05:30 [INF] Fetching book with SID: B010
+2025-09-02 16:48:14.381 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[p0='B010' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookBySID @p0
+2025-09-02 16:48:14.407 +05:30 [INF] Successfully retrieved book: A Brief History of Time (SID: B010)
+2025-09-02 16:48:14.408 +05:30 [INF] Successfully retrieved book: A Brief History of Time (SID: B010)
+2025-09-02 16:48:14.410 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetByBookSID (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 111.182ms.
+2025-09-02 16:48:14.414 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.ResponseModel.LMSBookResponseModel'.
+2025-09-02 16:48:14.505 +05:30 [INF] Executed action LMS.Controllers.BookController.GetByBookSID (LMS) in 214.111ms
+2025-09-02 16:48:14.505 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-02 16:48:14.507 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/dynamic/B010 - 200 null application/json; charset=utf-8 232.9409ms
+2025-09-02 16:50:05.471 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5171/deletebook/B010 - null 0
+2025-09-02 16:50:05.480 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.DeleteBook (LMS)'
+2025-09-02 16:50:05.485 +05:30 [INF] Route matched with {action = "DeleteBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteBook(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 16:50:05.486 +05:30 [INF] Executing action method LMS.Controllers.BookController.DeleteBook (LMS) - Validation state: "Valid"
+2025-09-02 16:50:05.486 +05:30 [INF] Request to delete book with SID: B010
+2025-09-02 16:50:05.488 +05:30 [INF] Deleting (marking as unavailable) book with SID: B010
+2025-09-02 16:50:05.520 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-02 16:50:05.733 +05:30 [INF] Executed DbCommand (69ms) [Parameters=[@p17='10', @p0='Stephen Hawking' (Size = 50), @p1='4' (Nullable = true), @p2='256' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='1st' (Size = 50), @p8='ISBN010' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1988' (Nullable = true), @p13='Bantam Books' (Size = 100), @p14='5' (Nullable = true), @p15='3', @p16='A Brief History of Time' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-02 16:50:05.750 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'LM.Model.Models.MyLMSDB.LMSDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the CHECK constraint "CK__Book__Status__17036CC0". The conflict occurred in database "LMS", table "dbo.Book", column 'Status'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:58dbd346-6e93-4833-b5dd-c60133fe4565
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the CHECK constraint "CK__Book__Status__17036CC0". The conflict occurred in database "LMS", table "dbo.Book", column 'Status'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:58dbd346-6e93-4833-b5dd-c60133fe4565
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-02 16:50:05.752 +05:30 [ERR] Error occurred while deleting (marking unavailable) book with SID: B010
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the CHECK constraint "CK__Book__Status__17036CC0". The conflict occurred in database "LMS", table "dbo.Book", column 'Status'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:58dbd346-6e93-4833-b5dd-c60133fe4565
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at LM.Services.Repositories.Implementation.BookRepository.Deletebook(String bookSid)
+2025-09-02 16:50:05.753 +05:30 [INF] Executed action LMS.Controllers.BookController.DeleteBook (LMS) in 268.571ms
+2025-09-02 16:50:05.754 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.DeleteBook (LMS)'
+2025-09-02 16:50:05.754 +05:30 [ERR] Unhandled error occurred.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the CHECK constraint "CK__Book__Status__17036CC0". The conflict occurred in database "LMS", table "dbo.Book", column 'Status'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:58dbd346-6e93-4833-b5dd-c60133fe4565
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at LM.Services.Repositories.Implementation.BookRepository.Deletebook(String bookSid)
+   at LMS.Controllers.BookController.DeleteBook(String bookSid) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/BookController.cs:line 97
+   at lambda_method57(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-02 16:50:05.759 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5171/deletebook/B010 - 500 null application/json 288.0313ms
+2025-09-02 16:52:00.180 +05:30 [INF] Application is shutting down...
+2025-09-02 16:52:02.372 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 16:52:02.407 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 16:52:02.408 +05:30 [INF] Hosting environment: Development
+2025-09-02 16:52:02.408 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 16:52:03.184 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 16:52:03.292 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.4503ms
+2025-09-02 16:52:11.190 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5171/deletebook/B010 - null 0
+2025-09-02 16:52:11.202 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 16:52:11.205 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.DeleteBook (LMS)'
+2025-09-02 16:52:11.216 +05:30 [INF] Route matched with {action = "DeleteBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteBook(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 16:52:11.429 +05:30 [INF] Executing action method LMS.Controllers.BookController.DeleteBook (LMS) - Validation state: "Valid"
+2025-09-02 16:52:11.430 +05:30 [INF] Request to delete book with SID: B010
+2025-09-02 16:52:11.431 +05:30 [INF] Deleting (marking as unavailable) book with SID: B010
+2025-09-02 16:52:11.920 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 16:52:12.556 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-02 16:52:12.768 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@p17='10', @p0='Stephen Hawking' (Size = 50), @p1='4' (Nullable = true), @p2='256' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='1st' (Size = 50), @p8='ISBN010' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1988' (Nullable = true), @p13='Bantam Books' (Size = 100), @p14='5' (Nullable = true), @p15='3', @p16='A Brief History of Time' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-02 16:52:12.791 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'LM.Model.Models.MyLMSDB.LMSDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the CHECK constraint "CK__Book__Status__17036CC0". The conflict occurred in database "LMS", table "dbo.Book", column 'Status'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:9ba47405-f73b-4d87-88fa-a7f7091561a7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the CHECK constraint "CK__Book__Status__17036CC0". The conflict occurred in database "LMS", table "dbo.Book", column 'Status'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:9ba47405-f73b-4d87-88fa-a7f7091561a7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-02 16:52:12.793 +05:30 [ERR] Error occurred while deleting (marking unavailable) book with SID: B010
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the CHECK constraint "CK__Book__Status__17036CC0". The conflict occurred in database "LMS", table "dbo.Book", column 'Status'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:9ba47405-f73b-4d87-88fa-a7f7091561a7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at LM.Services.Repositories.Implementation.BookRepository.Deletebook(String bookSid) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/BookRepository.cs:line 297
+2025-09-02 16:52:12.806 +05:30 [INF] Executed action LMS.Controllers.BookController.DeleteBook (LMS) in 1508.732ms
+2025-09-02 16:52:12.807 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.DeleteBook (LMS)'
+2025-09-02 16:52:12.808 +05:30 [ERR] Unhandled error occurred.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the CHECK constraint "CK__Book__Status__17036CC0". The conflict occurred in database "LMS", table "dbo.Book", column 'Status'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:9ba47405-f73b-4d87-88fa-a7f7091561a7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at LM.Services.Repositories.Implementation.BookRepository.Deletebook(String bookSid) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/BookRepository.cs:line 297
+   at LMS.Controllers.BookController.DeleteBook(String bookSid) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/BookController.cs:line 97
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-02 16:52:12.924 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5171/deletebook/B010 - 500 null application/json 1734.1118ms
+2025-09-02 16:54:06.394 +05:30 [INF] Application is shutting down...
+2025-09-02 16:54:08.959 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 16:54:08.994 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 16:54:08.994 +05:30 [INF] Hosting environment: Development
+2025-09-02 16:54:08.994 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 16:54:09.766 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 16:54:10.004 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 237.674ms
+2025-09-02 16:54:17.857 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5171/deletebook/B010 - null 0
+2025-09-02 16:54:17.877 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 16:54:17.880 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.DeleteBook (LMS)'
+2025-09-02 16:54:17.899 +05:30 [INF] Route matched with {action = "DeleteBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteBook(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-02 16:54:18.008 +05:30 [INF] Executing action method LMS.Controllers.BookController.DeleteBook (LMS) - Validation state: "Valid"
+2025-09-02 16:54:18.009 +05:30 [INF] Request to delete book with SID: B010
+2025-09-02 16:54:18.010 +05:30 [INF] Deleting (marking as unavailable) book with SID: B010
+2025-09-02 16:54:18.390 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 16:54:18.924 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[Available_Quantity], [b].[BookPages], [b].[BookSID], [b].[BorrowedStatus], [b].[CategoryName], [b].[CreatedAT], [b].[CreatedBY], [b].[Edition], [b].[ISBN], [b].[Language], [b].[ModifiedAT], [b].[ModifiedBY], [b].[PublishYear], [b].[Publisher], [b].[Quantity], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-09-02 16:54:19.141 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@p17='10', @p0='Stephen Hawking' (Size = 50), @p1='4' (Nullable = true), @p2='256' (Size = 50), @p3='4', @p4='Science Fiction' (Size = 50), @p5='2025-09-01T13:08:58.3130000' (DbType = DateTime), @p6='System' (Size = 50), @p7='1st' (Size = 50), @p8='ISBN010' (Size = 50), @p9='English' (Size = 50), @p10=NULL (DbType = DateTime), @p11=NULL (Size = 50), @p12='1988' (Nullable = true), @p13='Bantam Books' (Size = 100), @p14='5' (Nullable = true), @p15='2', @p16='A Brief History of Time' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [Available_Quantity] = @p1, [BookPages] = @p2, [BorrowedStatus] = @p3, [CategoryName] = @p4, [CreatedAT] = @p5, [CreatedBY] = @p6, [Edition] = @p7, [ISBN] = @p8, [Language] = @p9, [ModifiedAT] = @p10, [ModifiedBY] = @p11, [PublishYear] = @p12, [Publisher] = @p13, [Quantity] = @p14, [Status] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [BookID] = @p17;
+2025-09-02 16:54:19.150 +05:30 [INF] Book successfully marked as unavailable. SID: B010
+2025-09-02 16:54:19.150 +05:30 [INF] Successfully deleted book with SID: B010
+2025-09-02 16:54:19.154 +05:30 [INF] Executed action method LMS.Controllers.BookController.DeleteBook (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1142.4962ms.
+2025-09-02 16:54:19.161 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-09-02 16:54:19.165 +05:30 [INF] Executed action LMS.Controllers.BookController.DeleteBook (LMS) in 1263.6988ms
+2025-09-02 16:54:19.166 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.DeleteBook (LMS)'
+2025-09-02 16:54:19.179 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5171/deletebook/B010 - 200 null text/plain; charset=utf-8 1323.6711ms
+2025-09-02 16:54:44.596 +05:30 [INF] Application is shutting down...
+2025-09-02 18:22:36.340 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 18:22:36.377 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 18:22:36.378 +05:30 [INF] Hosting environment: Development
+2025-09-02 18:22:36.378 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 18:22:37.737 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 18:22:37.951 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 213.8059ms
+2025-09-02 18:22:49.194 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 18:22:49.229 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 18:22:49.236 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 18:22:49.250 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 18:22:49.367 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-02 18:22:49.370 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 18:22:49.379 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 18:22:49.632 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 18:22:50.175 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-02 18:22:50.287 +05:30 [INF] user list retrieved successfully.
+2025-09-02 18:22:50.288 +05:30 [INF] Retrieved 4 users
+2025-09-02 18:22:50.297 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 926.6833ms.
+2025-09-02 18:22:50.304 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 18:22:50.452 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1199.0444ms
+2025-09-02 18:22:50.453 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 18:22:50.464 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 1275.0919ms
+2025-09-02 18:23:05.674 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5171/deleteuser/USR003 - null 0
+2025-09-02 18:23:05.677 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.DeleteUser (LMS)'
+2025-09-02 18:23:05.682 +05:30 [INF] Route matched with {action = "DeleteUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteUser(System.String) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 18:23:05.684 +05:30 [INF] Executing action method LMS.Controllers.UserController.DeleteUser (LMS) - Validation state: "Valid"
+2025-09-02 18:23:05.685 +05:30 [INF] Request to delete book with SID: USR003
+2025-09-02 18:23:05.688 +05:30 [INF] Deleting (marking as unavailable) user with SID: USR003
+2025-09-02 18:23:05.942 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[Address], [u].[CreatedAT], [u].[CreatedBY], [u].[Email], [u].[ModifiedAT], [u].[ModifiedBY], [u].[Name], [u].[PasswordHash], [u].[phone_number], [u].[Status], [u].[UserSID]
+FROM [Users] AS [u]
+2025-09-02 18:23:06.104 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@p10='3', @p0='Mumbai, India' (Size = 100), @p1='2025-09-01T13:08:47.5900000' (DbType = DateTime), @p2='System' (Size = 50), @p3='jane@example.com' (Size = 50), @p4=NULL (DbType = DateTime), @p5=NULL (Size = 50), @p6='Jane Smith' (Size = 50), @p7='0x1111222233' (Nullable = false) (Size = 64), @p8='9988776655' (Nullable = true), @p9='2'], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [Address] = @p0, [CreatedAT] = @p1, [CreatedBY] = @p2, [Email] = @p3, [ModifiedAT] = @p4, [ModifiedBY] = @p5, [Name] = @p6, [PasswordHash] = @p7, [phone_number] = @p8, [Status] = @p9
+OUTPUT 1
+WHERE [UserID] = @p10;
+2025-09-02 18:23:06.114 +05:30 [INF] Book successfully marked as unavailable. SID: USR003
+2025-09-02 18:23:06.114 +05:30 [INF] Successfully deleted book with SID: USR003
+2025-09-02 18:23:06.114 +05:30 [INF] Executed action method LMS.Controllers.UserController.DeleteUser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 430.2163ms.
+2025-09-02 18:23:06.115 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-09-02 18:23:06.115 +05:30 [INF] Executed action LMS.Controllers.UserController.DeleteUser (LMS) in 432.8241ms
+2025-09-02 18:23:06.115 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.DeleteUser (LMS)'
+2025-09-02 18:23:06.117 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5171/deleteuser/USR003 - 200 null text/plain; charset=utf-8 442.9876ms
+2025-09-02 18:23:19.739 +05:30 [INF] Application is shutting down...
+2025-09-02 18:23:22.660 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-02 18:23:22.693 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-02 18:23:22.693 +05:30 [INF] Hosting environment: Development
+2025-09-02 18:23:22.693 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-02 18:23:23.329 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-02 18:23:23.480 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.5747ms
+2025-09-02 18:23:28.575 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser - null null
+2025-09-02 18:23:28.589 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-02 18:23:28.595 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 18:23:28.615 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-09-02 18:23:28.704 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-09-02 18:23:28.707 +05:30 [INF] Fetching all Users with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-02 18:23:28.717 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-02 18:23:28.954 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-02 18:23:29.454 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-09-02 18:23:29.566 +05:30 [INF] user list retrieved successfully.
+2025-09-02 18:23:29.566 +05:30 [INF] Retrieved 3 users
+2025-09-02 18:23:29.577 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 869.822ms.
+2025-09-02 18:23:29.585 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-02 18:23:29.728 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 1109.7742ms
+2025-09-02 18:23:29.729 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-09-02 18:23:29.740 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser - 200 null application/json; charset=utf-8 1165.5631ms
+2025-09-02 18:29:31.204 +05:30 [INF] Application is shutting down...

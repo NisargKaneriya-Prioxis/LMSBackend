@@ -1,0 +1,14 @@
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/bin/Debug/net8.0/LM.Model.deps.json
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/bin/Debug/net8.0/LM.Model.dll
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/bin/Debug/net8.0/LM.Model.pdb
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/obj/Debug/net8.0/LM.Model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/obj/Debug/net8.0/LM.Model.AssemblyInfoInputs.cache
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/obj/Debug/net8.0/LM.Model.AssemblyInfo.cs
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/obj/Debug/net8.0/LM.Model.csproj.CoreCompileInputs.cache
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/obj/Debug/net8.0/LM.Model.dll
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/obj/Debug/net8.0/refint/LM.Model.dll
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/obj/Debug/net8.0/LM.Model.pdb
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/obj/Debug/net8.0/ref/LM.Model.dll
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/bin/Debug/net8.0/LM.Model.runtimeconfig.json
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/obj/Debug/net8.0/LM.Model.csproj.AssemblyReference.cache
+/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Model/obj/Debug/net8.0/LM.Model.genruntimeconfig.cache
