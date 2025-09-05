@@ -159,7 +159,7 @@ public class BookRepository : IBookRepository
             
             var b = new Book
             {
-                BookSid = "LIB" + Guid.NewGuid(),
+                BookSid = "B" + Guid.NewGuid(),
                 Author = book.Author,
                 Title = book.Title,
                 PublishYear = book.PublishYear,
@@ -169,8 +169,7 @@ public class BookRepository : IBookRepository
                 CategoryId= category.CategoryId,
                 Quantity=book.Quantity,
                 AvailableQuantity=book.AvailableQuantity,
-                Publisher=book.Publisher,
-                BorrowedStatus = (int)Enums.IsAvailable
+                Publisher=book.Publisher
             };
 
             bookList.Add(b);
@@ -188,11 +187,12 @@ public class BookRepository : IBookRepository
             Isbn = b.Isbn,
             Edition=b.Edition,
             Language=b.Language,
-            CategoryId= b.CategoryId,
             Quantity=b.Quantity,
             AvailableQuantity=b.AvailableQuantity,
             Publisher=b.Publisher,
-            BorrowedStatus = b.BorrowedStatus
+            BorrowedStatus = (int)Enums.IsAvailable,
+            Status = (int)Enums.Active,
+            CreatedAt = DateTime.Now
         }).ToList();
 
         _logger.LogInformation("Successfully inserted {Count} books", resBooks.Count);
@@ -247,8 +247,6 @@ public class BookRepository : IBookRepository
         existingBook.Quantity = book.Quantity;
         existingBook.AvailableQuantity = book.AvailableQuantity;
         existingBook.Publisher = book.Publisher;
-        existingBook.BorrowedStatus = (int)Enums.IsAvailable;
-        existingBook.Status = (int)Enums.Active;
         existingBook.ModifiedAt = DateTime.Now;
 
         _unitOfWork.GetRepository<Book>().Update(existingBook);
@@ -265,13 +263,13 @@ public class BookRepository : IBookRepository
             PublishYear = existingBook.PublishYear,
             Edition = existingBook.Edition,
             Language = existingBook.Language,
-            CategoryId = existingBook.CategoryId,  
             CategoryName = category.CategoryName,  
             Quantity = existingBook.Quantity,
             AvailableQuantity = existingBook.AvailableQuantity,
             Publisher = existingBook.Publisher,
-            BorrowedStatus = existingBook.BorrowedStatus,
-            Status = existingBook.Status
+            BorrowedStatus = (int)Enums.IsAvailable,
+            Status = (int)Enums.Active,
+            ModifiedAt = DateTime.Now
         };
     }
     catch (HttpStatusCodeException)
@@ -341,7 +339,6 @@ public class BookRepository : IBookRepository
             var book = books.FirstOrDefault(x =>
                 x.BookSid == bookSid && 
                 x.Isbn == Isbn && 
-                // x.BorrowedStatus == (int)Enums.UnAvailable &&
                 x.Status == (int)Enums.Active);
 
             if (book == null)

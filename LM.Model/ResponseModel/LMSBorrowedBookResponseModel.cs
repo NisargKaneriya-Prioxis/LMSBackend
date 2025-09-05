@@ -6,13 +6,15 @@ namespace LM.Model.ResponseModel;
 
 public class LMSBorrowedBookResponseModel
 {
-    [Column("UserSID")]
-    [StringLength(50)]
-    public string UserSid { get; set; } = null!;
-
     [Column("BookSID")]
     [StringLength(50)]
-    public string BookSid { get; set; } = null!;
+    public string BorrowedSID { get; set; } = null!; 
+    
+    [StringLength(50)]
+    public string? Name { get; set; }
+    
+    [StringLength(50)]
+    public string? Title { get; set; }
 
     [Column(TypeName = "datetime")]
     public DateTime? IssueDate { get; set; }
@@ -23,27 +25,5 @@ public class LMSBorrowedBookResponseModel
     [Column(TypeName = "datetime")]
     public DateTime? ReturnDate { get; set; }
 
-    public int BorrowedStatus { get; set; }
-
-    [Column("CreatedAT", TypeName = "datetime")]
-    public DateTime CreatedAt { get; set; }
-
-    [Column("ModifiedAT", TypeName = "datetime")]
-    public DateTime? ModifiedAt { get; set; }
-
-    [Column("CreatedBY")]
-    [StringLength(50)]
-    public string? CreatedBy { get; set; }
-
-    [Column("ModifiedBY")]
-    [StringLength(50)]
-    public string? ModifiedBy { get; set; }
-
-    [ForeignKey("BookSid")]
-    [InverseProperty("BorrowedBooks")]
-    public virtual Book BookS { get; set; } = null!;
-
-    [ForeignKey("UserSid")]
-    [InverseProperty("BorrowedBooks")]
-    public virtual User UserS { get; set; } = null!;
+    public int BorrowedBookStatus { get; set; }
 }

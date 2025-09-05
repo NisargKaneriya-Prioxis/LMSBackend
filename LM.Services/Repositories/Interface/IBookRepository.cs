@@ -11,7 +11,7 @@ public interface IBookRepository
 
     Task<LMSBookResponseModel?> GetbookBySid(string booksid);
 
-    Task<List<LMSBookResponseModel>> InsertBook(string CategorySID, List<LMSBookRequestModel> books);
+    Task<List<LMSBookResponseModel>> InsertBook(string CategorySID,List<LMSBookRequestModel> books);
 
     Task<LMSBookResponseModel?> UpdateBook(string bookSid, LMSBookRequestModel book, string CategorySID);
 

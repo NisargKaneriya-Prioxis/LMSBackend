@@ -8,6 +8,7 @@ using LM.Model.SpDbContext;
 using LM.Services.Repositories.Interface;
 using LM.Services.Token;
 using LM.Services.UnitOfWork;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
@@ -202,62 +203,68 @@ public class UserRepository: IUserRepository
 }
 
   //login user 
-  public async Task<LoginResponseModel> LoginUser(LoginRequestModel model)
-{
-    _logger.LogInformation("Attempting login for email: {Email}", model.Email);
-
-    try
-    {
-        if (string.IsNullOrWhiteSpace(model.Email) || string.IsNullOrWhiteSpace(model.Password))
-        {
-            _logger.LogWarning("Login failed: Email and Password are required");
-            throw new HttpStatusCodeException(400, "Email and Password are required.");
-        }
-        
-        var user = (await _unitOfWork.GetRepository<User>()
-            .GetAllAsync(u => u.Email == model.Email && u.Status == (int)Enums.Active))
-            .FirstOrDefault();
-
-        if (user == null)
-        {
-            _logger.LogWarning("Login failed: User not found for email: {Email}", model.Email);
-            throw new HttpStatusCodeException(401, "Invalid email or password.");
-        }
-        
-        if (!PasswordHelper.VerifyPassword(model.Password, user.PasswordHash))
-        {
-            _logger.LogWarning("Login failed: Invalid password for email: {Email}", model.Email);
-            throw new HttpStatusCodeException(401, "Invalid email or password.");
-        }
-        
-        var token = _tokenService.GenerateToken(
-            user.UserSid,
-            user.Role,
-            user.Email
-        );
-
-        var response = new LoginResponseModel
-        {
-            UserSid = user.UserSid,
-            Name = user.Name,
-            Email = user.Email,
-            Role = user.Role,
-            Token = token
-        };
-
-        _logger.LogInformation("Login successful for email: {Email}", model.Email);
-        return response;
-    }
-    catch (HttpStatusCodeException)
-    {
-        throw;
-    }
-    catch (Exception ex)
-    {
-        _logger.LogError(ex, "Unexpected error occurred during login for email: {Email}", model.Email);
-        throw new HttpStatusCodeException(500, "An unexpected error occurred during login.");
-    }
-}
+//   public async Task<LoginResponseModel> LoginUser(LoginRequestModel model)
+// {
+//     _logger.LogInformation("Attempting login for email: {Email}", model.Email);
+//
+//     try
+//     {
+//         if (string.IsNullOrWhiteSpace(model.Email) || string.IsNullOrWhiteSpace(model.Password))
+//         {
+//             _logger.LogWarning("Login failed: Email and Password are required");
+//             throw new HttpStatusCodeException(400, "Email and Password are required.");
+//         }
+//         
+//         var user = (await _unitOfWork.GetRepository<User>()
+//             .GetAllAsync(u => u.Email == model.Email && u.Status == (int)Enums.Active))
+//             .FirstOrDefault();
+//
+//         if (user == null)
+//         {
+//             _logger.LogWarning("Login failed: User not found for email: {Email}", model.Email);
+//             throw new HttpStatusCodeException(401, "Invalid email or password.");
+//         }
+//         
+//         if (!PasswordHelper.VerifyPassword(model.Password, user.PasswordHash))
+//         {
+//             _logger.LogWarning("Login failed: Invalid password for email: {Email}", model.Email);
+//             throw new HttpStatusCodeException(401, "Invalid email or password.");
+//         }
+//         
+//         var response = await _authRepository.LoginUser(model);
+//         
+//         var cookieOptions = new CookieOptions
+//         {
+//             HttpOnly = true,
+//             Secure = true, // only over HTTPS in production
+//             SameSite = SameSiteMode.Strict,
+//             Expires = DateTime.UtcNow.AddDays(7) // adjust expiry as needed
+//         };
+//
+//         Response.Cookies.Append("jwt", response.Token, cookieOptions);
+//
+//         return Ok(new
+//         {
+//             response.UserSid,
+//             response.Name,
+//             response.Email,
+//             response.Role,
+//             message = "Login successful"
+//         });
+//
+//         _logger.LogInformation("Login successful for email: {Email}", model.Email);
+//         return response;
+//     }
+//     catch (HttpStatusCodeException)
+//     {
+//         throw;
+//     }
+//     catch (Exception ex)
+//     {
+//         _logger.LogError(ex, "Unexpected error occurred during login for email: {Email}", model.Email);
+//         throw new HttpStatusCodeException(500, "An unexpected error occurred during login.");
+//     }
+// }
 
     //Delete User
     public async Task<bool> Deleteuser(string userSid)

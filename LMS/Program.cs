@@ -10,6 +10,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+
 namespace LMS;
 
 public class Program
@@ -17,6 +21,15 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowFrontend",
+                policy => policy
+                    .AllowAnyOrigin()   
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+        });
         
         //Code for adding the log to the new file 
         Log.Logger = new LoggerConfiguration()
@@ -60,6 +73,9 @@ public class Program
         
         builder.Services.AddScoped<IBookRepository , BookRepository>();
         builder.Services.AddScoped<IUserRepository, UserRepository>();
+        builder.Services.AddScoped<IAuthRepository,AuthRepository>();
+        builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
+        builder.Services.AddScoped<IBorrowedBookRepository,BorrowedBookRepository>();
         builder.Services.AddScoped<TokenService>();
 
         // Add services to the container.
@@ -67,7 +83,32 @@ public class Program
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen();
+        builder.Services.AddSwaggerGen(x =>
+        {
+            x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+            {
+                Description = "JWT Authorization header using the Bearer scheme (Example: 'Bearer 12345abcdef')",
+                Name = "Authorization",
+                In = ParameterLocation.Header,
+                Type = SecuritySchemeType.ApiKey,
+                Scheme = "Bearer"
+            });
+            x.AddSecurityRequirement(new OpenApiSecurityRequirement
+            {
+                {
+                    new OpenApiSecurityScheme
+                    {
+                        Reference = new OpenApiReference
+                        {
+                            Type = ReferenceType.SecurityScheme, Id = "Bearer"
+                        }
+                    }, Array.Empty<string>()
+                }
+            });
+
+        }
+              
+            );
         
         // Add JWT authentication
         builder.Services.AddAuthentication(options =>
@@ -88,7 +129,22 @@ public class Program
                     IssuerSigningKey = new SymmetricSecurityKey(
                         Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
                 };
+                options.Events = new JwtBearerEvents
+                {
+                    OnChallenge = context =>
+                    {
+                        return Task.CompletedTask;
+                    },
+                    OnAuthenticationFailed = context =>
+                    {
+                        return Task.CompletedTask;
+                    }
+                
+                };
+                
             });
+        
+        
 
         builder.Services.AddAuthorization();
 
@@ -100,12 +156,12 @@ public class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }
-
         app.UseHttpsRedirection();
         app.UseMiddleware<ExceptionHandlingMiddleware>();
+        app.UseAuthentication();
         app.UseAuthorization();
 
-
+        app.UseCors("AllowFrontend");
         app.MapControllers();
 
         app.Run();

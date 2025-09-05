@@ -30,8 +30,6 @@ public class LMSBookResponseModel
     [StringLength(50)]
     public string? BookPages { get; set; }
     
-    [Column("CategoryID")]
-    public int CategoryId { get; set; }
     public int? Quantity { get; set; }
 
     [Column("Available_Quantity")]
@@ -50,16 +48,16 @@ public class LMSBookResponseModel
     [Column("CreatedAT", TypeName = "datetime")]
     public DateTime CreatedAt { get; set; }
 
-    // [Column("ModifiedAT", TypeName = "datetime")]
-    // public DateTime? ModifiedAt { get; set; }
-    //
-    // [Column("CreatedBY")]
-    // [StringLength(50)]
-    // public string? CreatedBy { get; set; }
-    //
-    // [Column("ModifiedBY")]
-    // [StringLength(50)]
-    // public string? ModifiedBy { get; set; }
+    [Column("ModifiedAT", TypeName = "datetime")]
+    public DateTime? ModifiedAt { get; set; }
+    
+    [Column("CreatedBY")]
+    [StringLength(50)]
+    public string? CreatedBy { get; set; }
+    
+    [Column("ModifiedBY")]
+    [StringLength(50)]
+    public string? ModifiedBy { get; set; }
 
     [StringLength(50)]
     public string? CategoryName { get; set; }

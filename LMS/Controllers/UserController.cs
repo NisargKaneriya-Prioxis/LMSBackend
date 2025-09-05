@@ -3,6 +3,7 @@ using LM.Common;
 using LM.Model.RequestModel;
 using LM.Model.ResponseModel;
 using LM.Services.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -20,7 +21,7 @@ public class UserController : BaseController
         _logger = logger;
     }
     
-    
+    // [Authorize]
     //get all controller 
     [HttpGet("getalluser")]
     public async Task<ActionResult<IEnumerable<LMSUserResponseModel>>> Getalluser([FromQuery] SearchRequestModel model)
@@ -77,30 +78,6 @@ public class UserController : BaseController
         return Ok(createduser);
     }
     
-    //login controller 
-    [HttpPost("login")]
-    public async Task<IActionResult> Login([FromBody] LoginRequestModel model)
-    {
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
-
-        try
-        {
-            var result = await _userRepository.LoginUser(model);
-            return Ok(result);
-        }
-        catch (HttpStatusCodeException ex)
-        {
-            _logger.LogWarning("Login failed: {Message}", ex.Message);
-            return StatusCode(ex.StatusCode, new { error = ex.Message });
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Unexpected error occurred during login.");
-            return StatusCode(500, new { error = "An unexpected error occurred." });
-        }
-    }
-
     //delete controller
     [HttpDelete("deleteuser/{userSid}")]
     public async Task<ActionResult> DeleteUser([FromRoute] string userSid)
