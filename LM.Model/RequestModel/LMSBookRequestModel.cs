@@ -7,14 +7,6 @@ namespace LM.Model.RequestModel;
 
 public class LMSBookRequestModel
 {
-    // [Key]
-    // [Column("BookID")]
-    // public int BookId { get; set; }
-
-    // [Column("BookSID")]
-    // [StringLength(50)]
-    // public string BookSid { get; set; } = null!;
-
     [StringLength(50)]
     public string? Title { get; set; }
 
@@ -34,9 +26,6 @@ public class LMSBookRequestModel
     [StringLength(50)]
     public string? BookPages { get; set; }
     
-    // [StringLength(50)]
-    // public string CategorySID { get; set; } = null!;
-    
     public int? Quantity { get; set; }
 
     [Column("Available_Quantity")]
@@ -47,26 +36,4 @@ public class LMSBookRequestModel
 
     [StringLength(100)]
     public string? Publisher { get; set; }
-
-    // public int BorrowedStatus { get; set; }
-    //
-    // public int Status { get; set; }
-
-    // [Column("CreatedAT", TypeName = "datetime")]
-    // public DateTime CreatedAt { get; set; }
-    //
-    // [Column("ModifiedAT", TypeName = "datetime")]
-    // public DateTime? ModifiedAt { get; set; }
-    //
-    // [Column("CreatedBY")]
-    // [StringLength(50)]
-    // public string? CreatedBy { get; set; }
-    //
-    // [Column("ModifiedBY")]
-    // [StringLength(50)]
-    // public string? ModifiedBy { get; set; }
-    
-    //
-    // [InverseProperty("BookS")]
-    // public virtual ICollection<BorrowedBook> BorrowedBooks { get; set; } = new List<BorrowedBook>();
 }

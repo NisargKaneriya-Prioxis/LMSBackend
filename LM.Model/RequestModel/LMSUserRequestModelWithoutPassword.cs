@@ -20,10 +20,7 @@ public class LMSUserRequestModelWithoutPassword
 
     [StringLength(50)]
     public string? Email { get; set; }
-    //
-    // [MaxLength(64)]
-    // public byte[] PasswordHash { get; set; } = null!;
-
+    
     [Column("phone_number")]
     [JsonProperty(PropertyName = "phone_number")]
     public long? PhoneNumber { get; set; }

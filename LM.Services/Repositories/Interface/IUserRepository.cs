@@ -11,8 +11,6 @@ public interface IUserRepository
     Task<LMSUserResponseModel?> GetuserBySID(string usersid);
 
     Task<List<LMSUserResponseModel>> InsertUser(List<UserSignupRequestModel> users);
-
-    // Task<LoginResponseModel> LoginUser(LoginRequestModel model);
-
+    
     Task<bool> Deleteuser(string userSid);
 }

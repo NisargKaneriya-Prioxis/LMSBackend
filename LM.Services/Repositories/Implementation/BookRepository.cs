@@ -110,7 +110,6 @@ public class BookRepository : IBookRepository
         }
     }
     
-    
     //insert book
     public async Task<List<LMSBookResponseModel>> InsertBook(string CategorySID,List<LMSBookRequestModel> books)
 {
@@ -282,103 +281,7 @@ public class BookRepository : IBookRepository
         throw new HttpStatusCodeException(500, "An unexpected error occurred while updating books");
     }
 }
-
-    //Borrowed Book
-    public async Task<bool> BorrowedBook(string bookSid, string Isbn )
-    {
-        _logger.LogInformation("Borrowing book with SID: {Sid} and ISBN: {isbn}", bookSid, Isbn);
-
-        try
-        {
-            var books = await _unitOfWork.GetRepository<Book>().GetAllAsync();
-
-            var book = books.FirstOrDefault(x =>
-                x.BookSid == bookSid &&
-                x.Isbn == Isbn &&
-                x.BorrowedStatus == (int)Enums.IsAvailable &&
-                x.Status == (int)Enums.Active);
-
-            if (book == null)
-            {
-                _logger.LogWarning("Book with SID: {Sid} and ISBN: {isbn} not available or already borrowed", bookSid, Isbn);
-                throw new HttpStatusCodeException(404, $"Book with SID '{bookSid}' and ISBN '{Isbn}' not available or already borrowed.");
-            }
-                
-            book.AvailableQuantity = (int)book.AvailableQuantity-1 ;
-            if (book.AvailableQuantity == 0)
-            {
-                book.BorrowedStatus = (int)Enums.UnAvailable;
-                
-                
-            }
-            _context.Books.Update(book);
-            await _context.SaveChangesAsync();
-
-            _logger.LogInformation("Book with SID: {Sid} and ISBN: {isbn} successfully borrowed", bookSid, Isbn);
-            return true;
-        }
-        catch (HttpStatusCodeException)
-        {
-            throw;
-        }
-        catch (Exception e)
-        {
-            _logger.LogError(e, "Unexpected error occurred while borrowing book with SID: {Sid} and ISBN: {isbn}", bookSid, Isbn);
-            throw new HttpStatusCodeException(500, "An unexpected error occurred while borrowing the book. Please try again later.");
-        }
-    }
-    
-    //Return Book 
-    public async Task<bool> ReturnBook(string bookSid, string Isbn)
-    {
-        _logger.LogInformation("Return book with SID: {Sid} and ISBN: {isbn}", bookSid, Isbn);
-
-        try
-        {
-            var books = await _unitOfWork.GetRepository<Book>().GetAllAsync();
-            var book = books.FirstOrDefault(x =>
-                x.BookSid == bookSid && 
-                x.Isbn == Isbn && 
-                x.Status == (int)Enums.Active);
-
-            if (book == null)
-            {
-                _logger.LogWarning("Book with SID: {Sid} and ISBN: {isbn} not found or already available in the library", bookSid, Isbn);
-                throw new HttpStatusCodeException(404, $"Book with SID: {bookSid} and ISBN: {Isbn} not found or already returned.");
-            }
-
-            if (book.AvailableQuantity < book.Quantity)
-            {
-                book.AvailableQuantity = (int)book.AvailableQuantity+1 ;
-            }
-            else
-            {
-                throw new ("Book is already Present");
-            }
-            
-            if (book.AvailableQuantity>0)
-            {
-                book.BorrowedStatus = (int)Enums.IsAvailable;
-            }
-
-            _context.Books.Update(book);
-            await _context.SaveChangesAsync();
-
-            _logger.LogInformation("Book with SID: {Sid} and ISBN: {isbn} successfully returned", bookSid, Isbn);
-            return true;
-        }
-        catch (HttpStatusCodeException) 
-        {
-            throw;
-        }
-        catch (Exception e)
-        {
-            _logger.LogError(e, "Unexpected error occurred while returning book with SID: {Sid} and ISBN: {isbn}", bookSid, Isbn);
-            throw new HttpStatusCodeException(500, "An unexpected error occurred while returning the book.");
-        }
-    }
-    
-    
+   
     //Delete book
     public async Task<bool> Deletebook(string bookSid)
     {

@@ -2,6 +2,7 @@ using EvaluationAPI.Controllers;
 using LM.Model.RequestModel;
 using LM.Model.ResponseModel;
 using LM.Services.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -17,6 +18,7 @@ public class BookController : BaseController
         _BookRepository = BookRepository;
         _logger = logger;
     }
+    
     
     //get all controller 
     [HttpGet("getallbook")]
@@ -59,6 +61,7 @@ public class BookController : BaseController
         return Ok(book);
     }
     
+    // [Authorize(Roles = "Admin")]
     //insert controller 
     [HttpPost("InsertBook")]
     public async Task<ActionResult<List<LMSBookResponseModel>>> InsertBook(string CategorySID,[FromBody] List<LMSBookRequestModel> book)
@@ -74,6 +77,7 @@ public class BookController : BaseController
         return Ok(createdBook);
     }
     
+    // [Authorize(Roles = "Admin")]
     //Update controller 
     [HttpPost("updateBook/{BookSID}")]
     public async Task<ActionResult<LMSBookResponseModel>> UpdateBook([FromRoute] string CategorySID,[FromBody] LMSBookRequestModel model, [FromRoute] string booksid)
@@ -89,56 +93,7 @@ public class BookController : BaseController
         return NotFound();
     }
     
-    
-    // Borrowed book 
-    [HttpPost("borrow/{bookSid}/{isbn}")]
-    public async Task<IActionResult> BorrowBook(string bookSid, string isbn)
-    {
-        _logger.LogInformation("Borrow request received for Book SID: {Sid}, ISBN: {isbn}", bookSid, isbn);
-
-        var result = await _BookRepository.BorrowedBook(bookSid, isbn);
-
-        if (!result)
-        {
-            return BadRequest(new
-            {
-                Success = false,
-                Message = $"Book with SID: {bookSid} and ISBN: {isbn} is already borrowed."
-            });
-        }
-
-        return Ok(new
-        {
-            Success = true,
-            Message = $"Book with SID: {bookSid} and ISBN: {isbn} successfully borrowed."
-        });
-    }
-
-    // Return Book 
-    [HttpPost("return/{bookSid}/{isbn}")]
-    public async Task<IActionResult> ReturnBook(string bookSid, string isbn)
-    {
-        _logger.LogInformation("Return request received for Book SID: {Sid}, ISBN: {isbn}", bookSid, isbn);
-
-        var result = await _BookRepository.ReturnBook(bookSid, isbn);
-
-        if (!result)
-        {
-            return BadRequest(new
-            {
-                Success = false,
-                Message = $"Book with SID: {bookSid} and ISBN: {isbn} is already marked as available."
-            });
-        }
-
-        return Ok(new
-        {
-            Success = true,
-            Message = $"Book with SID: {bookSid} and ISBN: {isbn} successfully returned."
-        });
-    }
-    
-    
+    // [Authorize(Roles = "Admin")]
     //delete Book
     [HttpDelete("deletebook/{bookSid}")]
     public async Task<ActionResult> DeleteBook([FromRoute] string bookSid)

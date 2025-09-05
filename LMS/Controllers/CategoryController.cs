@@ -1,6 +1,7 @@
 using EvaluationAPI.Controllers;
 using LM.Model.ResponseModel;
 using LM.Services.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -17,6 +18,7 @@ public class CategoryController : BaseController
         _logger = logger;
     }
     
+    // [Authorize(Roles = "Admin")]
     [HttpGet("getallcategory")]
     public async Task<ActionResult<IEnumerable<LMSCategoryResponseModel>>> GetallCategory([FromQuery] SearchRequestModel model)
     {

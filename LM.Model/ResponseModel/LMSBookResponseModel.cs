@@ -61,7 +61,4 @@ public class LMSBookResponseModel
 
     [StringLength(50)]
     public string? CategoryName { get; set; }
-
-    // [InverseProperty("BookS")]
-    // public virtual ICollection<BorrowedBook> BorrowedBooks { get; set; } = new List<BorrowedBook>();
 }

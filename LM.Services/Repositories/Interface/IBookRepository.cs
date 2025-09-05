@@ -15,9 +15,5 @@ public interface IBookRepository
 
     Task<LMSBookResponseModel?> UpdateBook(string bookSid, LMSBookRequestModel book, string CategorySID);
 
-   Task<bool> BorrowedBook(string bookSid, string Isbn);
-
-   Task<bool> ReturnBook(string bookSid, string Isbn);
-
    Task<bool> Deletebook(string bookSid);
 }
