@@ -49,14 +49,13 @@ public class AuthRepository : IAuthRepository
         }
 
         var token = _tokenService.GenerateToken(
-            user.UserSid,
+            user.UserId.ToString(),
             user.Role,
             user.Email
         );
 
         var response = new LoginResponseModel
         {
-            UserSid = user.UserSid,
             Name = user.Name,
             Email = user.Email,
             Role = user.Role,

@@ -1,7 +1,9 @@
+using System.Linq.Expressions;
 using EA.Services.RepositoryFactory;
 using LM.Common;
 using LM.Model.CommonModel;
 using LM.Model.Models.MyLMSDB;
+using LM.Model.RequestModel;
 using LM.Model.ResponseModel;
 using LM.Model.SpDbContext;
 using LM.Services.Repositories.Interface;
@@ -66,5 +68,72 @@ public class CategoryRepository : ICategoryRepository
             throw new HttpStatusCodeException(500, "An unexpected error occurred while fetching the Categories list");
         }
     }
+
+    // insert category
+    public async Task<List<LMSCategoryResponseModel>> InsertCategory(List<LMSCategoryRequestModel> categories)
+    {
+        _logger.LogInformation("Fetching list of categories with parameters: {@Params}", categories);
+
+        try
+        {
+            if (categories == null || categories.Count == 0)
+            {
+                _logger.LogWarning("Insert failed: Categories list cannot be empty.");
+                throw new HttpStatusCodeException(400, "Categories list cannot be empty.");
+            }
+
+            List<Category> CategoryList = new List<Category>();
+
+            foreach (var c in categories)
+            {
+                if (string.IsNullOrWhiteSpace(c.CategoryName))
+                {
+                    _logger.LogWarning("Insert failed: Missing information for request {@Categories}", categories);
+                    throw new HttpStatusCodeException(400, "Category name cannot be empty.");
+                }
+
+                var existingCategoryName = await _unitOfWork.GetRepository<Category>()
+                    .GetAllAsync(x => x.CategoryName == c.CategoryName);
+
+                if (existingCategoryName.Any())
+                {
+                    _logger.LogWarning("Insert failed: category Name is present - {CategoryName}", c.CategoryName);
+                    throw new HttpStatusCodeException(409, $"category Name is already present - {c.CategoryName}");
+                }
+
+                var cat = new Category
+                {
+                    CategorySid = "CAT" + Guid.NewGuid(),
+                    CategoryName = c.CategoryName,
+                };
+
+                CategoryList.Add(cat);
+            }
+
+            await _unitOfWork.GetRepository<Category>().InsertAsync(CategoryList);
+            await _unitOfWork.CommitAsync();
+
+            var rescategory = CategoryList.Select(c => new LMSCategoryResponseModel()
+            {
+                CategorySid = c.CategorySid,
+                CategoryName = c.CategoryName,
+            }).ToList();
+
+            _logger.LogInformation("Successfully inserted Category");
+            return rescategory;
+        }
+        catch (HttpStatusCodeException ex)
+        {
+            _logger.LogWarning("Known error occurred while inserting category: {Message}", ex.Message);
+            throw;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Unexpected error occurred while inserting Category");
+            throw new HttpStatusCodeException(500, "An unexpected error occurred while inserting Category");
+        }
+    }
+    
+    
 
 }

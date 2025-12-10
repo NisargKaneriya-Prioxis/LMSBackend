@@ -13,7 +13,4 @@ public class LMSCategoryResponseModel
 
     [StringLength(50)]
     public string? CategoryName { get; set; }
-
-    [InverseProperty("CategoryS")]
-    public virtual ICollection<Book> Books { get; set; } = new List<Book>();
 }

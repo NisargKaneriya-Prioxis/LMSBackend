@@ -1,4 +1,5 @@
 using System.Text;
+using EA.Services.RepositoryFactory;
 using EvaluationAPI.Helper;
 using LM.Model.Models.MyLMSDB;
 using LM.Model.SpDbContext;
@@ -76,6 +77,8 @@ public class Program
         builder.Services.AddScoped<IAuthRepository,AuthRepository>();
         builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
         builder.Services.AddScoped<IBorrowedBookRepository,BorrowedBookRepository>();
+        builder.Services.AddScoped<IRequestBookRepository,RequestBookRepository>();
+        builder.Services.AddScoped<IReturnBookRepository,ReturnBookRepository>();
         builder.Services.AddScoped<TokenService>();
 
         // Add services to the container.
@@ -157,11 +160,15 @@ public class Program
             app.UseSwaggerUI();
         }
         app.UseHttpsRedirection();
+      
         app.UseMiddleware<ExceptionHandlingMiddleware>();
+        
+        app.UseCors("AllowFrontend");
+        
         app.UseAuthentication();
         app.UseAuthorization();
 
-        app.UseCors("AllowFrontend");
+  
         app.MapControllers();
 
         app.Run();

@@ -21,7 +21,7 @@ public class UserController : BaseController
         _logger = logger;
     }
     
-    // [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     //get all controller 
     [HttpGet("getalluser")]
     public async Task<ActionResult<IEnumerable<LMSUserResponseModel>>> Getalluser([FromQuery] SearchRequestModel model)
@@ -44,7 +44,7 @@ public class UserController : BaseController
         return NoContent();
     }
     
-    // [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     //get by sid controller 
     [HttpGet("dynamicuser/{usersid}")]
     public async Task<ActionResult<LMSUserResponseModel>> GetByuserSID([FromRoute] string usersid)
@@ -79,7 +79,7 @@ public class UserController : BaseController
         return Ok(createduser);
     }
     
-    // [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     //delete controller
     [HttpDelete("deleteuser/{userSid}")]
     public async Task<ActionResult> DeleteUser([FromRoute] string userSid)

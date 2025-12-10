@@ -1,4 +1,5 @@
 using EvaluationAPI.Controllers;
+using LM.Model.RequestModel;
 using LM.Model.ResponseModel;
 using LM.Services.Repositories.Interface;
 using Microsoft.AspNetCore.Authorization;
@@ -18,7 +19,7 @@ public class CategoryController : BaseController
         _logger = logger;
     }
     
-    // [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     [HttpGet("getallcategory")]
     public async Task<ActionResult<IEnumerable<LMSCategoryResponseModel>>> GetallCategory([FromQuery] SearchRequestModel model)
     {
@@ -39,4 +40,24 @@ public class CategoryController : BaseController
         _logger.LogWarning("No Category found matching search parameters");
         return NoContent();
     }
-}
+
+    
+    [Authorize(Roles = "Admin")]
+    //insert category 
+    [HttpPost("addcategory")]
+    public async Task<ActionResult<IEnumerable<LMSCategoryResponseModel>>> InsertCategory([FromBody]
+        List<LMSCategoryRequestModel> categories)
+    {   
+        _logger.LogInformation("Inserting new category");
+        List<LMSCategoryResponseModel> createdCategory = await _categoryRepository.InsertCategory(categories);
+        if (createdCategory == null)
+        {
+            _logger.LogInformation("Failed to create the new category category");
+            return BadRequest();
+        }
+        _logger.LogInformation("Book created successfully");
+        return Ok(createdCategory);
+    }
+}   
+    
+    

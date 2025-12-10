@@ -17,6 +17,8 @@ public partial class LMSDbContext : DbContext
 
     public virtual DbSet<Category> Categories { get; set; }
 
+    public virtual DbSet<RequestBook> RequestBooks { get; set; }
+
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -53,6 +55,29 @@ public partial class LMSDbContext : DbContext
         modelBuilder.Entity<Category>(entity =>
         {
             entity.HasKey(e => e.CategoryId).HasName("PK__Categori__19093A2B7D8B6489");
+        });
+
+        modelBuilder.Entity<RequestBook>(entity =>
+        {
+            entity.HasKey(e => e.RequestBookId).HasName("PK__RequestB__67FB096138930A77");
+
+            entity.Property(e => e.CreatedAt).HasDefaultValueSql("(getdate())");
+            entity.Property(e => e.RequestBookStatus).HasDefaultValue(11);
+            entity.Property(e => e.RequestDate).HasDefaultValueSql("(getdate())");
+
+            entity.HasOne(d => d.Book).WithMany(p => p.RequestBooks)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__RequestBo__BookI__16CE6296");
+
+            entity.HasOne(d => d.CreatedByNavigation).WithMany(p => p.RequestBookCreatedByNavigations)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__RequestBo__Creat__17C286CF");
+
+            entity.HasOne(d => d.ModifiedByNavigation).WithMany(p => p.RequestBookModifiedByNavigations).HasConstraintName("FK__RequestBo__Modif__18B6AB08");
+
+            entity.HasOne(d => d.User).WithMany(p => p.RequestBookUsers)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__RequestBo__UserI__15DA3E5D");
         });
 
         modelBuilder.Entity<User>(entity =>

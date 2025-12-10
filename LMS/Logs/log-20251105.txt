@@ -1,0 +1,575 @@
+2025-11-05 10:30:21.639 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-05 10:30:21.800 +05:30 [INF] Now listening on: http://localhost:5171
+2025-11-05 10:30:21.803 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-05 10:30:21.804 +05:30 [INF] Hosting environment: Development
+2025-11-05 10:30:21.804 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-11-05 10:30:22.480 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger - null null
+2025-11-05 10:30:22.516 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger - 301 0 null 36.4585ms
+2025-11-05 10:30:22.522 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/index.html - null null
+2025-11-05 10:30:22.597 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/index.html - 200 null text/html;charset=utf-8 76.4017ms
+2025-11-05 10:30:23.101 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-11-05 10:30:23.189 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.0062ms
+2025-11-05 10:33:26.916 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/Auth/Login - application/json 51
+2025-11-05 10:33:26.924 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-11-05 10:33:26.956 +05:30 [INF] Executing endpoint 'AuthController.Login (LMS)'
+2025-11-05 10:33:26.969 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LM.Model.RequestModel.LoginRequestModel) on controller AuthController (LMS).
+2025-11-05 10:33:27.109 +05:30 [INF] Executing action method AuthController.Login (LMS) - Validation state: "Valid"
+2025-11-05 10:33:27.112 +05:30 [INF] Attempting login for email: Nik@gmail.com
+2025-11-05 10:33:27.492 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-11-05 10:33:42.475 +05:30 [ERR] An error occurred using the connection to database 'LMS' on server 'localhost,1433'.
+2025-11-05 10:33:42.484 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'LM.Model.Models.MyLMSDB.LMSDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+2025-11-05 10:33:42.488 +05:30 [ERR] Unexpected error during login
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at EA.Services.RepositoryFactory.Repository`1.GetAllAsync(Expression`1 predicate, Func`2 orderBy, Func`2 include, Boolean enableTracking, Boolean ignoreQueryFilters, CancellationToken cancellationToken) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/RepositoryFactory/Repository.cs:line 55
+   at LM.Services.Repositories.Implementation.AuthRepository.LoginUser(LoginRequestModel model) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/AuthRepository.cs:line 35
+   at AuthController.Login(LoginRequestModel model) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/AuthController.cs:line 206
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+2025-11-05 10:33:42.498 +05:30 [INF] Executed action method AuthController.Login (LMS), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 15384.0361ms.
+2025-11-05 10:33:42.504 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-05 10:33:42.530 +05:30 [INF] Executed action AuthController.Login (LMS) in 15558.1744ms
+2025-11-05 10:33:42.531 +05:30 [INF] Executed endpoint 'AuthController.Login (LMS)'
+2025-11-05 10:33:42.542 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/Auth/Login - 499 null application/json; charset=utf-8 15626.1161ms
+2025-11-05 10:34:08.563 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/Auth/Login - application/json 51
+2025-11-05 10:34:08.570 +05:30 [INF] Executing endpoint 'AuthController.Login (LMS)'
+2025-11-05 10:34:08.570 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LM.Model.RequestModel.LoginRequestModel) on controller AuthController (LMS).
+2025-11-05 10:34:08.576 +05:30 [INF] Executing action method AuthController.Login (LMS) - Validation state: "Valid"
+2025-11-05 10:34:08.576 +05:30 [INF] Attempting login for email: Nik@gmail.com
+2025-11-05 10:34:23.202 +05:30 [ERR] An error occurred using the connection to database 'LMS' on server 'localhost,1433'.
+2025-11-05 10:34:23.206 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'LM.Model.Models.MyLMSDB.LMSDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+2025-11-05 10:34:23.215 +05:30 [ERR] Unexpected error during login
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at EA.Services.RepositoryFactory.Repository`1.GetAllAsync(Expression`1 predicate, Func`2 orderBy, Func`2 include, Boolean enableTracking, Boolean ignoreQueryFilters, CancellationToken cancellationToken) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/RepositoryFactory/Repository.cs:line 55
+   at LM.Services.Repositories.Implementation.AuthRepository.LoginUser(LoginRequestModel model) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/AuthRepository.cs:line 35
+   at AuthController.Login(LoginRequestModel model) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/AuthController.cs:line 206
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+2025-11-05 10:34:23.229 +05:30 [INF] Executed action method AuthController.Login (LMS), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 14652.2236ms.
+2025-11-05 10:34:23.231 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-05 10:34:23.233 +05:30 [INF] Executed action AuthController.Login (LMS) in 14662.3287ms
+2025-11-05 10:34:23.233 +05:30 [INF] Executed endpoint 'AuthController.Login (LMS)'
+2025-11-05 10:34:23.234 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/Auth/Login - 499 null application/json; charset=utf-8 14670.5226ms
+2025-11-05 10:35:49.740 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/Auth/Login - application/json 51
+2025-11-05 10:35:49.741 +05:30 [INF] Executing endpoint 'AuthController.Login (LMS)'
+2025-11-05 10:35:49.742 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LM.Model.RequestModel.LoginRequestModel) on controller AuthController (LMS).
+2025-11-05 10:35:49.743 +05:30 [INF] Executing action method AuthController.Login (LMS) - Validation state: "Valid"
+2025-11-05 10:35:49.743 +05:30 [INF] Attempting login for email: Nik@gmail.com
+2025-11-05 10:36:04.280 +05:30 [ERR] An error occurred using the connection to database 'LMS' on server 'localhost,1433'.
+2025-11-05 10:36:04.281 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'LM.Model.Models.MyLMSDB.LMSDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+2025-11-05 10:36:04.284 +05:30 [ERR] Unexpected error during login
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at EA.Services.RepositoryFactory.Repository`1.GetAllAsync(Expression`1 predicate, Func`2 orderBy, Func`2 include, Boolean enableTracking, Boolean ignoreQueryFilters, CancellationToken cancellationToken) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/RepositoryFactory/Repository.cs:line 55
+   at LM.Services.Repositories.Implementation.AuthRepository.LoginUser(LoginRequestModel model) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/AuthRepository.cs:line 35
+   at AuthController.Login(LoginRequestModel model) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/AuthController.cs:line 206
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+2025-11-05 10:36:04.287 +05:30 [INF] Executed action method AuthController.Login (LMS), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 14543.7453ms.
+2025-11-05 10:36:04.288 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-05 10:36:04.290 +05:30 [INF] Executed action AuthController.Login (LMS) in 14548.1005ms
+2025-11-05 10:36:04.290 +05:30 [INF] Executed endpoint 'AuthController.Login (LMS)'
+2025-11-05 10:36:04.290 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/Auth/Login - 500 null application/json; charset=utf-8 14550.3399ms
+2025-11-05 10:38:28.284 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/Auth/Login - application/json 51
+2025-11-05 10:38:28.289 +05:30 [INF] Executing endpoint 'AuthController.Login (LMS)'
+2025-11-05 10:38:28.291 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LM.Model.RequestModel.LoginRequestModel) on controller AuthController (LMS).
+2025-11-05 10:38:28.639 +05:30 [INF] Executing action method AuthController.Login (LMS) - Validation state: "Valid"
+2025-11-05 10:38:28.639 +05:30 [INF] Attempting login for email: Nik@gmail.com
+2025-11-05 10:38:28.815 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[@__model_Email_0='Nik@gmail.com' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[Address], [u].[CreatedAT], [u].[CreatedBY], [u].[Email], [u].[ModifiedAT], [u].[ModifiedBY], [u].[Name], [u].[PasswordHash], [u].[phone_number], [u].[Role], [u].[Status], [u].[UserSID]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0 AND [u].[Status] = 1
+2025-11-05 10:38:28.855 +05:30 [INF] Login successful for email: Nik@gmail.com
+2025-11-05 10:38:28.857 +05:30 [INF] Executed action method AuthController.Login (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 217.1775ms.
+2025-11-05 10:38:28.857 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`6[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-05 10:38:28.863 +05:30 [INF] Executed action AuthController.Login (LMS) in 233.0155ms
+2025-11-05 10:38:28.863 +05:30 [INF] Executed endpoint 'AuthController.Login (LMS)'
+2025-11-05 10:38:28.863 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/Auth/Login - 200 null application/json; charset=utf-8 579.3517ms
+2025-11-05 10:40:28.084 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5171/getallbook - null 0
+2025-11-05 10:40:28.084 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5171/getallbook - null 0
+2025-11-05 10:40:28.092 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:40:28.094 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:40:28.101 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5171/getallbook - 204 null null 17.341ms
+2025-11-05 10:40:28.101 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5171/getallbook - 204 null null 17.3348ms
+2025-11-05 10:40:28.102 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-11-05 10:40:28.103 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-11-05 10:40:28.105 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:40:28.105 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:40:28.149 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 11:47:25 AM', Current time (UTC): '11/5/2025 5:10:28 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-05 10:40:28.149 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 11:47:25 AM', Current time (UTC): '11/5/2025 5:10:28 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-11-05 10:40:28.158 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 11:47:25 AM', Current time (UTC): '11/5/2025 5:10:28 AM'.
+2025-11-05 10:40:28.158 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '11/4/2025 11:47:25 AM', Current time (UTC): '11/5/2025 5:10:28 AM'.
+2025-11-05 10:40:28.158 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:40:28.158 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:40:28.181 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-11-05 10:40:28.181 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-11-05 10:40:28.205 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-11-05 10:40:28.205 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-11-05 10:40:28.210 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:40:28.210 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:40:28.215 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:40:28.215 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:40:28.454 +05:30 [INF] Executed DbCommand (122ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-11-05 10:40:28.454 +05:30 [INF] Executed DbCommand (163ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-11-05 10:40:28.545 +05:30 [INF] Books list retrieved successfully.
+2025-11-05 10:40:28.545 +05:30 [INF] Books list retrieved successfully.
+2025-11-05 10:40:28.545 +05:30 [INF] Retrieved 7 books
+2025-11-05 10:40:28.545 +05:30 [INF] Retrieved 7 books
+2025-11-05 10:40:28.552 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 346.3443ms.
+2025-11-05 10:40:28.552 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 346.3598ms.
+2025-11-05 10:40:28.552 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:40:28.552 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:40:28.583 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 402.3292ms
+2025-11-05 10:40:28.583 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:40:28.583 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 402.5362ms
+2025-11-05 10:40:28.583 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:40:28.587 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 484.9207ms
+2025-11-05 10:40:28.587 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 484.4814ms
+2025-11-05 10:40:59.019 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5171/Auth/Login - null 0
+2025-11-05 10:40:59.025 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:40:59.027 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5171/Auth/Login - 204 null null 8.3525ms
+2025-11-05 10:40:59.037 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/Auth/Login - application/json 42
+2025-11-05 10:40:59.037 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:40:59.039 +05:30 [INF] Executing endpoint 'AuthController.Login (LMS)'
+2025-11-05 10:40:59.040 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LM.Model.RequestModel.LoginRequestModel) on controller AuthController (LMS).
+2025-11-05 10:40:59.048 +05:30 [INF] Executing action method AuthController.Login (LMS) - Validation state: "Valid"
+2025-11-05 10:40:59.048 +05:30 [INF] Attempting login for email: Nik@gmail.com
+2025-11-05 10:40:59.080 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@__model_Email_0='Nik@gmail.com' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserID], [u].[Address], [u].[CreatedAT], [u].[CreatedBY], [u].[Email], [u].[ModifiedAT], [u].[ModifiedBY], [u].[Name], [u].[PasswordHash], [u].[phone_number], [u].[Role], [u].[Status], [u].[UserSID]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__model_Email_0 AND [u].[Status] = 1
+2025-11-05 10:40:59.083 +05:30 [INF] Login successful for email: Nik@gmail.com
+2025-11-05 10:40:59.084 +05:30 [INF] Executed action method AuthController.Login (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 35.0087ms.
+2025-11-05 10:40:59.084 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`6[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-05 10:40:59.085 +05:30 [INF] Executed action AuthController.Login (LMS) in 44.1715ms
+2025-11-05 10:40:59.085 +05:30 [INF] Executed endpoint 'AuthController.Login (LMS)'
+2025-11-05 10:40:59.085 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/Auth/Login - 200 null application/json; charset=utf-8 48.6607ms
+2025-11-05 10:40:59.187 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5171/getallbook - null 0
+2025-11-05 10:40:59.188 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:40:59.188 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5171/getallbook - 204 null null 0.6653ms
+2025-11-05 10:40:59.191 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-11-05 10:40:59.191 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5171/getallbook - null 0
+2025-11-05 10:40:59.191 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:40:59.192 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5171/getallbook - 204 null null 0.6095ms
+2025-11-05 10:40:59.192 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:40:59.203 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-11-05 10:40:59.204 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:40:59.225 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:40:59.225 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:40:59.225 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-11-05 10:40:59.225 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-11-05 10:40:59.237 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-11-05 10:40:59.237 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-11-05 10:40:59.238 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:40:59.238 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:40:59.241 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:40:59.241 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:40:59.273 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-11-05 10:40:59.273 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-11-05 10:40:59.278 +05:30 [INF] Books list retrieved successfully.
+2025-11-05 10:40:59.279 +05:30 [INF] Retrieved 7 books
+2025-11-05 10:40:59.280 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 42.0785ms.
+2025-11-05 10:40:59.280 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:40:59.280 +05:30 [INF] Books list retrieved successfully.
+2025-11-05 10:40:59.280 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 48.0582ms
+2025-11-05 10:40:59.280 +05:30 [INF] Retrieved 7 books
+2025-11-05 10:40:59.280 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:40:59.280 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 42.7066ms.
+2025-11-05 10:40:59.280 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 89.3217ms
+2025-11-05 10:40:59.280 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:40:59.281 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 48.8087ms
+2025-11-05 10:40:59.281 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:40:59.281 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 78.6235ms
+2025-11-05 10:41:05.604 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-11-05 10:41:05.604 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-11-05 10:41:05.604 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:41:05.604 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:41:05.604 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:41:05.604 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:41:05.604 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-11-05 10:41:05.604 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-11-05 10:41:05.612 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-11-05 10:41:05.612 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-11-05 10:41:05.612 +05:30 [INF] Fetching all books with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:41:05.612 +05:30 [INF] Fetching all books with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:41:05.613 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:41:05.613 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:41:05.667 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-11-05 10:41:05.667 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-11-05 10:41:05.670 +05:30 [INF] Books list retrieved successfully.
+2025-11-05 10:41:05.670 +05:30 [INF] Retrieved 7 books
+2025-11-05 10:41:05.673 +05:30 [INF] Books list retrieved successfully.
+2025-11-05 10:41:05.674 +05:30 [INF] Retrieved 7 books
+2025-11-05 10:41:05.675 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 62.5602ms.
+2025-11-05 10:41:05.675 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 62.5182ms.
+2025-11-05 10:41:05.675 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:41:05.675 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:41:05.676 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 70.5027ms
+2025-11-05 10:41:05.676 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 70.8545ms
+2025-11-05 10:41:05.676 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:41:05.676 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:41:05.676 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 72.6173ms
+2025-11-05 10:41:05.676 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 72.6745ms
+2025-11-05 10:41:08.636 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5171/getallbook - null 0
+2025-11-05 10:41:08.636 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5171/getallbook - null 0
+2025-11-05 10:41:08.637 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:41:08.637 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:41:08.638 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5171/getallbook - 204 null null 1.5111ms
+2025-11-05 10:41:08.638 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5171/getallbook - 204 null null 2.4355ms
+2025-11-05 10:41:08.639 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-11-05 10:41:08.639 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-11-05 10:41:08.640 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:41:08.640 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:41:08.640 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:41:08.640 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:41:08.641 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-11-05 10:41:08.641 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-11-05 10:41:08.643 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-11-05 10:41:08.643 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:41:08.643 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-11-05 10:41:08.645 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:41:08.645 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:41:08.645 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:41:08.653 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-11-05 10:41:08.653 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-11-05 10:41:08.654 +05:30 [INF] Books list retrieved successfully.
+2025-11-05 10:41:08.654 +05:30 [INF] Retrieved 7 books
+2025-11-05 10:41:08.654 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.9873ms.
+2025-11-05 10:41:08.654 +05:30 [INF] Books list retrieved successfully.
+2025-11-05 10:41:08.654 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:41:08.654 +05:30 [INF] Retrieved 7 books
+2025-11-05 10:41:08.654 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.689ms.
+2025-11-05 10:41:08.654 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:41:08.655 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 12.723ms
+2025-11-05 10:41:08.655 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 12.596ms
+2025-11-05 10:41:08.655 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:41:08.655 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:41:08.656 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 16.417ms
+2025-11-05 10:41:08.656 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 16.4267ms
+2025-11-05 10:41:10.453 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5171/getallcategory - null 0
+2025-11-05 10:41:10.453 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:41:10.457 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5171/getallcategory - 204 null null 1.6027ms
+2025-11-05 10:41:10.460 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5171/getallcategory - null 0
+2025-11-05 10:41:10.460 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:41:10.460 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5171/getallcategory - 204 null null 0.4539ms
+2025-11-05 10:41:10.462 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory - null null
+2025-11-05 10:41:10.462 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:41:10.463 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory - null null
+2025-11-05 10:41:10.463 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:41:10.475 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-11-05 10:41:10.475 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-11-05 10:41:10.478 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-11-05 10:41:10.478 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-11-05 10:41:10.479 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-11-05 10:41:10.479 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-11-05 10:41:10.480 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:41:10.480 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:41:10.482 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:41:10.482 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:41:10.545 +05:30 [INF] Executed DbCommand (55ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-11-05 10:41:10.547 +05:30 [INF] Executed DbCommand (57ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-11-05 10:41:10.551 +05:30 [INF] categories list retrieved successfully.
+2025-11-05 10:41:10.551 +05:30 [INF] categories list retrieved successfully.
+2025-11-05 10:41:10.551 +05:30 [INF] Retrieved 8 Category 
+2025-11-05 10:41:10.551 +05:30 [INF] Retrieved 8 Category 
+2025-11-05 10:41:10.551 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 71.6702ms.
+2025-11-05 10:41:10.551 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 71.6343ms.
+2025-11-05 10:41:10.551 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:41:10.552 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:41:10.561 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 82.0999ms
+2025-11-05 10:41:10.561 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-11-05 10:41:10.561 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 82.2292ms
+2025-11-05 10:41:10.561 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory - 200 null application/json; charset=utf-8 98.4449ms
+2025-11-05 10:41:10.561 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-11-05 10:41:10.562 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory - 200 null application/json; charset=utf-8 100.4316ms
+2025-11-05 10:41:13.502 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-11-05 10:41:13.503 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-11-05 10:41:13.504 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:41:13.504 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:41:13.505 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:41:13.505 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:41:13.506 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-11-05 10:41:13.506 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-11-05 10:41:13.506 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-11-05 10:41:13.507 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-11-05 10:41:13.507 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:41:13.507 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:41:13.507 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:41:13.507 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:41:13.515 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-11-05 10:41:13.515 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-11-05 10:41:13.516 +05:30 [INF] Books list retrieved successfully.
+2025-11-05 10:41:13.517 +05:30 [INF] Retrieved 7 books
+2025-11-05 10:41:13.517 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.3745ms.
+2025-11-05 10:41:13.517 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:41:13.517 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 11.2497ms
+2025-11-05 10:41:13.517 +05:30 [INF] Books list retrieved successfully.
+2025-11-05 10:41:13.518 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:41:13.518 +05:30 [INF] Retrieved 7 books
+2025-11-05 10:41:13.518 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.0915ms.
+2025-11-05 10:41:13.518 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 15.4403ms
+2025-11-05 10:41:13.518 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:41:13.519 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 13.0286ms
+2025-11-05 10:41:13.519 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-11-05 10:41:13.519 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 16.23ms
+2025-11-05 10:42:14.956 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5171/getalluser?Page=1&PageSize=10&SearchText=%25&SortColumn=name&SortOrder=asc - null 0
+2025-11-05 10:42:14.956 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5171/getalluser?Page=1&PageSize=10&SearchText=%25&SortColumn=name&SortOrder=asc - null 0
+2025-11-05 10:42:14.957 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:42:14.958 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:42:14.958 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5171/getalluser?Page=1&PageSize=10&SearchText=%25&SortColumn=name&SortOrder=asc - 204 null null 3.0355ms
+2025-11-05 10:42:14.958 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5171/getalluser?Page=1&PageSize=10&SearchText=%25&SortColumn=name&SortOrder=asc - 204 null null 3.0112ms
+2025-11-05 10:42:14.964 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser?Page=1&PageSize=10&SearchText=%25&SortColumn=name&SortOrder=asc - null null
+2025-11-05 10:42:14.965 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:42:14.967 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getalluser?Page=1&PageSize=10&SearchText=%25&SortColumn=name&SortOrder=asc - null null
+2025-11-05 10:42:14.968 +05:30 [INF] CORS policy execution successful.
+2025-11-05 10:42:14.974 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-11-05 10:42:14.974 +05:30 [INF] Executing endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-11-05 10:42:14.982 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-11-05 10:42:14.982 +05:30 [INF] Route matched with {action = "Getalluser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSUserResponseModel]]] Getalluser(SearchRequestModel) on controller LMS.Controllers.UserController (LMS).
+2025-11-05 10:42:14.987 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-11-05 10:42:14.987 +05:30 [INF] Executing action method LMS.Controllers.UserController.Getalluser (LMS) - Validation state: "Valid"
+2025-11-05 10:42:14.994 +05:30 [INF] Fetching all Users with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"name","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:42:14.994 +05:30 [INF] Fetching all Users with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"name","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-11-05 10:42:14.996 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"name","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:42:14.996 +05:30 [INF] Fetching list of user with parameters: {"SortColumn":"name","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-11-05 10:42:15.109 +05:30 [INF] Executed DbCommand (96ms) [Parameters=[p0='<Search><SortColumn>name</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-11-05 10:42:15.109 +05:30 [INF] Executed DbCommand (96ms) [Parameters=[p0='<Search><SortColumn>name</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllUser @p0
+2025-11-05 10:42:15.122 +05:30 [INF] user list retrieved successfully.
+2025-11-05 10:42:15.122 +05:30 [INF] user list retrieved successfully.
+2025-11-05 10:42:15.122 +05:30 [INF] Retrieved 4 users
+2025-11-05 10:42:15.122 +05:30 [INF] Retrieved 4 users
+2025-11-05 10:42:15.123 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 136.0427ms.
+2025-11-05 10:42:15.123 +05:30 [INF] Executed action method LMS.Controllers.UserController.Getalluser (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 135.9994ms.
+2025-11-05 10:42:15.123 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:42:15.123 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-11-05 10:42:15.156 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 171.983ms
+2025-11-05 10:42:15.156 +05:30 [INF] Executed action LMS.Controllers.UserController.Getalluser (LMS) in 173.7465ms
+2025-11-05 10:42:15.156 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-11-05 10:42:15.156 +05:30 [INF] Executed endpoint 'LMS.Controllers.UserController.Getalluser (LMS)'
+2025-11-05 10:42:15.157 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser?Page=1&PageSize=10&SearchText=%25&SortColumn=name&SortOrder=asc - 200 null application/json; charset=utf-8 192.3639ms
+2025-11-05 10:42:15.157 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getalluser?Page=1&PageSize=10&SearchText=%25&SortColumn=name&SortOrder=asc - 200 null application/json; charset=utf-8 189.7225ms
+2025-11-05 10:54:08.663 +05:30 [INF] Application is shutting down...

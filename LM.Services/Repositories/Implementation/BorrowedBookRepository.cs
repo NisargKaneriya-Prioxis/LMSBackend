@@ -149,11 +149,10 @@ public class BorrowedBookRepository : IBorrowedBookRepository
                 borrowedList.Add(borrowed);
                 
                 book.AvailableQuantity = (int)book.AvailableQuantity-1 ;
+                book.BorrowedCount = (int)book.BorrowedCount + 1;
                 if (book.AvailableQuantity == 0)
                 {
                     book.BorrowedStatus = (int)Enums.UnAvailable;
-                
-                
                 }
                 _context.Books.Update(book);
                 await _context.SaveChangesAsync();
@@ -186,75 +185,5 @@ public class BorrowedBookRepository : IBorrowedBookRepository
         }
     }
     
-    //returnBook
-    public async Task<LMSBorrowedBookResponseModel> ReturnBook(string borrowedSid, string userSid)
-{
-    _logger.LogInformation("Returning book for BorrowedSID: {BorrowedSid}, UserSID: {UserSid}", borrowedSid, userSid);
-
-    try
-    {
-        var borrowedRecord = await _unitOfWork.GetRepository<BorrowedBook>()
-            .SingleOrDefaultAsync(b => b.BorrowedSid == borrowedSid && b.BorrowedBookStatus == (int)Enums.Borrowed);
-
-        if (borrowedRecord == null)
-        {
-            _logger.LogWarning("Return failed: No active borrowed record found for BorrowedSID: {BorrowedSid}", borrowedSid);
-            throw new HttpStatusCodeException(404, "Borrowed record not found or already returned.");
-        }
-
-        var user = await _unitOfWork.GetRepository<User>()
-            .SingleOrDefaultAsync(u => u.UserSid == userSid && u.Status == (int)Enums.Active);
-
-        if (user == null)
-        {
-            _logger.LogWarning("Return failed: User not found with SID: {UserSid}", userSid);
-            throw new HttpStatusCodeException(404, "User not found.");
-        }
-
-        var book = await _unitOfWork.GetRepository<Book>()
-            .SingleOrDefaultAsync(b => b.BookId == borrowedRecord.BookId && b.Status == (int)Enums.Active);
-
-        if (book == null)
-        {
-            _logger.LogWarning("Return failed: Book not found with ID: {BookId}", borrowedRecord.BookId);
-            throw new HttpStatusCodeException(404, "Book not found.");
-        }
-        borrowedRecord.ReturnDate = DateTime.UtcNow;
-        borrowedRecord.BorrowedBookStatus = (int)Enums.Unborrowed;
-        borrowedRecord.ReturnDate = DateTime.UtcNow;
-        borrowedRecord.ModifiedBy = user.UserSid;
-        book.AvailableQuantity = (int)book.AvailableQuantity + 1;
-        if (book.AvailableQuantity > 0)
-        {
-            book.BorrowedStatus = (int)Enums.IsAvailable;
-        }
-
-        _context.Books.Update(book);
-        _context.BorrowedBooks.Update(borrowedRecord);
-        await _unitOfWork.CommitAsync();
-
-        var response = new LMSBorrowedBookResponseModel
-        {
-            BorrowedSID = borrowedRecord.BorrowedSid,
-            IssueDate = borrowedRecord.IssueDate,
-            DueDate = borrowedRecord.DueDate,
-            ReturnDate = borrowedRecord.ReturnDate,
-            BorrowedBookStatus = borrowedRecord.BorrowedBookStatus
-        };
-
-        _logger.LogInformation("Book successfully returned for BorrowedSID: {BorrowedSid}", borrowedSid);
-        return response;
-    }
-    catch (HttpStatusCodeException ex)
-    {
-        _logger.LogWarning("Known error occurred while returning book: {Message}", ex.Message);
-        throw;
-    }
-    catch (Exception ex)
-    {
-        _logger.LogError(ex, "Unexpected error occurred while returning book");
-        throw new HttpStatusCodeException(500, "An unexpected error occurred while returning book");
-    }
-}
-
+   
 }

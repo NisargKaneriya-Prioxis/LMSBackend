@@ -69,10 +69,15 @@ public partial class Book
     [StringLength(50)]
     public string? ModifiedBy { get; set; }
 
+    public int BorrowedCount { get; set; }
+
     [InverseProperty("Book")]
     public virtual ICollection<BorrowedBook> BorrowedBooks { get; set; } = new List<BorrowedBook>();
 
     [ForeignKey("CategoryId")]
     [InverseProperty("Books")]
     public virtual Category Category { get; set; } = null!;
+
+    [InverseProperty("Book")]
+    public virtual ICollection<RequestBook> RequestBooks { get; set; } = new List<RequestBook>();
 }

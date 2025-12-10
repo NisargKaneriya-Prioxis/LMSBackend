@@ -2,6 +2,7 @@ using EvaluationAPI.Controllers;
 using LM.Model.RequestModel;
 using LM.Model.ResponseModel;
 using LM.Services.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -60,9 +61,9 @@ public class BorrowedBookController : BaseController
         return NoContent();
     }
     
-    
+    [Authorize(Roles = "Admin")]
     [HttpPost("Inserborrowedbook")]
-    public async Task<ActionResult<List<LMSBorrowedBookResponseModel>>> InsertBorrowedBook(string booksid, string usersid,[FromBody] List<LMSBorrowedBookRequestModel> borrowedbook)
+    public async Task<ActionResult<List<LMSBorrowedBookResponseModel>>> InsertBorrowedBook([FromQuery] string booksid, [FromQuery] string usersid,[FromBody] List<LMSBorrowedBookRequestModel> borrowedbook)
     {
         List<LMSBorrowedBookResponseModel> createdBook = await _borrowedbookrepository.InsertBorrowedBook(booksid,usersid,borrowedbook);
         if (createdBook == null)

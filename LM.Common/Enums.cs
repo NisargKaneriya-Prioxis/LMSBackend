@@ -12,5 +12,7 @@ public enum Enums
     Unpaid = 7,
     Borrowed = 9,
     Unborrowed = 10,
+    RequestDone = 11,
+    RequestNotDone = 12
     
 }

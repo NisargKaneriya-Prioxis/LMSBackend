@@ -61,7 +61,7 @@ public class BookController : BaseController
         return Ok(book);
     }
     
-    // [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     //insert controller 
     [HttpPost("InsertBook")]
     public async Task<ActionResult<List<LMSBookResponseModel>>> InsertBook(string CategorySID,[FromBody] List<LMSBookRequestModel> book)
@@ -77,7 +77,7 @@ public class BookController : BaseController
         return Ok(createdBook);
     }
     
-    // [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     //Update controller 
     [HttpPost("updateBook/{BookSID}")]
     public async Task<ActionResult<LMSBookResponseModel>> UpdateBook([FromRoute] string CategorySID,[FromBody] LMSBookRequestModel model, [FromRoute] string booksid)
@@ -93,7 +93,7 @@ public class BookController : BaseController
         return NotFound();
     }
     
-    // [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     //delete Book
     [HttpDelete("deletebook/{bookSid}")]
     public async Task<ActionResult> DeleteBook([FromRoute] string bookSid)

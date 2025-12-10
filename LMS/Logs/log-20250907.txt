@@ -1,0 +1,721 @@
+2025-09-07 09:02:39.238 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-07 09:02:39.325 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-07 09:02:39.327 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-07 09:02:39.327 +05:30 [INF] Hosting environment: Development
+2025-09-07 09:02:39.327 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-07 09:02:40.226 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-07 09:02:40.635 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 410.2686ms
+2025-09-07 09:02:52.247 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-07 09:02:52.287 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-07 09:02:52.320 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:02:52.322 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:02:52.334 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 09:02:52.438 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 09:02:52.441 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 09:02:52.450 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 09:02:52.695 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-07 09:02:53.273 +05:30 [INF] Executed DbCommand (134ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 09:02:53.379 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 09:02:53.380 +05:30 [INF] Retrieved 6 books
+2025-09-07 09:02:53.388 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 946.82ms.
+2025-09-07 09:02:53.395 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 09:02:53.528 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 1190.8645ms
+2025-09-07 09:02:53.529 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:02:53.541 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 1296.3903ms
+2025-09-07 09:05:16.696 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 09:05:16.696 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 09:05:16.701 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:05:16.701 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:05:16.701 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:05:16.701 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:05:16.701 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 09:05:16.701 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 09:05:16.708 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 09:05:16.708 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 09:05:16.708 +05:30 [INF] Fetching all books with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 09:05:16.708 +05:30 [INF] Fetching all books with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 09:05:16.709 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 09:05:16.710 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 09:05:16.796 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 09:05:16.801 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 09:05:16.801 +05:30 [INF] Retrieved 6 books
+2025-09-07 09:05:16.805 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 97.27ms.
+2025-09-07 09:05:16.806 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 09:05:16.807 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 105.1884ms
+2025-09-07 09:05:16.807 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:05:16.807 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 112.0028ms
+2025-09-07 09:05:16.808 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 09:05:16.812 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 09:05:16.812 +05:30 [INF] Retrieved 6 books
+2025-09-07 09:05:16.812 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 104.338ms.
+2025-09-07 09:05:16.812 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 09:05:16.814 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 111.2657ms
+2025-09-07 09:05:16.814 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:05:16.814 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 118.3237ms
+2025-09-07 09:05:19.066 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/dynamic/LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03 - null null
+2025-09-07 09:05:19.069 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:05:19.069 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-07 09:05:19.074 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LM.Model.ResponseModel.LMSBookResponseModel]] GetByBookSID(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 09:05:19.081 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetByBookSID (LMS) - Validation state: "Valid"
+2025-09-07 09:05:19.083 +05:30 [INF] Fetching book with SID: LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03
+2025-09-07 09:05:19.085 +05:30 [INF] Fetching book with SID: LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03
+2025-09-07 09:05:19.134 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[p0='LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookBySID @p0
+2025-09-07 09:05:19.136 +05:30 [INF] Successfully retrieved book: Hello (SID: LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03)
+2025-09-07 09:05:19.136 +05:30 [INF] Successfully retrieved book: Hello (SID: LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03)
+2025-09-07 09:05:19.136 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetByBookSID (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 55.1523ms.
+2025-09-07 09:05:19.136 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.ResponseModel.LMSBookResponseModel'.
+2025-09-07 09:05:19.136 +05:30 [INF] Executed action LMS.Controllers.BookController.GetByBookSID (LMS) in 61.7698ms
+2025-09-07 09:05:19.137 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-07 09:05:19.137 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/dynamic/LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03 - 200 null application/json; charset=utf-8 70.8639ms
+2025-09-07 09:05:22.042 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/dynamic/LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03 - null null
+2025-09-07 09:05:22.044 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:05:22.044 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-07 09:05:22.044 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[LM.Model.ResponseModel.LMSBookResponseModel]] GetByBookSID(System.String) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 09:05:22.046 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetByBookSID (LMS) - Validation state: "Valid"
+2025-09-07 09:05:22.046 +05:30 [INF] Fetching book with SID: LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03
+2025-09-07 09:05:22.046 +05:30 [INF] Fetching book with SID: LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03
+2025-09-07 09:05:22.057 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[p0='LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookBySID @p0
+2025-09-07 09:05:22.058 +05:30 [INF] Successfully retrieved book: Hello (SID: LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03)
+2025-09-07 09:05:22.058 +05:30 [INF] Successfully retrieved book: Hello (SID: LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03)
+2025-09-07 09:05:22.058 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetByBookSID (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.0221ms.
+2025-09-07 09:05:22.059 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.ResponseModel.LMSBookResponseModel'.
+2025-09-07 09:05:22.059 +05:30 [INF] Executed action LMS.Controllers.BookController.GetByBookSID (LMS) in 14.7841ms
+2025-09-07 09:05:22.059 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetByBookSID (LMS)'
+2025-09-07 09:05:22.059 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/dynamic/LIBd5bb5e65-25aa-46c7-b330-8d9be5a47e03 - 200 null application/json; charset=utf-8 17.5439ms
+2025-09-07 09:05:28.764 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-07 09:05:28.764 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-07 09:05:28.765 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:05:28.765 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:05:28.765 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:05:28.765 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:05:28.765 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 09:05:28.765 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 09:05:28.767 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 09:05:28.767 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 09:05:28.767 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 09:05:28.767 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 09:05:28.768 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 09:05:28.770 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 09:05:28.793 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 09:05:28.793 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 09:05:28.795 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 09:05:28.795 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 09:05:28.795 +05:30 [INF] Retrieved 6 books
+2025-09-07 09:05:28.796 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 28.5777ms.
+2025-09-07 09:05:28.796 +05:30 [INF] Retrieved 6 books
+2025-09-07 09:05:28.796 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 29.1912ms.
+2025-09-07 09:05:28.796 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 09:05:28.796 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 09:05:28.797 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 31.169ms
+2025-09-07 09:05:28.797 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 31.3179ms
+2025-09-07 09:05:28.797 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:05:28.797 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:05:28.798 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 34.0226ms
+2025-09-07 09:05:28.798 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 34.6622ms
+2025-09-07 09:19:07.630 +05:30 [INF] Application is shutting down...
+2025-09-07 09:19:12.356 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-07 09:19:12.428 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-07 09:19:12.430 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-07 09:19:12.430 +05:30 [INF] Hosting environment: Development
+2025-09-07 09:19:12.430 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-07 09:19:12.976 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-07 09:19:13.094 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.3422ms
+2025-09-07 09:19:42.431 +05:30 [INF] Application is shutting down...
+2025-09-07 09:19:43.567 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-07 09:19:43.635 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-07 09:19:43.637 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-07 09:19:43.637 +05:30 [INF] Hosting environment: Development
+2025-09-07 09:19:43.637 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-07 09:19:44.300 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-07 09:19:44.432 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 131.9752ms
+2025-09-07 09:20:06.674 +05:30 [INF] Application is shutting down...
+2025-09-07 09:20:29.712 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-07 09:20:29.789 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-07 09:20:29.791 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-07 09:20:29.791 +05:30 [INF] Hosting environment: Development
+2025-09-07 09:20:29.791 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-07 09:20:30.261 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-07 09:20:30.413 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.664ms
+2025-09-07 09:21:21.696 +05:30 [INF] Application is shutting down...
+2025-09-07 09:21:24.187 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-07 09:21:24.262 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-07 09:21:24.265 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-07 09:21:24.265 +05:30 [INF] Hosting environment: Development
+2025-09-07 09:21:24.265 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-07 09:21:24.688 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-07 09:21:24.824 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.271ms
+2025-09-07 09:22:26.078 +05:30 [INF] Application is shutting down...
+2025-09-07 09:22:58.691 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-07 09:22:58.770 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-07 09:22:58.771 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-07 09:22:58.772 +05:30 [INF] Hosting environment: Development
+2025-09-07 09:22:58.772 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-07 09:22:59.115 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-07 09:22:59.243 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 128.7085ms
+2025-09-07 09:23:17.295 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/addcategory?categories=%7B%0A%20%20%22categoryName%22%3A%20%22Korean%20drama%22%0A%7D - null 0
+2025-09-07 09:23:17.305 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-07 09:23:17.330 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:23:17.332 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.InsertCategory (LMS)'
+2025-09-07 09:23:17.343 +05:30 [INF] Route matched with {action = "InsertCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] InsertCategory(System.Collections.Generic.List`1[LM.Model.RequestModel.LMSCategoryRequestModel]) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 09:23:17.450 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.InsertCategory (LMS) - Validation state: "Valid"
+2025-09-07 09:23:17.451 +05:30 [INF] Inserting new category
+2025-09-07 09:23:17.453 +05:30 [INF] Fetching list of categories with parameters: []
+2025-09-07 09:23:17.454 +05:30 [WRN] Insert failed: Categories list cannot be empty.
+2025-09-07 09:23:17.455 +05:30 [WRN] Known error occurred while inserting category: Categories list cannot be empty.
+2025-09-07 09:23:17.459 +05:30 [INF] Executed action LMS.Controllers.CategoryController.InsertCategory (LMS) in 113.6952ms
+2025-09-07 09:23:17.459 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.InsertCategory (LMS)'
+2025-09-07 09:23:17.459 +05:30 [ERR] Custom error occurred: Categories list cannot be empty.
+LM.Common.HttpStatusCodeException: Categories list cannot be empty.
+   at LM.Services.Repositories.Implementation.CategoryRepository.InsertCategory(List`1 categories) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/CategoryRepository.cs:line 82
+   at LMS.Controllers.CategoryController.InsertCategory(List`1 categories) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/CategoryController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-07 09:23:17.509 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/addcategory?categories=%7B%0A%20%20%22categoryName%22%3A%20%22Korean%20drama%22%0A%7D - 400 null application/json 213.8286ms
+2025-09-07 09:23:49.938 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/addcategory - null 0
+2025-09-07 09:23:49.940 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:23:49.940 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.InsertCategory (LMS)'
+2025-09-07 09:23:49.941 +05:30 [INF] Route matched with {action = "InsertCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] InsertCategory(System.Collections.Generic.List`1[LM.Model.RequestModel.LMSCategoryRequestModel]) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 09:23:49.943 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.InsertCategory (LMS) - Validation state: "Valid"
+2025-09-07 09:23:49.944 +05:30 [INF] Inserting new category
+2025-09-07 09:23:49.944 +05:30 [INF] Fetching list of categories with parameters: []
+2025-09-07 09:23:49.944 +05:30 [WRN] Insert failed: Categories list cannot be empty.
+2025-09-07 09:23:49.944 +05:30 [WRN] Known error occurred while inserting category: Categories list cannot be empty.
+2025-09-07 09:23:49.944 +05:30 [INF] Executed action LMS.Controllers.CategoryController.InsertCategory (LMS) in 3.4314ms
+2025-09-07 09:23:49.944 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.InsertCategory (LMS)'
+2025-09-07 09:23:49.944 +05:30 [ERR] Custom error occurred: Categories list cannot be empty.
+LM.Common.HttpStatusCodeException: Categories list cannot be empty.
+   at LM.Services.Repositories.Implementation.CategoryRepository.InsertCategory(List`1 categories) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/CategoryRepository.cs:line 82
+   at LMS.Controllers.CategoryController.InsertCategory(List`1 categories) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/CategoryController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-07 09:23:49.946 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/addcategory - 400 null application/json 8.4688ms
+2025-09-07 09:25:52.798 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/addcategory?categories=%7B%0A%20%20%22categoryName%22%3A%20%22string%22%0A%7D - null 0
+2025-09-07 09:25:52.801 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:25:52.802 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.InsertCategory (LMS)'
+2025-09-07 09:25:52.802 +05:30 [INF] Route matched with {action = "InsertCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] InsertCategory(System.Collections.Generic.List`1[LM.Model.RequestModel.LMSCategoryRequestModel]) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 09:25:52.807 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.InsertCategory (LMS) - Validation state: "Valid"
+2025-09-07 09:25:52.807 +05:30 [INF] Inserting new category
+2025-09-07 09:25:52.807 +05:30 [INF] Fetching list of categories with parameters: []
+2025-09-07 09:25:52.807 +05:30 [WRN] Insert failed: Categories list cannot be empty.
+2025-09-07 09:25:52.807 +05:30 [WRN] Known error occurred while inserting category: Categories list cannot be empty.
+2025-09-07 09:25:52.807 +05:30 [INF] Executed action LMS.Controllers.CategoryController.InsertCategory (LMS) in 5.1554ms
+2025-09-07 09:25:52.808 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.InsertCategory (LMS)'
+2025-09-07 09:25:52.808 +05:30 [ERR] Custom error occurred: Categories list cannot be empty.
+LM.Common.HttpStatusCodeException: Categories list cannot be empty.
+   at LM.Services.Repositories.Implementation.CategoryRepository.InsertCategory(List`1 categories) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/CategoryRepository.cs:line 82
+   at LMS.Controllers.CategoryController.InsertCategory(List`1 categories) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/CategoryController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-07 09:25:52.809 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/addcategory?categories=%7B%0A%20%20%22categoryName%22%3A%20%22string%22%0A%7D - 400 null application/json 11.5821ms
+2025-09-07 09:29:47.393 +05:30 [INF] Application is shutting down...
+2025-09-07 09:29:50.746 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-07 09:29:50.817 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-07 09:29:50.818 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-07 09:29:50.818 +05:30 [INF] Hosting environment: Development
+2025-09-07 09:29:50.818 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-07 09:29:51.106 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-07 09:29:51.205 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.8714ms
+2025-09-07 09:30:13.583 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/addcategory?categories=%7B%0A%20%20%22categoryName%22%3A%20%22Korean%20Drama%22%0A%7D - null 0
+2025-09-07 09:30:13.595 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-07 09:30:13.624 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:30:13.625 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.InsertCategory (LMS)'
+2025-09-07 09:30:13.637 +05:30 [INF] Route matched with {action = "InsertCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] InsertCategory(System.Collections.Generic.List`1[LM.Model.RequestModel.LMSCategoryRequestModel]) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 09:30:13.744 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.InsertCategory (LMS) - Validation state: "Valid"
+2025-09-07 09:30:13.745 +05:30 [INF] Inserting new category
+2025-09-07 09:30:13.747 +05:30 [INF] Fetching list of categories with parameters: []
+2025-09-07 09:30:13.748 +05:30 [WRN] Insert failed: Categories list cannot be empty.
+2025-09-07 09:30:13.749 +05:30 [WRN] Known error occurred while inserting category: Categories list cannot be empty.
+2025-09-07 09:30:13.752 +05:30 [INF] Executed action LMS.Controllers.CategoryController.InsertCategory (LMS) in 113.4974ms
+2025-09-07 09:30:13.752 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.InsertCategory (LMS)'
+2025-09-07 09:30:13.753 +05:30 [ERR] Custom error occurred: Categories list cannot be empty.
+LM.Common.HttpStatusCodeException: Categories list cannot be empty.
+   at LM.Services.Repositories.Implementation.CategoryRepository.InsertCategory(List`1 categories) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/CategoryRepository.cs:line 82
+   at LMS.Controllers.CategoryController.InsertCategory(List`1 categories) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/CategoryController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-07 09:30:13.801 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/addcategory?categories=%7B%0A%20%20%22categoryName%22%3A%20%22Korean%20Drama%22%0A%7D - 400 null application/json 218.4635ms
+2025-09-07 09:31:56.829 +05:30 [INF] Application is shutting down...
+2025-09-07 09:31:58.531 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-07 09:31:58.594 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-07 09:31:58.596 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-07 09:31:58.596 +05:30 [INF] Hosting environment: Development
+2025-09-07 09:31:58.596 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-07 09:31:59.278 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-07 09:31:59.385 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.3755ms
+2025-09-07 09:32:10.171 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/addcategory?categories=%7B%0A%20%20%22categoryName%22%3A%20%22Korean%20Drama%22%0A%7D - null 0
+2025-09-07 09:32:10.185 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-07 09:32:10.210 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:32:10.212 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.InsertCategory (LMS)'
+2025-09-07 09:32:10.224 +05:30 [INF] Route matched with {action = "InsertCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] InsertCategory(System.Collections.Generic.List`1[LM.Model.RequestModel.LMSCategoryRequestModel]) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 09:32:10.330 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.InsertCategory (LMS) - Validation state: "Valid"
+2025-09-07 09:32:10.331 +05:30 [INF] Inserting new category
+2025-09-07 09:32:10.333 +05:30 [INF] Fetching list of categories with parameters: []
+2025-09-07 09:32:10.334 +05:30 [WRN] Insert failed: Categories list cannot be empty.
+2025-09-07 09:32:10.335 +05:30 [WRN] Known error occurred while inserting category: Categories list cannot be empty.
+2025-09-07 09:32:10.338 +05:30 [INF] Executed action LMS.Controllers.CategoryController.InsertCategory (LMS) in 112.6242ms
+2025-09-07 09:32:10.339 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.InsertCategory (LMS)'
+2025-09-07 09:32:10.339 +05:30 [ERR] Custom error occurred: Categories list cannot be empty.
+LM.Common.HttpStatusCodeException: Categories list cannot be empty.
+   at LM.Services.Repositories.Implementation.CategoryRepository.InsertCategory(List`1 categories) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/Repositories/Implementation/CategoryRepository.cs:line 82
+   at LMS.Controllers.CategoryController.InsertCategory(List`1 categories) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Controllers/CategoryController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-09-07 09:32:10.396 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/addcategory?categories=%7B%0A%20%20%22categoryName%22%3A%20%22Korean%20Drama%22%0A%7D - 400 null application/json 225.1518ms
+2025-09-07 09:40:50.603 +05:30 [INF] Application is shutting down...
+2025-09-07 09:40:53.478 +05:30 [INF] User profile is available. Using '/Users/nisargkaneriya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-07 09:40:53.548 +05:30 [INF] Now listening on: http://localhost:5171
+2025-09-07 09:40:53.551 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-07 09:40:53.551 +05:30 [INF] Hosting environment: Development
+2025-09-07 09:40:53.551 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS
+2025-09-07 09:40:54.082 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - null null
+2025-09-07 09:40:54.187 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.3885ms
+2025-09-07 09:41:08.274 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5171/addcategory - application/json 46
+2025-09-07 09:41:08.289 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-07 09:41:08.318 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:41:08.320 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.InsertCategory (LMS)'
+2025-09-07 09:41:08.330 +05:30 [INF] Route matched with {action = "InsertCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] InsertCategory(System.Collections.Generic.List`1[LM.Model.RequestModel.LMSCategoryRequestModel]) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 09:41:08.483 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.InsertCategory (LMS) - Validation state: "Valid"
+2025-09-07 09:41:08.484 +05:30 [INF] Inserting new category
+2025-09-07 09:41:08.487 +05:30 [INF] Fetching list of categories with parameters: [{"CategoryName":"Korean Drama","$type":"LMSCategoryRequestModel"}]
+2025-09-07 09:41:08.854 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-09-07 09:41:09.451 +05:30 [INF] Executed DbCommand (41ms) [Parameters=[@__c_CategoryName_0='Korean Drama' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[CategorySID]
+FROM [Categories] AS [c]
+WHERE [c].[CategoryName] = @__c_CategoryName_0
+2025-09-07 09:41:09.630 +05:30 [INF] Executed DbCommand (40ms) [Parameters=[@p0='Korean Drama' (Size = 50), @p1='CAT65dce0a2-6413-4a49-8389-006152d2f4f8' (Nullable = false) (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([CategoryName], [CategorySID])
+OUTPUT INSERTED.[CategoryID]
+VALUES (@p0, @p1);
+2025-09-07 09:41:09.652 +05:30 [INF] Successfully inserted Category
+2025-09-07 09:41:09.652 +05:30 [INF] Book created successfully
+2025-09-07 09:41:09.655 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.InsertCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1169.2575ms.
+2025-09-07 09:41:09.663 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LM.Model.ResponseModel.LMSCategoryResponseModel, LM.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-07 09:41:09.690 +05:30 [INF] Executed action LMS.Controllers.CategoryController.InsertCategory (LMS) in 1357.6135ms
+2025-09-07 09:41:09.691 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.InsertCategory (LMS)'
+2025-09-07 09:41:09.700 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5171/addcategory - 200 null application/json; charset=utf-8 1429.9608ms
+2025-09-07 09:41:17.988 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory - null null
+2025-09-07 09:41:17.994 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 09:41:17.999 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 09:41:18.003 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-09-07 09:41:18.004 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 09:41:18.012 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 09:41:18.112 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-09-07 09:41:18.184 +05:30 [INF] categories list retrieved successfully.
+2025-09-07 09:41:18.184 +05:30 [INF] Retrieved 6 Category 
+2025-09-07 09:41:18.188 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 184.8582ms.
+2025-09-07 09:41:18.189 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 09:41:18.211 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 211.6651ms
+2025-09-07 09:41:18.211 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 09:41:18.213 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory - 200 null application/json; charset=utf-8 226.4808ms
+2025-09-07 09:42:12.307 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-07 09:42:12.307 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-07 09:42:12.317 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:42:12.317 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:42:12.317 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:42:12.318 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:42:12.327 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 09:42:12.327 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 09:42:12.338 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 09:42:12.338 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 09:42:12.340 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 09:42:12.340 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 09:42:12.342 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 09:42:12.342 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 09:42:12.385 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 09:42:12.397 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 09:42:12.398 +05:30 [INF] Retrieved 6 books
+2025-09-07 09:42:12.398 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 60.0818ms.
+2025-09-07 09:42:12.399 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 09:42:12.402 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 09:42:12.403 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 09:42:12.404 +05:30 [INF] Retrieved 6 books
+2025-09-07 09:42:12.404 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 66.0245ms.
+2025-09-07 09:42:12.404 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 09:42:12.421 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 93.3695ms
+2025-09-07 09:42:12.421 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 93.0547ms
+2025-09-07 09:42:12.421 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:42:12.421 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 09:42:12.421 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 114.2377ms
+2025-09-07 09:42:12.421 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 114.2374ms
+2025-09-07 09:42:14.629 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory - null null
+2025-09-07 09:42:14.629 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory - null null
+2025-09-07 09:42:14.630 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:42:14.630 +05:30 [INF] CORS policy execution successful.
+2025-09-07 09:42:14.630 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 09:42:14.630 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 09:42:14.631 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 09:42:14.631 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 09:42:14.637 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-09-07 09:42:14.637 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-09-07 09:42:14.637 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 09:42:14.637 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 09:42:14.757 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 09:42:14.757 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 09:42:14.774 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-09-07 09:42:14.775 +05:30 [INF] categories list retrieved successfully.
+2025-09-07 09:42:14.775 +05:30 [INF] Retrieved 6 Category 
+2025-09-07 09:42:14.775 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 138.3993ms.
+2025-09-07 09:42:14.776 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 09:42:14.776 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 143.7584ms
+2025-09-07 09:42:14.776 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 09:42:14.776 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory - 200 null application/json; charset=utf-8 146.6954ms
+2025-09-07 09:42:14.777 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-09-07 09:42:14.778 +05:30 [INF] categories list retrieved successfully.
+2025-09-07 09:42:14.778 +05:30 [INF] Retrieved 6 Category 
+2025-09-07 09:42:14.778 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 141.0957ms.
+2025-09-07 09:42:14.778 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 09:42:14.779 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 147.6072ms
+2025-09-07 09:42:14.779 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 09:42:14.779 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory - 200 null application/json; charset=utf-8 149.7776ms
+2025-09-07 10:23:13.567 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-07 10:23:13.567 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-07 10:23:13.582 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:23:13.582 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:23:13.585 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:23:13.585 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:23:13.586 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 10:23:13.586 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 10:23:13.598 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 10:23:13.598 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 10:23:13.598 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:23:13.598 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:23:13.599 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:23:13.599 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:23:13.667 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 10:23:13.669 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 10:23:13.669 +05:30 [INF] Retrieved 6 books
+2025-09-07 10:23:13.669 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 71.3839ms.
+2025-09-07 10:23:13.670 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:23:13.671 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 80.9684ms
+2025-09-07 10:23:13.671 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:23:13.671 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 104.7777ms
+2025-09-07 10:23:13.686 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 10:23:13.687 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 10:23:13.687 +05:30 [INF] Retrieved 6 books
+2025-09-07 10:23:13.687 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 89.3687ms.
+2025-09-07 10:23:13.688 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:23:13.688 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 98.9598ms
+2025-09-07 10:23:13.688 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:23:13.688 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 122.313ms
+2025-09-07 10:43:04.282 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 10:43:04.289 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:43:04.289 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:43:04.290 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 10:43:04.345 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 10:43:04.346 +05:30 [INF] Fetching all books with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:43:04.347 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:43:04.420 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 10:43:04.422 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 10:43:04.422 +05:30 [INF] Retrieved 6 books
+2025-09-07 10:43:04.429 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 83.1247ms.
+2025-09-07 10:43:04.429 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:43:04.431 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 136.5062ms
+2025-09-07 10:43:04.431 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:43:04.431 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 149.4571ms
+2025-09-07 10:49:41.453 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 10:49:41.458 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:49:41.459 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:49:41.459 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 10:49:41.503 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 10:49:41.503 +05:30 [INF] Fetching all books with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:49:41.513 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:49:41.595 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 10:49:41.600 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 10:49:41.600 +05:30 [INF] Retrieved 6 books
+2025-09-07 10:49:41.601 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 97.7539ms.
+2025-09-07 10:49:41.627 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:49:41.628 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 133.1684ms
+2025-09-07 10:49:41.628 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:49:41.628 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 175.2236ms
+2025-09-07 10:49:45.332 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-07 10:49:45.333 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:49:45.333 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:49:45.335 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 10:49:45.339 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook - null null
+2025-09-07 10:49:45.345 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 10:49:45.345 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:49:45.345 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:49:45.345 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:49:45.346 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:49:45.346 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 10:49:45.347 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 10:49:45.347 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:49:45.348 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:49:45.369 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 10:49:45.370 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 10:49:45.370 +05:30 [INF] Retrieved 6 books
+2025-09-07 10:49:45.370 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25.371ms.
+2025-09-07 10:49:45.371 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:49:45.371 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 27.1597ms
+2025-09-07 10:49:45.371 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:49:45.371 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 39.1791ms
+2025-09-07 10:49:45.402 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 10:49:45.403 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 10:49:45.404 +05:30 [INF] Retrieved 6 books
+2025-09-07 10:49:45.404 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 56.6944ms.
+2025-09-07 10:49:45.404 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:49:45.406 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 59.7907ms
+2025-09-07 10:49:45.406 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:49:45.406 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook - 200 null application/json; charset=utf-8 66.9488ms
+2025-09-07 10:49:46.748 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 10:49:46.748 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 10:49:46.749 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:49:46.749 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:49:46.749 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:49:46.749 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:49:46.750 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 10:49:46.750 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 10:49:46.751 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 10:49:46.752 +05:30 [INF] Fetching all books with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:49:46.754 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 10:49:46.755 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:49:46.758 +05:30 [INF] Fetching all books with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:49:46.772 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:49:46.775 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 10:49:46.776 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 10:49:46.776 +05:30 [INF] Retrieved 6 books
+2025-09-07 10:49:46.776 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.9442ms.
+2025-09-07 10:49:46.785 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 10:49:46.787 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:49:46.788 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 37.8731ms
+2025-09-07 10:49:46.788 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:49:46.789 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 40.8949ms
+2025-09-07 10:49:46.790 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 10:49:46.796 +05:30 [INF] Retrieved 6 books
+2025-09-07 10:49:46.796 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 38.3169ms.
+2025-09-07 10:49:46.798 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:49:46.799 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 46.7045ms
+2025-09-07 10:49:46.799 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:49:46.799 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 51.2151ms
+2025-09-07 10:50:13.313 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 10:50:13.313 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:50:13.313 +05:30 [INF] Executing endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:50:13.314 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSBookResponseModel]]] GetallBooks(SearchRequestModel) on controller LMS.Controllers.BookController (LMS).
+2025-09-07 10:50:13.315 +05:30 [INF] Executing action method LMS.Controllers.BookController.GetallBooks (LMS) - Validation state: "Valid"
+2025-09-07 10:50:13.316 +05:30 [INF] Fetching all books with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:50:13.317 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:50:13.353 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBook @p0
+2025-09-07 10:50:13.362 +05:30 [INF] Books list retrieved successfully.
+2025-09-07 10:50:13.363 +05:30 [INF] Retrieved 6 books
+2025-09-07 10:50:13.363 +05:30 [INF] Executed action method LMS.Controllers.BookController.GetallBooks (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 47.1164ms.
+2025-09-07 10:50:13.364 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:50:13.365 +05:30 [INF] Executed action LMS.Controllers.BookController.GetallBooks (LMS) in 51.0025ms
+2025-09-07 10:50:13.365 +05:30 [INF] Executed endpoint 'LMS.Controllers.BookController.GetallBooks (LMS)'
+2025-09-07 10:50:13.365 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallbook?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 52.6455ms
+2025-09-07 10:51:19.531 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 10:51:19.545 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:51:19.546 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 10:51:19.547 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 10:51:19.553 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-09-07 10:51:19.553 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:51:19.554 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:51:19.649 +05:30 [INF] Executed DbCommand (81ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-09-07 10:51:19.652 +05:30 [INF] categories list retrieved successfully.
+2025-09-07 10:51:19.652 +05:30 [INF] Retrieved 6 Category 
+2025-09-07 10:51:19.653 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 99.368ms.
+2025-09-07 10:51:19.653 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:51:19.654 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 106.3358ms
+2025-09-07 10:51:19.654 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 10:51:19.655 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 124.0402ms
+2025-09-07 10:53:18.314 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=History&SortColumn=title&SortOrder=asc - null null
+2025-09-07 10:53:18.322 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:53:18.322 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 10:53:18.323 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 10:53:18.331 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-09-07 10:53:18.332 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":"History","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:53:18.334 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"History","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:53:18.366 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>History</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-09-07 10:53:18.367 +05:30 [INF] categories list retrieved successfully.
+2025-09-07 10:53:18.367 +05:30 [INF] Retrieved 1 Category 
+2025-09-07 10:53:18.367 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 35.6886ms.
+2025-09-07 10:53:18.368 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:53:18.368 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 44.8334ms
+2025-09-07 10:53:18.368 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 10:53:18.369 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=History&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 55.0628ms
+2025-09-07 10:53:32.029 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=desc - null null
+2025-09-07 10:53:32.030 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:53:32.030 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 10:53:32.030 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 10:53:32.031 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-09-07 10:53:32.032 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"desc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:53:32.035 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"title","SortOrder":"desc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:53:32.051 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>desc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-09-07 10:53:32.052 +05:30 [INF] categories list retrieved successfully.
+2025-09-07 10:53:32.052 +05:30 [INF] Retrieved 6 Category 
+2025-09-07 10:53:32.054 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 22.1279ms.
+2025-09-07 10:53:32.054 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:53:32.054 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 23.4398ms
+2025-09-07 10:53:32.054 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 10:53:32.054 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=desc - 200 null application/json; charset=utf-8 24.8587ms
+2025-09-07 10:53:36.279 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 10:53:36.280 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:53:36.280 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 10:53:36.280 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 10:53:36.282 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-09-07 10:53:36.282 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:53:36.284 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:53:36.298 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-09-07 10:53:36.299 +05:30 [INF] categories list retrieved successfully.
+2025-09-07 10:53:36.299 +05:30 [INF] Retrieved 6 Category 
+2025-09-07 10:53:36.300 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 17.7931ms.
+2025-09-07 10:53:36.300 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:53:36.300 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 19.8243ms
+2025-09-07 10:53:36.302 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 10:53:36.302 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 23.4608ms
+2025-09-07 10:55:11.991 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 10:55:11.996 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:55:11.996 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 10:55:11.997 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 10:55:12.003 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-09-07 10:55:12.003 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:55:12.005 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:55:12.046 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-09-07 10:55:12.047 +05:30 [INF] categories list retrieved successfully.
+2025-09-07 10:55:12.048 +05:30 [INF] Retrieved 6 Category 
+2025-09-07 10:55:12.048 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 45.015ms.
+2025-09-07 10:55:12.048 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:55:12.049 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 52.1219ms
+2025-09-07 10:55:12.049 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 10:55:12.049 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 58.7208ms
+2025-09-07 10:55:18.428 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 10:55:18.428 +05:30 [INF] CORS policy execution successful.
+2025-09-07 10:55:18.428 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 10:55:18.428 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 10:55:18.431 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-09-07 10:55:18.431 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 10:55:18.431 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 10:55:18.438 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-09-07 10:55:18.439 +05:30 [INF] categories list retrieved successfully.
+2025-09-07 10:55:18.439 +05:30 [INF] Retrieved 6 Category 
+2025-09-07 10:55:18.439 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.0744ms.
+2025-09-07 10:55:18.439 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 10:55:18.439 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 8.9633ms
+2025-09-07 10:55:18.439 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 10:55:18.439 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 11.2538ms
+2025-09-07 11:02:50.654 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 11:02:50.657 +05:30 [INF] CORS policy execution successful.
+2025-09-07 11:02:50.657 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 11:02:50.659 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 11:02:50.663 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-09-07 11:02:50.663 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 11:02:50.664 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 11:02:50.722 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-09-07 11:02:50.724 +05:30 [INF] categories list retrieved successfully.
+2025-09-07 11:02:50.724 +05:30 [INF] Retrieved 6 Category 
+2025-09-07 11:02:50.724 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 61.211ms.
+2025-09-07 11:02:50.725 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 11:02:50.735 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 75.5726ms
+2025-09-07 11:02:50.735 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 11:02:50.735 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 499 null application/json; charset=utf-8 81.8741ms
+2025-09-07 11:02:50.926 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - null null
+2025-09-07 11:02:50.927 +05:30 [INF] CORS policy execution successful.
+2025-09-07 11:02:50.927 +05:30 [INF] Executing endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 11:02:50.927 +05:30 [INF] Route matched with {action = "GetallCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[LM.Model.ResponseModel.LMSCategoryResponseModel]]] GetallCategory(SearchRequestModel) on controller LMS.Controllers.CategoryController (LMS).
+2025-09-07 11:02:50.932 +05:30 [INF] Executing action method LMS.Controllers.CategoryController.GetallCategory (LMS) - Validation state: "Valid"
+2025-09-07 11:02:50.933 +05:30 [INF] Fetching all Catagories with search params: {"SearchText":"%","Page":1,"PageSize":10,"SortColumn":"title","SortOrder":"asc","Filters":null,"$type":"SearchRequestModel"}
+2025-09-07 11:02:50.933 +05:30 [INF] Fetching list of Catagories with parameters: {"SortColumn":"title","SortOrder":"asc","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-09-07 11:02:50.946 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[p0='<Search><SortColumn>title</SortColumn><SortOrder>asc</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllCategory @p0
+2025-09-07 11:02:50.948 +05:30 [INF] categories list retrieved successfully.
+2025-09-07 11:02:50.948 +05:30 [INF] Retrieved 6 Category 
+2025-09-07 11:02:50.949 +05:30 [INF] Executed action method LMS.Controllers.CategoryController.GetallCategory (LMS), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.1615ms.
+2025-09-07 11:02:50.949 +05:30 [INF] Executing OkObjectResult, writing value of type 'LM.Model.CommonModel.Page'.
+2025-09-07 11:02:50.949 +05:30 [INF] Executed action LMS.Controllers.CategoryController.GetallCategory (LMS) in 17.6547ms
+2025-09-07 11:02:50.949 +05:30 [INF] Executed endpoint 'LMS.Controllers.CategoryController.GetallCategory (LMS)'
+2025-09-07 11:02:50.949 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5171/getallcategory?Page=1&PageSize=10&SearchText=%25&SortColumn=title&SortOrder=asc - 200 null application/json; charset=utf-8 22.8071ms
+2025-09-07 11:18:16.586 +05:30 [INF] Application is shutting down...

@@ -53,4 +53,13 @@ public partial class User
 
     [InverseProperty("User")]
     public virtual ICollection<BorrowedBook> BorrowedBooks { get; set; } = new List<BorrowedBook>();
+
+    [InverseProperty("CreatedByNavigation")]
+    public virtual ICollection<RequestBook> RequestBookCreatedByNavigations { get; set; } = new List<RequestBook>();
+
+    [InverseProperty("ModifiedByNavigation")]
+    public virtual ICollection<RequestBook> RequestBookModifiedByNavigations { get; set; } = new List<RequestBook>();
+
+    [InverseProperty("User")]
+    public virtual ICollection<RequestBook> RequestBookUsers { get; set; } = new List<RequestBook>();
 }
