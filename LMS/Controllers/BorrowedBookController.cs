@@ -62,10 +62,10 @@ public class BorrowedBookController : BaseController
     }
     
     [Authorize(Roles = "Admin")]
-    [HttpPost("Inserborrowedbook")]
-    public async Task<ActionResult<List<LMSBorrowedBookResponseModel>>> InsertBorrowedBook([FromQuery] string booksid, [FromQuery] string usersid,[FromBody] List<LMSBorrowedBookRequestModel> borrowedbook)
+    [HttpPost("Insertborrowedbook")]
+    public async Task<ActionResult<List<LMSBorrowedBookResponseModel>>> InsertBorrowedBook([FromQuery] string booksid,[FromBody] List<LMSBorrowedBookRequestModel> borrowedbook)
     {
-        List<LMSBorrowedBookResponseModel> createdBook = await _borrowedbookrepository.InsertBorrowedBook(booksid,usersid,borrowedbook);
+        List<LMSBorrowedBookResponseModel> createdBook = await _borrowedbookrepository.InsertBorrowedBook(booksid,borrowedbook);
         if (createdBook == null)
         {
             _logger.LogInformation("Failed to create book: {@BookData}", borrowedbook);

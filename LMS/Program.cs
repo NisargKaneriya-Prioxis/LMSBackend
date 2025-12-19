@@ -1,5 +1,4 @@
-using System.Text;
-using EA.Services.RepositoryFactory;
+﻿using EA.Services.RepositoryFactory;
 using EvaluationAPI.Helper;
 using LM.Model.Models.MyLMSDB;
 using LM.Model.SpDbContext;
@@ -7,13 +6,17 @@ using LM.Services.Repositories.Implementation;
 using LM.Services.Repositories.Interface;
 using LM.Services.Token;
 using LMS.Helper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Serilog;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using Serilog;
+using System.Data;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace LMS;
 
@@ -25,11 +28,13 @@ public class Program
         
         builder.Services.AddCors(options =>
         {
-            options.AddPolicy("AllowFrontend",
-                policy => policy
-                    .AllowAnyOrigin()   
-                    .AllowAnyMethod()
-                    .AllowAnyHeader());
+            options.AddPolicy("AllowFrontend", policy =>
+            {
+                policy.WithOrigins("http://localhost:3000") 
+                      .AllowAnyHeader()
+                      .AllowAnyMethod()
+                      .AllowCredentials();                   
+            });
         });
         
         //Code for adding the log to the new file 
@@ -79,9 +84,12 @@ public class Program
         builder.Services.AddScoped<IBorrowedBookRepository,BorrowedBookRepository>();
         builder.Services.AddScoped<IRequestBookRepository,RequestBookRepository>();
         builder.Services.AddScoped<IReturnBookRepository,ReturnBookRepository>();
-        builder.Services.AddScoped<TokenService>();
+        builder.Services.AddSingleton<TokenService>();
 
         // Add services to the container.
+
+        builder.Services.AddHttpContextAccessor();
+
 
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -134,11 +142,38 @@ public class Program
                 };
                 options.Events = new JwtBearerEvents
                 {
-                    OnChallenge = context =>
+
+                    OnTokenValidated = context =>
                     {
+                        var identity = context.Principal.Identity as ClaimsIdentity;
+
+                        // Read user ID from "sub".
+
+                        var userSid = identity.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                        Console.WriteLine(userSid);
+
+                        // Read role from ClaimTypes.Role
+                        var roleValue = identity.FindFirst(ClaimTypes.Role)?.Value;
+
+                        // If numeric → convert to string enum
+                        if (int.TryParse(roleValue, out int roleId))
+                        {
+                            var roleName =roleValue;
+
+                            identity.RemoveClaim(identity.FindFirst(ClaimTypes.Role));
+                            identity.AddClaim(new Claim(ClaimTypes.Role, roleName));
+
+                            roleValue = roleName;
+                        }
+
+
+                        // Store in HttpContext
+                        context.HttpContext.Items["UserSID"] = userSid;
+                        context.HttpContext.Items["Role"] = roleValue;
+
                         return Task.CompletedTask;
                     },
-                    OnAuthenticationFailed = context =>
+                        OnAuthenticationFailed = context =>
                     {
                         return Task.CompletedTask;
                     }

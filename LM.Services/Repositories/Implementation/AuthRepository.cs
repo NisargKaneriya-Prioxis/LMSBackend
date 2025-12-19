@@ -49,7 +49,7 @@ public class AuthRepository : IAuthRepository
         }
 
         var token = _tokenService.GenerateToken(
-            user.UserId.ToString(),
+            user.UserSid.ToString(),
             user.Role,
             user.Email
         );

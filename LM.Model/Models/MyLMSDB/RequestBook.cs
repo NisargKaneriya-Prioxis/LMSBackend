@@ -18,8 +18,8 @@ public partial class RequestBook
     [StringLength(50)]
     public string RequestBookSid { get; set; } = null!;
 
-    [Column("UserID")]
-    public int UserId { get; set; }
+    [Column("UserSID")]
+    public int UserSid { get; set; }
 
     [Column("BookID")]
     public int BookId { get; set; }

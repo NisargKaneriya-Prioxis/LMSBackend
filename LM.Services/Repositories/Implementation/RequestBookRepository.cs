@@ -6,6 +6,7 @@ using LM.Model.RequestModel;
 using LM.Model.ResponseModel;
 using LM.Model.SpDbContext;
 using LM.Services.UnitOfWork;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
@@ -17,17 +18,20 @@ public class RequestBookRepository : IRequestBookRepository
     private readonly ILogger<RequestBookRepository> _logger;
     private readonly LMSSpContext _spContext;
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IHttpContextAccessor _httpContextAccessor;
 
     public RequestBookRepository(
         LMSDbContext context,
         IUnitOfWork unitOfWork,
         ILogger<RequestBookRepository> logger,
-        LMSSpContext spContext)
+        LMSSpContext spContext,
+        IHttpContextAccessor httpContextAccessor)
     {
         _context = context;
         _logger = logger;
         _spContext = spContext;
         _unitOfWork = unitOfWork;
+        _httpContextAccessor = httpContextAccessor;
     }
     
     public async Task<Page> List(Dictionary<string, object> parameters)
@@ -68,7 +72,7 @@ public class RequestBookRepository : IRequestBookRepository
     
     
     //insert book request
-       public async Task<List<LMSRequestBookResponseModel>> InsertBookRequest(string UserSid,string BookSid,List<LMSRequestBookRequestModel> Requestbooks)
+       public async Task<List<LMSRequestBookResponseModel>> InsertBookRequest(string BookSid,List<LMSRequestBookRequestModel> Requestbooks)
 {
     _logger.LogInformation("Inserting {Count} new book Request", Requestbooks?.Count ?? 0);
     
@@ -81,11 +85,11 @@ public class RequestBookRepository : IRequestBookRepository
         }
 
         List<RequestBook> requestbookList = new List<RequestBook>();
-
-        foreach (var requestbook in Requestbooks)
+            string userSID = _httpContextAccessor.HttpContext?.Items["UserSID"]?.ToString();
+            foreach (var requestbook in Requestbooks)
         {
             var user = await _unitOfWork.GetRepository<User>()
-                .SingleOrDefaultAsync(u => u.UserSid == UserSid);
+                .SingleOrDefaultAsync(u => u.UserSid == userSID);
             
             var book = await _unitOfWork.GetRepository<Book>()
                 .SingleOrDefaultAsync(b => b.BookSid == BookSid);
@@ -93,7 +97,7 @@ public class RequestBookRepository : IRequestBookRepository
             var rb = new RequestBook
             {
                 RequestBookSid = "REQ" + Guid.NewGuid(),
-                UserId = user.UserId,
+                UserSid = user.UserId,
                 BookId = book.BookId,
                 CreatedBy = user.UserId,
                 ModifiedBy = user.UserId,

@@ -7,6 +7,7 @@ using LM.Model.ResponseModel;
 using LM.Model.SpDbContext;
 using LM.Services.Repositories.Interface;
 using LM.Services.UnitOfWork;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
@@ -18,17 +19,20 @@ public class BorrowedBookRepository : IBorrowedBookRepository
     private readonly ILogger<BorrowedBookRepository> _logger;
     private readonly LMSSpContext _spContext;
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IHttpContextAccessor _httpContextAccessor;
 
     public BorrowedBookRepository(
         LMSDbContext context,
         IUnitOfWork unitOfWork,
         ILogger<BorrowedBookRepository> logger,
-        LMSSpContext spContext)
+        LMSSpContext spContext,
+        IHttpContextAccessor httpContextAccessor)
     {
         _context = context;
         _logger = logger;
         _spContext = spContext;
         _unitOfWork = unitOfWork;
+        _httpContextAccessor = httpContextAccessor;
     }
 
     //Get ALL Borrowed book for admin 
@@ -110,7 +114,7 @@ public class BorrowedBookRepository : IBorrowedBookRepository
     }
 
     //borrowedbook
-    public async Task<List<LMSBorrowedBookResponseModel>> InsertBorrowedBook(string booksid, string usersid, List<LMSBorrowedBookRequestModel> borrowedBooks)
+    public async Task<List<LMSBorrowedBookResponseModel>> InsertBorrowedBook(string booksid, List<LMSBorrowedBookRequestModel> borrowedBooks)
     {
         _logger.LogInformation("Inserting {Count} borrowed book records", borrowedBooks?.Count ?? 0);
 
@@ -123,14 +127,15 @@ public class BorrowedBookRepository : IBorrowedBookRepository
             }
 
             List<BorrowedBook> borrowedList = new List<BorrowedBook>();
-
+            string userSID = _httpContextAccessor.HttpContext?.Items["UserSID"]?.ToString();
+       
             foreach (var req in borrowedBooks)
             {
                 var book = await _unitOfWork.GetRepository<Book>()
                     .SingleOrDefaultAsync(b => b.BookSid == booksid && b.Status == (int)Enums.Active);
 
                 var user = await _unitOfWork.GetRepository<User>()
-                    .SingleOrDefaultAsync(u => u.UserSid == usersid && u.Status == (int)Enums.Active);
+                    .SingleOrDefaultAsync(u => u.UserSid == userSID && u.Status == (int)Enums.Active);
 
 
                 var borrowed = new BorrowedBook
