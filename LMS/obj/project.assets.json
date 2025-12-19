@@ -5582,35 +5582,42 @@
     ]
   },
   "packageFolders": {
-    "/Users/nisargkaneriya/.nuget/packages/": {}
+    "C:\\Users\\NisargKaneriya\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/LMS.csproj",
+      "projectUniqueName": "D:\\LMS\\LMSBackend\\LMS\\LMS.csproj",
       "projectName": "LMS",
-      "projectPath": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/LMS.csproj",
-      "packagesPath": "/Users/nisargkaneriya/.nuget/packages/",
-      "outputPath": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LMS/obj/",
+      "projectPath": "D:\\LMS\\LMSBackend\\LMS\\LMS.csproj",
+      "packagesPath": "C:\\Users\\NisargKaneriya\\.nuget\\packages\\",
+      "outputPath": "D:\\LMS\\LMSBackend\\LMS\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/nisargkaneriya/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\NisargKaneriya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/LM.Common.csproj": {
-              "projectPath": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/LM.Common.csproj"
+            "D:\\LMS\\LMSBackend\\LM.Common\\LM.Common.csproj": {
+              "projectPath": "D:\\LMS\\LMSBackend\\LM.Common\\LM.Common.csproj"
             },
-            "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/LM.Services.csproj": {
-              "projectPath": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Services/LM.Services.csproj"
+            "D:\\LMS\\LMSBackend\\LM.Services\\LM.Services.csproj": {
+              "projectPath": "D:\\LMS\\LMSBackend\\LM.Services\\LM.Services.csproj"
             }
           }
         }
@@ -5624,7 +5631,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -5698,7 +5706,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

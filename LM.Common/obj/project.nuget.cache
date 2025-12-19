@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uKvIo+jR7cw=",
+  "dgSpecHash": "fjZw93cx0so=",
   "success": true,
-  "projectFilePath": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/LMS/LM.Common/LM.Common.csproj",
+  "projectFilePath": "D:\\LMS\\LMSBackend\\LM.Common\\LM.Common.csproj",
   "expectedPackageFiles": [
-    "/Users/nisargkaneriya/.nuget/packages/newtonsoft.json/13.0.4-beta1/newtonsoft.json.13.0.4-beta1.nupkg.sha512"
+    "C:\\Users\\NisargKaneriya\\.nuget\\packages\\newtonsoft.json\\13.0.4-beta1\\newtonsoft.json.13.0.4-beta1.nupkg.sha512"
   ],
   "logs": []
 }
